@@ -41,7 +41,7 @@ $dialog-title-padding: grid(1) grid(4) grid(1) grid(2) !default;
 
 %dialog-close {
   @extend %btn-icon;
-  background: asset_url("admin/icons/ic_clear_24px.svg") 50% 50% no-repeat;
+  background: asset_url("icons/ic_clear_24px.svg") 50% 50% no-repeat;
   margin: 0;
   padding: 0;
   position: absolute;

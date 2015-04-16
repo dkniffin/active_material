@@ -81,7 +81,7 @@ $table-border-color: #efefef !default;
 }
 
 %table-cell-actions {
-  background: asset_url("admin/icons/more.svg") 25% 50% no-repeat;
+  background: asset_url("icons/more.svg") 25% 50% no-repeat;
   position: relative;
   width: grid(6);
 }

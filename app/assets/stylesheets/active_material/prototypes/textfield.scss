@@ -38,17 +38,17 @@ $textfield-primary     : $theme-primary !default;
 }
 
 %textfield-input-email {
-  background: #fff asset-url("admin/icons/email.svg") grid(1) 50% no-repeat;
+  background: #fff asset-url("icons/email.svg") grid(1) 50% no-repeat;
   padding-left: grid(5);
 }
 
 %textfield-input-password {
-  background: #fff asset-url("admin/icons/secret.svg") grid(1) 50% no-repeat;
+  background: #fff asset-url("icons/secret.svg") grid(1) 50% no-repeat;
   padding-left: grid(5);
 }
 
 %textfield-input-date {
-  background: #fff asset-url("admin/icons/event.svg") grid(1) 50% no-repeat;
+  background: #fff asset-url("icons/event.svg") grid(1) 50% no-repeat;
   padding-left: grid(5);
 }
 
