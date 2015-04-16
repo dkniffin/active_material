@@ -1,0 +1,84 @@
+/**
+ * Utility Nav
+ * Displays current user and logout information
+ */
+
+#utility_nav {
+  background: asset-url("icons/account_circle.svg") no-repeat;
+  background-size: grid(5);
+  width: grid(5);
+  height: grid(5);
+  margin-top: grid(-2.5);
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: grid(2);
+
+  // Increase the hit region
+  &:before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 50px;
+    top: 0;
+    right: -12px;
+  }
+
+  a {
+    color: #333;
+  }
+
+  #current_user,
+  #logout {
+    clip: rect(0, 0, 0, 0);
+    opacity: 0;
+    transition: 0.28s all;
+  }
+
+  &:hover {
+    #current_user,
+    #logout {
+      clip: initial;
+      opacity: 1;
+    }
+  }
+}
+
+#current_user {
+  box-shadow: 0 1px 2px rgba(#000, 0.22);
+  background: #fff;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  padding: 16px;
+  height: 56px;
+  width: 200px;
+  position: absolute;
+  right: 0;
+  top: 48px;
+
+  &:before {
+    content: "";
+    border: 7px solid transparent;
+    border-bottom-color: #fff;
+    top: -14px;
+    right: 12px;
+    position: absolute;
+  }
+}
+
+#logout {
+  border-top: 1px solid #d9d9d9;
+  box-shadow: 0 1px 2px rgba(#000, 0.22);
+  position: absolute;
+  width: 200px;
+  right: 0;
+  top: 104px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background: #efefef;
+  text-align: right;
+
+  a {
+    @extend %btn;
+  }
+}

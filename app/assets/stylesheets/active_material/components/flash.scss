@@ -1,0 +1,13 @@
+/**
+ * Flash
+ * Notifications that appear whenever a CRUD action or error
+ * has surfaced
+ */
+
+.flash {
+  @extend %snackbar;
+
+  &.flash_alert {
+    @extend %snackbar-error;
+  }
+}

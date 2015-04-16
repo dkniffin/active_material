@@ -1,0 +1,28 @@
+/**
+ * Dialog
+ * A full page takeover action panel
+ */
+
+.ui-dialog {
+  @extend %dialog;
+}
+
+.ui-dialog-toolbar {
+  @extend %toolbar;
+}
+
+.ui-dialog-title {
+  @extend %dialog-title;
+}
+
+.ui-dialog-buttonset {
+  @extend %dialog-footer;
+}
+
+.ui-button {
+  @extend %btn;
+}
+
+.ui-dialog-titlebar-close {
+  @extend %dialog-close;
+}

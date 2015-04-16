@@ -1,0 +1,35 @@
+%tag {
+  @extend %type-caption, %type-smooth;
+  background: $theme-secondary-text;
+  border-radius: 3px;
+  display: inline-block;
+  color: #fff;
+  line-height: grid(2);
+  letter-spacing: 0.1em;
+  padding: grid(0.5) grid(1);
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+%tag-pressable {
+  transition: 0.2s all;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 1px 1px rgba(#000, 0.22);
+    text-shadow: none;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+%tag-success {
+  background: $theme-primary;
+}
+
+%tag-error {
+  background: $theme-error;
+}

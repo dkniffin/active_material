@@ -1,0 +1,25 @@
+/**
+ * Tabs
+ * Theses show up on complicated forms, such as the Exhibit edit page.
+ */
+
+.nav-tabs {
+  @extend %tabs;
+  @extend %tabs-list;
+
+  > li {
+    @extend %tabs-list-item;
+  }
+
+  > li > a {
+    @extend %tabs-btn;
+  }
+
+  > li.ui-state-active > a {
+    @extend %tabs-btn-active;
+  }
+
+  > li.tab_with_errors > a {
+    @extend %tabs-btn-error;
+  }
+}

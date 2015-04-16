@@ -1,0 +1,105 @@
+/**
+ * Menu
+ * A dropdown menu. Used for nested navigation and selection
+ */
+
+$menu-background: #fff !default;
+$menu-border-radius: 2px !default;
+$menu-offset-x: 0 !default;
+$menu-offset-y: 36px !default;
+$menu-padding: 8px !default;
+$menu-item-padding: 4px 16px !default;
+$menu-transition: 0.2s !default;
+$menu-transition-delay: 0.2s !default;
+$menu-keyline: 56px !default;
+$menu-breakpoint: 1300px !default;
+$menu-carat-size: 5px !default;
+
+%menu {
+  display: inline-block;
+  outline: 0;
+  position: relative;
+  text-align: left;
+}
+
+%menu-carat {
+  border: $menu-carat-size solid transparent;
+  border-color: $theme-primary transparent transparent;
+  content: "";
+  height: 0;
+  margin-top: $menu-carat-size / -2;
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  width: 0;
+}
+
+%menu-carat-muted {
+  border-top-color: $theme-hint-text;
+}
+
+%menu-list {
+  background: $menu-background;
+  border-radius: $menu-border-radius;
+  box-shadow: 0 1px 1px rgba(#000, 0.24), 0 0 1.5px rgba(#000, 0.12);
+  filter: blur(1px);
+  left: $menu-offset-x;
+  list-style: none;
+  margin: 0;
+  min-width: $menu-keyline* 2;
+  padding: $menu-padding 0;
+  position: absolute;
+  text-align: left;
+  top: $menu-offset-y;
+  transform-origin: 0 0;
+  transform: translate3d(0, -4px, 0) scaleY(0);
+  transition: $menu-transition all;
+  width: auto;
+  will-change: transform;
+  z-index: $elevation-top;
+}
+
+%menu-list-right {
+  left: auto;
+  right: $menu-offset-x;
+}
+
+%menu-item {
+  display: block;
+  margin: 0;
+  transition: $menu-transition all;
+}
+
+%menu-link {
+  @extend %link-secondary-text, %link-no-decoration;
+  display: block;
+  font-size: 14px;
+  opacity: 0;
+  padding: $menu-item-padding;
+  transition: 0.28s opacity, 0.28s color;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    color: $theme-primary;
+  }
+
+  @include min-breakpoint($menu-breakpoint) {
+    font-size: 13px;
+  }
+}
+
+%menu-button {
+  position: relative;
+}
+
+%menu-list-open {
+  filter: none;
+  transition: $menu-transition all;
+  transform: translateZ(0) scale(1);
+}
+
+%menu-item-open {
+  opacity: 1;
+  transition: $menu-transition opacity;
+}

@@ -1,0 +1,19 @@
+@function tracking($value) {
+  @return ($value / 1000) + 0em;
+}
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+@function sp($value, $baseline:16) {
+  @return (strip-units($value) / $baseline) + rem;
+}
+
+@function grid($step:1) {
+  @return $grid-base * $step;
+}
+
+@function type-grid($step:1) {
+  @return $grid-type * $step;
+}

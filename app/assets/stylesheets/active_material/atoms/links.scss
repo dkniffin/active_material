@@ -1,0 +1,22 @@
+/**
+ * Link Text
+ * Special link text treatment
+ */
+
+%link-secondary-text {
+  color: $theme-secondary-text;
+
+  &:hover,
+  &:focus {
+    color: $theme-accent;
+  }
+}
+
+%link-no-decoration {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,62 @@
+/**
+ * Header
+ * Encapsulates several elements related to navigation at
+ * the top of the page.
+ */
+
+.header {
+  @extend %toolbar;
+  @extend %toolbar-primary;
+  padding-right: grid(8);
+}
+
+.site_title {
+  @extend %toolbar-title;
+  color: #fff;
+}
+
+#tabs {
+  flex-grow: 1;
+}
+
+.header-item {
+  @extend %toolbar-list;
+}
+
+.header-item > li {
+  @extend %toolbar-item;
+
+  > a {
+    @extend %toolbar-item-primary;
+  }
+
+  &.current > a {
+    @extend %toolbar-item-primary-active;
+  }
+}
+
+.has_nested {
+  @extend %menu;
+
+  ul {
+    @extend %menu-list;
+
+    li {
+      @extend %menu-item;
+    }
+
+    li a {
+      @extend %menu-link;
+    }
+  }
+
+  &:hover ul,
+  &:focus ul {
+    @extend %menu-list-open;
+
+    li a {
+      @extend %menu-item-open
+    }
+  }
+
+}

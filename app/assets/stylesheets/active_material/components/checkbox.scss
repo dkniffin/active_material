@@ -1,0 +1,21 @@
+/**
+ * Checkboxes
+ * Inputs given the "boolean" class. They have been seperated
+ * from general form styles because of some hairy nesting.
+ */
+
+.input.boolean {
+
+  > label {
+    font-size: 14px;
+  }
+
+  > label > input {
+    display: inline-block;
+    margin-right: grid(1);
+    position: relative;
+    top: -1px;
+    width: auto;
+  }
+
+}

@@ -1,0 +1,87 @@
+/**
+ * Forms
+ */
+
+fieldset.inputs {
+  margin-bottom: grid(2);
+
+  ol {
+    @extend %list-blank;
+  }
+
+  > legend {
+    @extend %subheader;
+    border: 0;
+  }
+}
+
+.input {
+  @extend %textfield;
+
+  > label,
+  .label > label {
+    @extend %textfield-label;
+  }
+
+  &.string input,
+  &.stringish input,
+  &.numberic input {
+    @extend %textfield-input;
+  }
+
+  &.email input {
+    @extend %textfield-input-email;
+  }
+
+  &.password input {
+    @extend %textfield-input-password;
+  }
+
+  &.text textarea {
+    @extend %textfield-input, %textfield-textarea;
+  }
+
+  select + input {
+    margin-top: grid(2);
+  }
+
+}
+
+.field_with_errors input {
+  @extend %textfield-input-error;
+}
+
+.inline-hints {
+  @extend %textfield-hint;
+}
+
+.inline-errors {
+  @extend %textfield-hint;
+  @extend %textfield-hint-error;
+
+  + .inline-hints {
+    display: none;
+  }
+}
+
+abbr[title="required"] {
+  @extend %textfield-required;
+}
+
+fieldset.actions,
+.buttons {
+  @extend %actions-footer;
+
+  ol {
+    @extend %list-blank;
+    @extend %list-inline;
+  }
+
+  button {
+    @extend %btn-raised;
+  }
+
+  .cancel a {
+    @extend %btn;
+  }
+}

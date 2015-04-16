@@ -1,0 +1,13 @@
+/**
+ * Subheader
+ * Used for sidebar headings and other secondary content
+ * which require title text
+ */
+
+%subheader {
+  color: $theme-secondary-text;
+  font-size: sp(14);
+  font-weight: 500;
+  padding: grid(2);
+  line-height: grid(2);
+}

@@ -1,0 +1,73 @@
+/**
+ * Tables
+ */
+
+.table_tools {
+  @extend %table-header;
+}
+
+.index_table,
+.panel_contents table {
+  @extend %table;
+
+  th {
+    @extend %table-heading;
+
+    a {
+      @extend %table-sort;
+    }
+
+    &.sorted-asc a {
+      @extend %table-sort-asc;
+    }
+
+    &.sorted-desc a {
+      @extend %table-sort-desc;
+    }
+  }
+
+  td {
+    @extend %table-cell;
+  }
+
+  tr.selected {
+    @extend %table-row-selected;
+  }
+
+  .col-selectable {
+    @extend %table-cell-selectable;
+  }
+
+  td.col-actions {
+    @extend %table-cell-actions;
+
+    .table_actions {
+      @extend %menu-list, %menu-list-right;
+      top: 50%;
+      margin-top: grid(-2);
+      margin-right: grid(2);
+
+      a {
+        @extend %menu-link;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      .table_actions {
+        @extend %menu-list-open;
+
+        a {
+          @extend %menu-item-open;
+        }
+      }
+    }
+  }
+
+  .col-photo img,
+  .col-card_image img,
+  .col-image img {
+    @extend %avatar
+  }
+
+}

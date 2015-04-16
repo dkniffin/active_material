@@ -1,0 +1,32 @@
+%elevation-0 {
+  z-index: $elevation-0;
+}
+
+%elevation-1 {
+  box-shadow: 0 1px 1px rgba(#000, 0.24), 0 1px 1.5px rgba(#000, 0.12);
+  z-index: $elevation-1;
+}
+
+%elevation-2 {
+  box-shadow: 0 3px 3px rgba(#000, 0.23), 0 3px 3px rgba(#000, 0.16);
+  z-index: $elevation-2;
+}
+
+%elevation-3 {
+  box-shadow: 0 6px 3px rgba(#000, 0.23), 0 10px 10px rgba(#000, 0.19);
+  z-index: $elevation-3;
+}
+
+%elevation-4 {
+  box-shadow: 0 10px 5px rgba(#000, 0.22), 0 14px 14px rgba(#000, 0.25);
+  z-index: $elevation-4;
+}
+
+%elevation-5 {
+  box-shadow: 0 15px 6px rgba(#000, 0.22), 0 19px 19px rgba(#000, 0.30);
+  z-index: $elevation-5;
+}
+
+%elevation-dominate {
+  z-index: 1000;
+}

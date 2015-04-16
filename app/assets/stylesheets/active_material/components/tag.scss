@@ -1,0 +1,23 @@
+/**
+ * Tags
+ * Tags show up as states within tables and other components
+ */
+
+.status_tag {
+  @extend %tag;
+
+  a & {
+    @extend %tag-pressable;
+  }
+
+  &.yes {
+    @extend %tag-success;
+  }
+}
+
+.empty {
+  color: #ccc;
+  font-size: 0.9em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

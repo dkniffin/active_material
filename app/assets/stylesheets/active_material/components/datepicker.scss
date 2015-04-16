@@ -1,0 +1,58 @@
+/**
+ * Datepicker
+ * An input with a dropdown calendar that appears on focus
+ */
+
+.ui-datepicker {
+  @extend %datepicker;
+}
+
+.ui-datepicker-header {
+  @extend %datepicker-header;
+
+  .ui-icon {
+    @extend %visually-hidden;
+  }
+}
+
+.ui-datepicker-title {
+  @extend %datepicker-title;
+}
+
+.ui-datepicker-prev {
+  @extend %datepicker-prev;
+}
+
+.ui-datepicker-next {
+  @extend %datepicker-next;
+}
+
+.ui-datepicker-calendar {
+  @extend %datepicker-calendar;
+
+  th {
+    @extend %datepicker-calendar-heading;
+  }
+
+  td {
+    @extend %datepicker-calendar-day;
+  }
+
+  a {
+    @extend %datepicker-calendar-day-link;
+
+    &.ui-state-active,
+    &:hover,
+    &:focus {
+      @extend %datepicker-calendar-day-link-focus
+    }
+
+    &.ui-state-highlight {
+      @extend %datepicker-calendar-day-link-current;
+    }
+  }
+}
+
+.ui-datepicker-unselectable {
+  @extend %datepicker-calendar-day-disabled;
+}

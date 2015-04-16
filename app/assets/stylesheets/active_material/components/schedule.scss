@@ -1,0 +1,45 @@
+/**
+ * Schedule
+ */
+
+.schedule-menu {
+  @extend %toolbar;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
+}
+
+.schedule-menu-next,
+.schedule-menu-prev,
+.schedule-menu-title {
+  padding: grid(2);
+  margin: 0;
+}
+
+.schedule-menu-title {
+  color: $theme-text;
+  display: block;
+  flex-grow: 1;
+  font-size: 1.2;
+  font-weight: bold;
+  line-height: grid(3);
+  text-align: center;
+
+  span {
+    font-weight: normal;
+  }
+}
+
+.schedule-menu-prev:before {
+  content: '\02190';
+}
+
+.schedule-menu-next {
+  text-align: right;
+
+  &:after {
+    content: '\02192';
+  }
+}

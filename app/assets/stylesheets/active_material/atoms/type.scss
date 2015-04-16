@@ -1,0 +1,55 @@
+/**
+ * Utilitize for manipulating typography.
+ * These styles mirror the Material Design Stickersheet
+ */
+
+%type-headline {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+%type-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+%type-subheader {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+%type-menu,
+%type-body-2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+%type-body-1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+%type-body-2 {
+  font-weight: 600;
+}
+
+%type-caption {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: tracking(20);
+  line-height: 12px;
+}
+
+%type-btn {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: tracking(10);
+  line-height: 12px;
+  text-transform: uppercase;
+}

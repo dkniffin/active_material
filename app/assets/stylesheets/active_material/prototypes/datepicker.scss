@@ -1,0 +1,96 @@
+/**
+ * Datepicker
+ * A calendar widget
+ */
+
+$datepicker-padding: $grid-type !default;
+$datepicker-width: grid(35) !default;
+
+%datepicker {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(#000, 0.25), 0 -1px 1px rgba(#000, 0.12);
+  padding: 0 grid(1.5) grid(1);
+  width: $datepicker-width;
+}
+
+%datepicker-header {
+  line-height: grid(4);
+  padding: grid(1) 0 grid(0.5);
+  position: relative;
+  text-align: center;
+}
+
+%datepicker-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+%datepicker-icon:before {
+  display: inline-block;
+  font-size: grid(2);
+  height: grid(4);
+  width: grid(4);
+}
+
+%datepicker-prev {
+  cursor: pointer;
+  float: left;
+
+  &:before {
+    @extend %datepicker-icon;
+    content: "‹";
+  }
+}
+
+%datepicker-next {
+  cursor: pointer;
+  float: right;
+
+  &:before {
+    @extend %datepicker-icon;
+    content: "›";
+  }
+}
+
+%datepicker-calendar {
+  border-collapse: collapse;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+%datepicker-calendar-heading {
+  color: $theme-secondary-text;
+  font-weight: 500;
+  padding-bottom: 4px;
+}
+
+%datepicker-calendar-day {
+  font-weight: 500;
+  height: grid(5);
+}
+
+%datepicker-calendar-day-disabled {
+  opacity: 0;
+}
+
+%datepicker-calendar-day-link {
+  border-radius: 50%;
+  color: $theme-text;
+  height: grid(5);
+  padding: grid(1);
+  width: grid(5);
+}
+
+%datepicker-calendar-day-link-focus {
+  color: $theme-primary;
+  text-decoration: none;
+}
+
+%datepicker-calendar-day-link-current {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25) inset;
+  background: $theme-primary;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(#000, 0.12);
+}

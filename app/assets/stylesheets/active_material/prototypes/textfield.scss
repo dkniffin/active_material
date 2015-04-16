@@ -1,0 +1,120 @@
+/**
+ * Textfield
+ * Character inputs, for simple form fields
+ */
+
+$textfield-input-type  : normal sp(14)/24px $font-sans !default;
+$textfield-label-type  : 400 sp(12)/grid(2) $font-sans !default;
+$textfield-margin      : grid(1) 0 !default;
+$textfield-padding     : grid(1) grid(2) !default;
+$textfield-error-color : $theme-error !default;
+$textfield-color       : rgba(#000, 0.70) !default;
+$textfield-primary     : $theme-primary !default;
+
+%textfield {
+  color: $textfield-color;
+  margin: $textfield-margin;
+  padding: $textfield-padding;
+  position: relative;
+}
+
+%textfield-input {
+  background: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(#222, 0.1), inset 1px 1px 1px rgba(#222, 0.08);
+  display: block;
+  font: $textfield-input-type;
+  margin: 0;
+  padding: grid(1);
+  transition: 0.35s all;
+  width: 100%;
+
+  &:focus {
+    box-shadow: 0 0 0 1px rgba($theme-primary, 0.7);
+    outline: 0;
+    transition: 0.15s all;
+  }
+}
+
+%textfield-input-email {
+  background: #fff asset-url("admin/icons/email.svg") grid(1) 50% no-repeat;
+  padding-left: grid(5);
+}
+
+%textfield-input-password {
+  background: #fff asset-url("admin/icons/secret.svg") grid(1) 50% no-repeat;
+  padding-left: grid(5);
+}
+
+%textfield-input-date {
+  background: #fff asset-url("admin/icons/event.svg") grid(1) 50% no-repeat;
+  padding-left: grid(5);
+}
+
+%textfield-textarea {
+  border-radius: 2px;
+  min-height: sp(48);
+  padding: grid(1);
+}
+
+%textfield-input-error {
+  border-color: $textfield-error-color;
+  box-shadow: 0 1px 0 0 $textfield-error-color;
+}
+
+%textfield-label {
+  color: $theme-secondary-text;
+  display: block;
+  font-size: sp(13);
+  line-height: 16px;
+  margin-bottom: 8px;
+  position: relative;
+  transition: 0.28s all;
+  width: 100%;
+
+  .has-focus & {
+    color: $textfield-primary;
+  }
+}
+
+%textfield-hint {
+  @extend %type-caption;
+  color: $theme-secondary-text;
+  margin: grid(1) 0 0;
+}
+
+%textfield-hint-error {
+  @extend %type-caption;
+  color: $textfield-error-color;
+  display: inline-block;
+  margin: $grid-type 0 0;
+  vertical-align: middle;
+  transition: 0.3s all;
+
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
+
+%textfield-required {
+  @extend %type-caption;
+  border: 0;
+  color: $textfield-primary;
+  margin-left: 4px;
+}
+
+%textfield-inline {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+%textfield-label-inline {
+  width: 100%;
+}
+
+%textfield-input-inline {
+  flex: 1;
+  width: auto;
+}

@@ -1,0 +1,58 @@
+$btn-min-width: 88px !default;
+$btn-padding: 12px 8px !default;
+$btn-border-radius: 2px !default;
+$btn-focus-color: rgba(#999, 0.2) !default;
+$btn-active-color: rgba(#999, 0.4) !default;
+
+%btn {
+  @extend %type-btn;
+  background: transparent;
+  border-radius: $btn-border-radius;
+  border: 0;
+  color: $theme-text;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 18px;
+  margin: 4px;
+  padding: $btn-padding;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.25s all;
+  user-select: none;
+  vertical-align: center;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: $theme-primary;
+    text-decoration: none;
+  }
+}
+
+%btn-raised {
+  @extend %type-smooth;
+  background: $theme-primary;
+  box-shadow: 0 0 2px rgba(#000, 0.12);
+  color: #fff;
+  font-weight: 600;
+  min-width: $btn-min-width;
+
+  &:focus,
+  &:hover {
+    background: lighten($theme-primary, 10%);
+    color: $theme-text-reverse;
+    outline: none;
+  }
+
+  &:active {
+    background: lighten($theme-primary, 5%);
+    box-shadow: inset 0 1px 0 rgba(#fff, 0.2);
+  }
+}
+
+%btn-disabled {
+  opacity: 0.4;
+}

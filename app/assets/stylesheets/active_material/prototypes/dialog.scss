@@ -1,0 +1,50 @@
+/**
+ * Dialog
+ * A modal that appears above all other content
+ */
+
+$dialog-background: #fff !default;
+$dialog-border-radius: 2px !default;
+$dialog-title-padding: grid(1) grid(4) grid(1) grid(2) !default;
+
+@keyframes dialog-fade {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+%dialog {
+  @extend %elevation-2;
+  animation: 0.6s dialog-fade;
+  background: $dialog-background;
+  border-radius: $dialog-border-radius;
+  outline: none;
+  z-index: $elevation-top;
+}
+
+%dialog-title {
+  @extend %type-subheader;
+  display: block;
+  padding: $dialog-title-padding;
+}
+
+%dialog-footer {
+  padding: grid(1) grid(1) 0;
+  text-align: right;
+}
+
+%dialog-close {
+  @extend %btn-icon;
+  background: asset_url("admin/icons/ic_clear_24px.svg") 50% 50% no-repeat;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

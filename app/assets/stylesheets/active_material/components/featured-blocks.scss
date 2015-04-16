@@ -1,0 +1,12 @@
+.featured-blocks-message {
+  display: block;
+  padding: 0 grid(2) grid(2);
+}
+
+.new-featured-block {
+  @extend %actions-footer;
+
+  .button {
+    @extend %btn-raised;
+  }
+}

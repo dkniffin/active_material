@@ -1,0 +1,40 @@
+/**
+ * Filters
+ * Filters show up as sidebars on most index pages
+ */
+
+.filter_form_field,
+.select_and_search,
+.filter_date_range {
+  @extend %textfield, %textfield-inline;
+
+  label {
+    @extend %textfield-label, %textfield-label-inline;
+  }
+
+  > select {
+    @extend %select-input;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    flex-basis: 100px;
+  }
+
+  > input.datepicker {
+    @extend %textfield-input, %textfield-input-inline, %textfield-input-date;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  > input[type="submit"] {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin: 0;
+  }
+}
+
+.filter_string input,
+.filter_numeric input {
+  @extend %textfield-input, %textfield-input-inline;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}

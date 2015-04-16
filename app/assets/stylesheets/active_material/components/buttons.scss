@@ -1,0 +1,19 @@
+/**
+ * Buttons
+ * Various selectors for button like elements
+ */
+
+.clear_filters_btn {
+  @extend %btn;
+}
+
+.button,
+.cancel a {
+  @extend %btn;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  @extend %btn, %btn-raised;
+}

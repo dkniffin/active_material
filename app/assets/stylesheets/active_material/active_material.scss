@@ -1,0 +1,48 @@
+/**
+ * Active Material
+ *
+ * A redesign of ActiveAdmin that follows Material Design standards
+ * www.google.com/design/spec/material-design/introduction.html
+ */
+
+/**
+ * $variables, these should always end with !default
+ * so that they can be overriden
+ */
+@import "values/colors";
+@import "values/grid";
+@import "values/fonts";
+@import "values/breakpoints";
+@import "values/keylines";
+@import "values/elevation";
+
+/**
+ * Generators describe functions, mixins, and classes
+ * intended for extention. More or less, they are "style builders"
+ * instead of "style descriptors"
+ */
+@import "generators/functions";
+@import "generators/mixins";
+@import "generators/extends";
+
+/**
+ * Foundational rules that setup the page
+ */
+@import "global/foundation";
+@import "global/utilities";
+
+/**
+ * Atoms are individual styles to enhance reusability
+ */
+@import "atoms/*";
+
+/**
+ * Prototypes are collections of %selectors to allow for css design
+ * without the constraints of limiting ActiveAdmin selectors
+ */
+@import "prototypes/*";
+
+/**
+ * Components describe actual implementation within Active Admin
+ */
+@import "components/*";

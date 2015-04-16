@@ -1,0 +1,20 @@
+/**
+ * Basic Selects
+ */
+
+.select,
+.polymorphic_select {
+
+  select:not([multiple]) {
+    @extend %select-input;
+  }
+
+}
+
+select[multiple] {
+  @extend %multiselect;
+
+  option {
+    @extend %multiselect-option;
+  }
+}

@@ -1,0 +1,109 @@
+/**
+ * Tabs
+ * http://www.google.com/design/spec/components/tabs.html
+ */
+
+$tabs-padding: 0 24px !default;
+$tabs-background: $theme-primary !default;
+$tabs-border-width: 3px !default;
+$tabs-color: rgba(#fff, 0.6) !default;
+$tabs-color-focus: #fff !default;
+$tabs-font: 400 14px/16px $font-sans !default;
+
+@keyframes tabs-error-throb {
+  from {
+    text-shadow: none;
+    transform: translateY(1px);
+  }
+
+  to {
+    text-shadow: 0 0 5px rgba($theme-error, 0.8);
+    transform: translateY(-1px);
+  }
+}
+
+%tabs {
+  color: $tabs-color;
+  background: $tabs-background;
+  box-shadow: inset 0 -1px 1px rgba(#000, 0.15);
+  line-height: 0;
+  margin: 0;
+  padding: $tabs-padding;
+}
+
+%tabs-list {
+  list-style: none;
+}
+
+%tabs-list-item {
+  display: inline-block;
+}
+
+%tabs-btn {
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  font: $tabs-font;
+  letter-spacing: 0.08em;
+  padding: grid(2);
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.2s color;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  &:after {
+    background: $theme-secondary-text-reverse;
+    bottom: 0;
+    box-shadow: 0 -1px 1px rgba(#000, 0.1);
+    content: "";
+    height: $tabs-border-width;
+    left: 0;
+    position: absolute;
+    transform: translateY($tabs-border-width);
+    transition: 0.2s background, 0.25s transform;
+    width: 100%;
+  }
+
+  &:focus,
+  &:hover {
+    background: transparent;
+    outline: none;
+    text-decoration: none;
+
+    &:after {
+      transform: none;
+    }
+  }
+
+  &:active {
+    border: 0;
+    box-shadow: none;
+  }
+}
+
+%tabs-btn-active {
+  color: $tabs-color-focus;
+
+  &:after {
+    background: $theme-accent;
+    box-shadow: 0 -1px 1px rgba(#000, 0.1), inset 0 1px 1px rgba(#fff, 0.50);
+    transform: none;
+  }
+}
+
+%tabs-btn-error {
+  padding-right: grid(5);
+
+  &:before {
+    animation: 2s tabs-error-throb infinite alternate;
+    color: $theme-error-400;
+    content: '\026a0';
+    font-size: 20px;
+    line-height: grid(2);
+    margin-top: -6px;
+    position: absolute;
+    right: grid(1);
+    top: 50%;
+  }
+}
