@@ -2,6 +2,8 @@
 
 ActiveAdmin skin based on Google's Material Design.
 
+<img src="http://i.imgur.com/dGZYLxA.png">
+
 ## Installation
 
 Add this line to your application's Gemfile:
