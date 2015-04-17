@@ -2,7 +2,7 @@
 
 ActiveAdmin skin based on Google's Material Design.
 
-<img src="http://i.imgur.com/dGZYLxA.png">
+<img src="http://i.imgur.com/kDkGzYe.png">
 
 ## Installation
 
