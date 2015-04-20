@@ -5,13 +5,13 @@
 .select,
 .polymorphic_select {
 
-  select:not([multiple="multiple"]) {
+  select:not([multiple]) {
     @extend %select-input;
   }
 
 }
 
-select[multiple="multiple"] {
+select[multiple] {
   @extend %multiselect;
 
   option {

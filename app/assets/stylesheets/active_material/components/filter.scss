@@ -12,11 +12,15 @@
     @extend %textfield-label, %textfield-label-inline;
   }
 
-  > select {
+  > select:not([multiple]) {
     @extend %select-input;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     flex-basis: 100px;
+  }
+
+  > select[multiple] {
+    flex-basis: 100%;
   }
 
   > input.datepicker {
