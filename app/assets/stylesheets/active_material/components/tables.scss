@@ -11,7 +11,7 @@
   @extend %table;
 
   th {
-    @extend %table-heading;
+    @extend %table-column-heading;
 
     a {
       @extend %table-sort;
@@ -26,16 +26,29 @@
     }
   }
 
+  tr {
+    @extend %table-row;
+
+    &:hover {
+      @extend %table-row-hover;
+    }
+
+    &.selected {
+      @extend %table-row-selected;
+    }
+  }
+
   td {
     @extend %table-cell;
   }
 
-  tr.selected {
-    @extend %table-row-selected;
-  }
-
   .col-selectable {
     @extend %table-cell-selectable;
+
+    // This is necessary to center align checkboxes given
+    .resource_selection_cell {
+      display: inline;
+    }
   }
 
   td.col-actions {
@@ -64,10 +77,10 @@
     }
   }
 
-  .col-photo img,
-  .col-card_image img,
-  .col-image img {
-    @extend %avatar
+  td img {
+    @extend %avatar;
+    width: grid(6);
+    height: grid(6);
   }
 
 }

@@ -3,7 +3,7 @@
  */
 
 $table-background: #fff !default;
-$table-border-color: #efefef !default;
+$table-border-color: $theme-divider !default;
 
 %table {
   background: $table-background;
@@ -17,8 +17,11 @@ $table-border-color: #efefef !default;
   padding: grid(2);
 }
 
-%table-heading {
+%table-column-heading {
+  color: $theme-secondary-text;
   border-bottom: 1px solid $table-border-color;
+  font-size: 13px;
+  font-weight: 600;
   line-height: grid(2);
   height: grid(6);
   padding: grid(1) grid(2);
@@ -51,19 +54,35 @@ $table-border-color: #efefef !default;
   border-top-color: $theme-primary;
 }
 
-%table-row-selected {
-  background: $table-border-color;
-  box-shadow: 0 1px 0 0 rgba(#000, 0.1);
-  transition: 0.12s all;
+%table-row {
+  height: grid(6);
+  transition: 0.12s background;
+}
 
-  &:first-child {
-    box-shadow: 0 1px 0 0 rgba(#000, 0.1), 0 -1px 0 0 rgba(#000, 0.05);
+%table-row-hover {
+  background: #eee;
+
+  td {
+    box-shadow: 0 -1px 0 rgba(#000, 0.05);
+    border-bottom: 1px solid darken($table-border-color, 5%);
+  }
+}
+
+%table-row-selected {
+  background: #e0e0e0;
+
+  td {
+    box-shadow: 0 -1px 0 rgba(#000, 0.15);
+    border-bottom: 1px solid darken($table-border-color, 15%);
   }
 }
 
 %table-cell {
   border-bottom: 1px solid $table-border-color;
-  padding: grid(2);
+  color: $theme-text;
+  font-size: 13px;
+  font-weight: 400;
+  padding: grid(1) grid(2);
 
   img {
     display: block;
@@ -72,16 +91,20 @@ $table-border-color: #efefef !default;
 }
 
 %table-cell-selectable {
-  padding: grid(2) grid(3) grid(2) grid(2);
-  width: grid(6);
+  padding: grid(2) grid(3) grid(2);
+  width: 18px + grid(6);
 
   [type=checkbox] {
+    display: inline-block;
+    height: 18px;
     margin: 0;
+    vertical-align: middle;
+    width: 18px;
   }
 }
 
 %table-cell-actions {
-  background: asset_url("icons/more.svg") 25% 50% no-repeat;
+  background: asset_url("admin/icons/more.svg") 25% 50% no-repeat;
   position: relative;
   width: grid(6);
 }
