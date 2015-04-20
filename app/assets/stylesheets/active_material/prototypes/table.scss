@@ -62,7 +62,8 @@ $table-border-color: $theme-divider !default;
 %table-row-hover {
   background: #eee;
 
-  td {
+  td,
+  th {
     box-shadow: 0 -1px 0 rgba(#000, 0.05);
     border-bottom: 1px solid darken($table-border-color, 5%);
   }
@@ -71,7 +72,8 @@ $table-border-color: $theme-divider !default;
 %table-row-selected {
   background: #e0e0e0;
 
-  td {
+  td,
+  th {
     box-shadow: 0 -1px 0 rgba(#000, 0.15);
     border-bottom: 1px solid darken($table-border-color, 15%);
   }
