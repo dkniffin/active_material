@@ -21,40 +21,41 @@ $textfield-primary     : $theme-primary !default;
 %textfield-input {
   background: #fff;
   border: 0;
-  border-radius: 2px;
-  box-shadow: 0 0 0 1px rgba(#222, 0.1), inset 1px 1px 1px rgba(#222, 0.08);
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 1px rgba(#222, 0.08);
   display: block;
   font: $textfield-input-type;
   margin: 0;
   padding: grid(1);
-  transition: 0.35s all;
+  transition: 0.35s border-color, 0.35s box-shadow;
   width: 100%;
 
   &:focus {
-    box-shadow: 0 0 0 1px rgba($theme-primary, 0.7);
+    border-color: $theme-primary;
     outline: 0;
-    transition: 0.15s all;
+    transition: 0.15s border-color, 0.15s box-shadow;
   }
 }
 
 %textfield-input-email {
-  background: #fff asset-url("icons/email.svg") grid(1) 50% no-repeat;
+  background: #fff asset-url("admin/icons/email.svg") grid(1) 50% no-repeat;
   padding-left: grid(5);
 }
 
 %textfield-input-password {
-  background: #fff asset-url("icons/secret.svg") grid(1) 50% no-repeat;
+  background: #fff asset-url("admin/icons/secret.svg") grid(1) 50% no-repeat;
   padding-left: grid(5);
 }
 
 %textfield-input-date {
-  background: #fff asset-url("icons/event.svg") grid(1) 50% no-repeat;
+  background: #fff asset-url("admin/icons/event.svg") grid(1) 50% no-repeat;
   padding-left: grid(5);
 }
 
 %textfield-textarea {
   border-radius: 2px;
-  min-height: sp(48);
+  height: sp(grid(7));
   padding: grid(1);
 }
 

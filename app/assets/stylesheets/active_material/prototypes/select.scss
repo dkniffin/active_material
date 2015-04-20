@@ -11,8 +11,8 @@
 }
 
 %select-input {
-  background: #fafafa asset-url("icons/arrow-dropdown.svg") no-repeat calc(100% - 4px) 50%;
-  border: 1px solid $theme-divider;
+  background: #fafafa asset-url("admin/icons/arrow-dropdown.svg") no-repeat calc(100% - 4px) 50%;
+  border: 1px solid #d3d3d3;
   border-radius: 3px;
   box-shadow: inset 0 1px 0 rgba(#fff, 0.8);
   height: grid(5) + 2px; // line height + border for Firefox
