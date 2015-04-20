@@ -45,7 +45,8 @@
   .col-selectable {
     @extend %table-cell-selectable;
 
-    // This is necessary to center align checkboxes given
+    // ActiveAdmin wraps checkboxes in a div. This rule prevents
+    // that div from messing up vertical alignment
     .resource_selection_cell {
       display: inline;
     }
