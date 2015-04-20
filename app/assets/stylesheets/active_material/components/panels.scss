@@ -7,6 +7,7 @@
 .panel,
 #collection_selection,
 .has_many_container,
+body.index #main_content,
 body.edit #main_content > form,
 body.new #main_content > form,
 body.create #main_content > form {
