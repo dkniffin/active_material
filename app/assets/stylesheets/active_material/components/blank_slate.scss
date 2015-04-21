@@ -9,7 +9,7 @@
   color: $theme-tertiary-text;
   font-weight: 600;
   text-align: center;
-  padding: grid(3) grid(2);
+  padding: unit(3) unit(2);
 }
 
 .blank_slate {
@@ -20,6 +20,6 @@
 
   small {
     display: block;
-    margin-top: grid(1);
+    margin-top: unit(1);
   }
 }

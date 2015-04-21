@@ -5,7 +5,7 @@
 
 $dialog-background: #fff !default;
 $dialog-border-radius: 2px !default;
-$dialog-title-padding: grid(1) grid(4) grid(1) grid(2) !default;
+$dialog-title-padding: unit(1) unit(4) unit(1) unit(2) !default;
 
 @keyframes dialog-fade {
   from {
@@ -35,7 +35,7 @@ $dialog-title-padding: grid(1) grid(4) grid(1) grid(2) !default;
 }
 
 %dialog-footer {
-  padding: grid(1) grid(1) 0;
+  padding: unit(1) unit(1) 0;
   text-align: right;
 }
 

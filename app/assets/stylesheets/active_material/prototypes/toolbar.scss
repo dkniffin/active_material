@@ -26,8 +26,8 @@ $toolbar-keyline-medium  : $toolbar-keyline-small + 8px !default;
 %toolbar-title {
   font-size: $toolbar-title-font-size;
   font-weight: 500;
-  line-height: grid(2);
-  padding: grid(2);
+  line-height: unit(2);
+  padding: unit(2);
   width: 100%;
   text-align: left;
 
@@ -37,7 +37,7 @@ $toolbar-keyline-medium  : $toolbar-keyline-small + 8px !default;
 }
 
 %toolbar-list {
-  margin: 0 0 0 grid(2);
+  margin: 0 0 0 unit(2);
   padding: 0;
   text-align: left;
 }
@@ -47,7 +47,7 @@ $toolbar-keyline-medium  : $toolbar-keyline-small + 8px !default;
   display: inline-block;
   color: $theme-text;
   font-weight: 500;
-  line-height: grid(3);
+  line-height: unit(3);
   margin: 0;
 }
 
@@ -55,8 +55,8 @@ $toolbar-keyline-medium  : $toolbar-keyline-small + 8px !default;
   @extend %link-no-decoration;
   color: $theme-text-reverse;
   display: block;
-  line-height: grid(2);
-  padding: grid(2) grid(1);
+  line-height: unit(2);
+  padding: unit(2) unit(1);
   text-align: center;
 
   &:hover,

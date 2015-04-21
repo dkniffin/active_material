@@ -86,14 +86,14 @@ a {
 
 blockquote {
   border-left: 4px solid $theme-hint-text;
-  margin: type-grid(4) 0;
-  padding: type-grid(4);
+  margin: type-unit(4) 0;
+  padding: type-unit(4);
 }
 
 hr {
   border: 0;
   border-bottom: 1px solid $theme-divider;
-  margin: grid(4) 0
+  margin: unit(4) 0
 }
 
 ul {

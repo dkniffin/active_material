@@ -10,7 +10,7 @@
   .pagination_information,
   .download_links {
     @extend %type-caption;
-    padding: grid(2);
+    padding: unit(2);
   }
 
   .pagination_information {
@@ -18,7 +18,7 @@
   }
 
   .download_links {
-    line-height: grid(3);
+    line-height: unit(3);
     float: right;
     text-align: right;
   }
@@ -30,7 +30,7 @@
   border-bottom: 1px solid #efefef;
   display: flex;
   justify-content: flex-end;
-  padding: 0 grid(2);
+  padding: 0 unit(2);
 
   .page,
   .next,

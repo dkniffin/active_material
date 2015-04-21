@@ -3,7 +3,7 @@
  */
 
 fieldset.inputs {
-  margin-bottom: grid(2);
+  margin-bottom: unit(2);
 
   ol {
     @extend %list-blank;
@@ -42,7 +42,7 @@ fieldset.inputs {
   }
 
   select + input {
-    margin-top: grid(2);
+    margin-top: unit(2);
   }
 
 }

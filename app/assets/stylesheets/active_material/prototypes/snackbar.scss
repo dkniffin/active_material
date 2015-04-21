@@ -6,8 +6,8 @@
 
 $snackbar-background: #323232 !default;
 $snackbar-color: $theme-text-reverse !default;
-$snackbar-min-width: grid(36) !default;
-$snackbar-max-width: grid(72) !default;
+$snackbar-min-width: unit(36) !default;
+$snackbar-max-width: unit(72) !default;
 $snackbar-duration: 9s !default;
 
 @keyframes snackbar-fade {
@@ -32,10 +32,10 @@ $snackbar-duration: 9s !default;
   font-weight: 300;
   font-size: 14px;
   line-height: sp(20);
-  margin: grid(2);
+  margin: unit(2);
   min-width: $snackbar-min-width;
   max-width: $snackbar-max-width;
-  padding: grid(2) grid(3) grid(1.5);
+  padding: unit(2) unit(3) unit(1.5);
   position: fixed;
   text-shadow: 0 1px 1px #000;
   z-index: $elevation-top;

@@ -5,8 +5,8 @@
 
 #login {
   @extend %dialog;
-  margin: grid(-4) auto 0;
-  max-width: grid(50);
+  margin: unit(-4) auto 0;
+  max-width: unit(50);
 
   h2 {
     @extend %visually-hidden;

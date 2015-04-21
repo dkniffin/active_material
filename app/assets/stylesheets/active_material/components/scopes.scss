@@ -12,7 +12,7 @@
 .scope {
   font-size: 13px;
   font-weight: 500;
-  margin-left: grid(2);
+  margin-left: unit(2);
 
   a {
     @extend %link-secondary-text;

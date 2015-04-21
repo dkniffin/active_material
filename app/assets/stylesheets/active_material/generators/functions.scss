@@ -10,10 +10,10 @@
   @return (strip-units($value) / $baseline) + rem;
 }
 
-@function grid($step:1) {
-  @return $grid-base * $step;
+@function unit($step:1) {
+  @return $unit-base * $step;
 }
 
-@function type-grid($step:1) {
-  @return $grid-type * $step;
+@function type-unit($step:1) {
+  @return $unit-type * $step;
 }

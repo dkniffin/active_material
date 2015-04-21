@@ -7,5 +7,5 @@
 .breadcrumb {
   @extend %type-caption;
   display: block;
-  margin-bottom: grid(1);
+  margin-bottom: unit(1);
 }

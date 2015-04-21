@@ -4,9 +4,9 @@
  */
 
 $textfield-input-type  : normal sp(14)/24px $font-sans !default;
-$textfield-label-type  : 400 sp(12)/grid(2) $font-sans !default;
-$textfield-margin      : grid(1) 0 !default;
-$textfield-padding     : grid(1) grid(2) !default;
+$textfield-label-type  : 400 sp(12)/unit(2) $font-sans !default;
+$textfield-margin      : unit(1) 0 !default;
+$textfield-padding     : unit(1) unit(2) !default;
 $textfield-error-color : $theme-error !default;
 $textfield-color       : rgba(#000, 0.70) !default;
 $textfield-primary     : $theme-primary !default;
@@ -27,7 +27,7 @@ $textfield-primary     : $theme-primary !default;
   display: block;
   font: $textfield-input-type;
   margin: 0;
-  padding: grid(1);
+  padding: unit(1);
   transition: 0.35s border-color, 0.35s box-shadow;
   width: 100%;
 
@@ -39,24 +39,24 @@ $textfield-primary     : $theme-primary !default;
 }
 
 %textfield-input-email {
-  background: #fff asset-url("admin/icons/email.svg") grid(1) 50% no-repeat;
-  padding-left: grid(5);
+  background: #fff asset-url("admin/icons/email.svg") unit(1) 50% no-repeat;
+  padding-left: unit(5);
 }
 
 %textfield-input-password {
-  background: #fff asset-url("admin/icons/secret.svg") grid(1) 50% no-repeat;
-  padding-left: grid(5);
+  background: #fff asset-url("admin/icons/secret.svg") unit(1) 50% no-repeat;
+  padding-left: unit(5);
 }
 
 %textfield-input-date {
-  background: #fff asset-url("admin/icons/event.svg") grid(1) 50% no-repeat;
-  padding-left: grid(5);
+  background: #fff asset-url("admin/icons/event.svg") unit(1) 50% no-repeat;
+  padding-left: unit(5);
 }
 
 %textfield-textarea {
   border-radius: 2px;
-  height: sp(grid(7));
-  padding: grid(1);
+  height: sp(unit(7));
+  padding: unit(1);
 }
 
 %textfield-input-error {
@@ -82,14 +82,14 @@ $textfield-primary     : $theme-primary !default;
 %textfield-hint {
   @extend %type-caption;
   color: $theme-secondary-text;
-  margin: grid(1) 0 0;
+  margin: unit(1) 0 0;
 }
 
 %textfield-hint-error {
   @extend %type-caption;
   color: $textfield-error-color;
   display: inline-block;
-  margin: $grid-type 0 0;
+  margin: $unit-type 0 0;
   vertical-align: middle;
   transition: 0.3s all;
 

@@ -28,7 +28,9 @@
 
   tr {
     @extend %table-row;
+  }
 
+  tbody tr {
     &:hover {
       @extend %table-row-hover;
     }
@@ -40,6 +42,7 @@
 
   td {
     @extend %table-cell;
+
   }
 
   .col-selectable {
@@ -58,8 +61,8 @@
     .table_actions {
       @extend %menu-list, %menu-list-right;
       top: 50%;
-      margin-top: grid(-2);
-      margin-right: grid(2);
+      margin-top: unit(-2);
+      margin-right: unit(2);
 
       a {
         @extend %menu-link;
@@ -80,8 +83,8 @@
 
   td img {
     @extend %avatar;
-    width: grid(6);
-    height: grid(6);
+    width: unit(6);
+    height: unit(6);
   }
 
 }

@@ -7,7 +7,7 @@
   border: 1px solid $theme-divider;
   border-radius: 2px;
   display: inline-block;
-  margin-top: grid(1);
+  margin-top: unit(1);
 }
 
 %select-input {
@@ -15,8 +15,8 @@
   border: 1px solid #d3d3d3;
   border-radius: 3px;
   box-shadow: inset 0 1px 0 rgba(#fff, 0.8);
-  height: grid(5) + 2px; // line height + border for Firefox
-  line-height: grid(5);
+  height: unit(5) + 2px; // line height + border for Firefox
+  line-height: unit(5);
   -webkit-appearance: none;
   -moz-appearance: none;
 
@@ -24,7 +24,7 @@
   // align as closely to the open options as much as possible
   font-size: sp(14);
   letter-spacing: 0.01em;
-  padding: 0 grid(3) 0 10px;
+  padding: 0 unit(3) 0 10px;
 }
 
 %select-input-borderless {

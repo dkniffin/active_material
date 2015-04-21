@@ -8,11 +8,11 @@ body {
 }
 
 #active_admin_content {
-  padding: grid(3);
+  padding: unit(3);
 }
 
 #sidebar {
-  margin-left: grid(3);
+  margin-left: unit(3);
 }
 
 .with_sidebar {
@@ -24,7 +24,7 @@ body {
   }
 
   #sidebar {
-    max-width: grid(40);
+    max-width: unit(40);
     width: 100%;
   }
 }

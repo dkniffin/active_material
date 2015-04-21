@@ -45,7 +45,7 @@ $tabs-font: 400 14px/16px $font-sans !default;
   display: block;
   font: $tabs-font;
   letter-spacing: 0.08em;
-  padding: grid(2);
+  padding: unit(2);
   position: relative;
   text-transform: uppercase;
   transition: 0.2s color;
@@ -93,17 +93,17 @@ $tabs-font: 400 14px/16px $font-sans !default;
 }
 
 %tabs-btn-error {
-  padding-right: grid(5);
+  padding-right: unit(5);
 
   &:before {
     animation: 2s tabs-error-throb infinite alternate;
     color: $theme-error-400;
     content: '\026a0';
     font-size: 20px;
-    line-height: grid(2);
+    line-height: unit(2);
     margin-top: -6px;
     position: absolute;
-    right: grid(1);
+    right: unit(1);
     top: 50%;
   }
 }

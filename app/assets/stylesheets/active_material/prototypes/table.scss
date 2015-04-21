@@ -14,7 +14,7 @@ $table-border-color: $theme-divider !default;
 %table-header {
   border-bottom: 1px solid $table-border-color;
   display: flex;
-  padding: grid(2);
+  padding: unit(2);
 }
 
 %table-column-heading {
@@ -22,9 +22,9 @@ $table-border-color: $theme-divider !default;
   border-bottom: 1px solid $table-border-color;
   font-size: 13px;
   font-weight: 600;
-  line-height: grid(2);
-  height: grid(6);
-  padding: grid(1) grid(2);
+  line-height: unit(2);
+  height: unit(6);
+  padding: unit(1) unit(2);
   text-align: left;
   white-space: nowrap;
 }
@@ -34,7 +34,7 @@ $table-border-color: $theme-divider !default;
 
   &:after {
     border: 5px solid transparent;
-    margin-left: $grid-type;
+    margin-left: $unit-type;
     content: "";
     margin-top: -1.5px;
     position: absolute;
@@ -55,7 +55,7 @@ $table-border-color: $theme-divider !default;
 }
 
 %table-row {
-  height: grid(6);
+  height: unit(6);
   transition: 0.12s background;
 }
 
@@ -84,7 +84,7 @@ $table-border-color: $theme-divider !default;
   color: $theme-text;
   font-size: 13px;
   font-weight: 400;
-  padding: grid(1) grid(2);
+  padding: unit(1) unit(2);
 
   img {
     display: block;
@@ -93,8 +93,8 @@ $table-border-color: $theme-divider !default;
 }
 
 %table-cell-selectable {
-  padding: grid(2) grid(3) grid(2);
-  width: 18px + grid(6);
+  padding: unit(2) unit(3) unit(2);
+  width: 18px + unit(6);
 
   [type=checkbox] {
     display: inline-block;
@@ -108,5 +108,5 @@ $table-border-color: $theme-divider !default;
 %table-cell-actions {
   background: asset_url("admin/icons/more.svg") 25% 50% no-repeat;
   position: relative;
-  width: grid(6);
+  width: unit(6);
 }

@@ -23,7 +23,7 @@ body.create #main_content > form {
 
   .row th {
     width: 20%;
-    padding-left: grid(2);
+    padding-left: unit(2);
   }
 }
 
@@ -34,5 +34,5 @@ body.create #main_content > form {
 }
 
 .panel_well {
-  padding: 0 grid(2) grid(2);
+  padding: 0 unit(2) unit(2);
 }

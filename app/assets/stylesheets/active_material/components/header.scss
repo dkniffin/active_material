@@ -7,7 +7,7 @@
 .header {
   @extend %toolbar;
   @extend %toolbar-primary;
-  padding-right: grid(8);
+  padding-right: unit(8);
 }
 
 .site_title {
