@@ -9,7 +9,8 @@
 body.index #main_content,
 body.edit #main_content > form,
 body.new #main_content > form,
-body.create #main_content > form {
+body.create #main_content > form,
+body.update #main_content > form {
   @extend %paper;
 
   > h3 {
