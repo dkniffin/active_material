@@ -5,12 +5,15 @@
 
 @import '../values/colors';
 
+$avatar-background: $theme-icon !default;
+$avatar-box-shadow: 0 1px 2px rgba(#000, 0.2) !default;
+$avatar-border-radius: 50% !default;
+$avatar-block-level: block !default;
+
 %avatar {
   background: $theme-icon;
-  box-shadow: 0 1px 2px rgba(#000, 0.2);
-  border-radius: 50%;
+  box-shadow: $avatar-box-shadow;
+  border-radius: $avatar-border-radius;
   color: transparent;
-  display: block;
-  height: unit(12);
-  width: unit(12);
+  display: $avatar-block-level;
 }
