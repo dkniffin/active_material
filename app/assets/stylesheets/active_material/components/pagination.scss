@@ -33,6 +33,8 @@
   padding: 0 unit(2);
 
   .page,
+  .first,
+  .prev,
   .next,
   .last {
     @extend %btn;
