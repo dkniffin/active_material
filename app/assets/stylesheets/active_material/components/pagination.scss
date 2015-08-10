@@ -4,8 +4,8 @@
  */
 
 .paginated_collection {
+  @extend .clearfix;
   clear: both;
-  overflow: hidden;
 
   .pagination_information,
   .download_links {
