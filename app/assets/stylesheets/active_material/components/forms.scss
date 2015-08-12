@@ -58,10 +58,6 @@ fieldset.inputs {
 .inline-errors {
   @extend %textfield-hint;
   @extend %textfield-hint-error;
-
-  + .inline-hints {
-    display: none;
-  }
 }
 
 abbr[title="required"] {
