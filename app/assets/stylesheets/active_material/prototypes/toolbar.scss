@@ -9,7 +9,7 @@ $toolbar-keyline-small   : 56px !default;
 $toolbar-keyline-medium  : $toolbar-keyline-small + 8px !default;
 
 %toolbar {
-  @extend %type-smooth;
+  @extend %am-type-smooth;
   align-items: center;
   display: flex;
   flex-wrap: wrap;

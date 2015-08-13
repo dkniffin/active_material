@@ -9,7 +9,7 @@
 
   .pagination_information,
   .download_links {
-    @extend %type-caption;
+    @extend %am-type-caption;
     padding: unit(2);
   }
 

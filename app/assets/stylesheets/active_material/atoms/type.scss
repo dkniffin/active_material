@@ -3,47 +3,47 @@
  * These styles mirror the Material Design Stickersheet
  */
 
-%type-headline {
+%am-type-headline {
   font-size: sp(24);
   font-weight: 400;
   line-height: sp(32);
   letter-spacing: 0;
 }
 
-%type-title {
+%am-type-title {
   font-size: sp(20);
   font-weight: 500;
   letter-spacing: tracking(5);
   line-height: sp(28);
 }
 
-%type-subheader {
+%am-type-subheader {
   font-size: sp(16);
   font-weight: 400;
   line-height: sp(24);
   letter-spacing: tracking(10);
 }
 
-%type-menu,
-%type-body-2 {
+%am-type-menu,
+%am-type-body-2 {
   font-size: sp(14);
   font-weight: 500;
   line-height: sp(24);
   letter-spacing: tracking(10);
 }
 
-%type-body-1 {
+%am-type-body-1 {
   font-size: sp(14);
   font-weight: 400;
   line-height: sp(20);
   letter-spacing: tracking(10);
 }
 
-%type-body-2 {
+%am-type-body-2 {
   font-weight: 600;
 }
 
-%type-caption {
+%am-type-caption {
   font-size: sp(12);
   font-style: normal;
   font-weight: 500;
@@ -51,7 +51,7 @@
   line-height: sp(12);
 }
 
-%type-btn {
+%am-type-btn {
   font-size: sp(14);
   font-weight: 500;
   letter-spacing: tracking(10);

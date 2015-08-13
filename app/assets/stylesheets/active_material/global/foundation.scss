@@ -19,7 +19,7 @@ body {
 }
 
 body {
-  @extend %type-body-1;
+  @extend %am-type-body-1;
   color: $theme-text;
   font-family: $font-sans;
   margin: 0;
@@ -31,7 +31,7 @@ img {
 
 b,
 strong {
-  @extend %type-body-2;
+  @extend %am-type-body-2;
 }
 
 h1,

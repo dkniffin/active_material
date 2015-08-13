@@ -80,13 +80,13 @@ $textfield-primary     : $theme-primary !default;
 }
 
 %textfield-hint {
-  @extend %type-caption;
+  @extend %am-type-caption;
   color: $theme-secondary-text;
   margin: unit(1) 0 0;
 }
 
 %textfield-hint-error {
-  @extend %type-caption;
+  @extend %am-type-caption;
   color: $textfield-error-color;
   display: inline-block;
   margin: $unit-type 0 0;
@@ -99,7 +99,7 @@ $textfield-primary     : $theme-primary !default;
 }
 
 %textfield-required {
-  @extend %type-caption;
+  @extend %am-type-caption;
   border: 0;
   color: $textfield-primary;
   margin-left: 4px;
