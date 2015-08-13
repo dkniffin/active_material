@@ -37,7 +37,7 @@
   .prev,
   .next,
   .last {
-    @extend %btn;
+    @extend %am-btn;
     min-width: unit(3);
   }
 }

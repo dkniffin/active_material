@@ -74,10 +74,10 @@ fieldset.actions,
   }
 
   button {
-    @extend %btn-raised;
+    @extend %am-btn-raised;
   }
 
   .cancel a {
-    @extend %btn;
+    @extend %am-btn;
   }
 }

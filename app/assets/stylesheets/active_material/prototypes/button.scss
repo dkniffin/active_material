@@ -4,7 +4,7 @@ $btn-border-radius: 2px !default;
 $btn-focus-color: rgba(#999, 0.2) !default;
 $btn-active-color: rgba(#999, 0.4) !default;
 
-%btn {
+%am-btn {
   @extend %am-type-btn;
   background: transparent;
   border-radius: $btn-border-radius;
@@ -32,7 +32,7 @@ $btn-active-color: rgba(#999, 0.4) !default;
   }
 }
 
-%btn-raised {
+%am-btn-raised {
   @extend %am-type-smooth;
   background: $theme-primary;
   box-shadow: 0 0 2px rgba(#000, 0.12);
@@ -53,6 +53,6 @@ $btn-active-color: rgba(#999, 0.4) !default;
   }
 }
 
-%btn-disabled {
+%am-btn-disabled {
   opacity: 0.4;
 }

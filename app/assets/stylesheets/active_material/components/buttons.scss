@@ -4,16 +4,16 @@
  */
 
 .clear_filters_btn {
-  @extend %btn;
+  @extend %am-btn;
 }
 
 .button,
 .cancel a {
-  @extend %btn;
+  @extend %am-btn;
 }
 
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  @extend %btn, %btn-raised;
+  @extend %am-btn, %am-btn-raised;
 }

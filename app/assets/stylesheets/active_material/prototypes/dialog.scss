@@ -40,7 +40,7 @@ $dialog-title-padding: unit(1) unit(4) unit(1) unit(2) !default;
 }
 
 %dialog-close {
-  @extend %btn-icon;
+  @extend %am-btn-icon;
   background: asset_url("icons/ic_clear_24px.svg") 50% 50% no-repeat;
   margin: 0;
   padding: 0;
