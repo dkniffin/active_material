@@ -3,50 +3,50 @@
  */
 
 .table_tools {
-  @extend %table-header;
+  @include am-table-header;
 }
 
 .index_table,
 .panel_contents table {
-  @extend %table;
+  @include am-table;
 
   th {
-    @extend %table-column-heading;
+    @include am-table-column-heading;
 
     a {
-      @extend %table-sort;
+      @include am-table-sort;
     }
 
     &.sorted-asc a {
-      @extend %table-sort-asc;
+      @include am-table-sort-asc;
     }
 
     &.sorted-desc a {
-      @extend %table-sort-desc;
+      @include am-table-sort-desc;
     }
   }
 
   tr {
-    @extend %table-row;
+    @include am-table-row;
   }
 
   tbody tr {
     &:hover {
-      @extend %table-row-hover;
+      @include am-table-row-hover;
     }
 
     &.selected {
-      @extend %table-row-selected;
+      @include am-table-row-selected;
     }
   }
 
   td {
-    @extend %table-cell;
+    @include am-table-cell;
 
   }
 
   .col-selectable {
-    @extend %table-cell-selectable;
+    @include am-table-cell-selectable;
 
     // ActiveAdmin wraps checkboxes in a div. This rule prevents
     // that div from messing up vertical alignment
@@ -56,26 +56,27 @@
   }
 
   td.col-actions {
-    @extend %table-cell-actions;
+    @include am-table-cell-actions;
 
     .table_actions {
-      @extend %menu-list, %menu-list-right;
+      @include am-menu-list;
+      @include am-menu-list-right;
       top: 50%;
-      margin-top: unit(-2);
-      margin-right: unit(2);
+      margin-top: am-unit(-2);
+      margin-right: am-unit(2);
 
       a {
-        @extend %menu-link;
+        @include am-menu-link;
       }
     }
 
     &:hover,
     &:focus {
       .table_actions {
-        @extend %menu-list-open;
+        @include am-menu-list-open;
 
         a {
-          @extend %menu-item-open;
+          @include am-menu-item-open;
         }
       }
     }

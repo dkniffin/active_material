@@ -4,15 +4,15 @@
  */
 
 body {
-  background: $theme-backdrop;
+  @include am-fill(backdrop);
 }
 
 #active_admin_content {
-  padding: unit(3);
+  padding: am-unit(3);
 }
 
 #sidebar {
-  margin-left: unit(3);
+  margin-left: am-unit(3);
 }
 
 .with_sidebar {
@@ -24,7 +24,7 @@ body {
   }
 
   #sidebar {
-    max-width: unit(40);
+    max-width: am-unit(40);
     width: 100%;
   }
 }

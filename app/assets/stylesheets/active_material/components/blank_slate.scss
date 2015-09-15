@@ -5,11 +5,12 @@
  */
 
 .blank_slate_container {
-  @extend %am-type-body-1, %am-type-smooth;
-  color: $theme-tertiary-text;
+  @include am-color(tertiary-text);
+  @include am-type-body-1;
+  @include am-type-smooth;
   font-weight: 600;
+  padding: am-unit(3) am-unit(2);
   text-align: center;
-  padding: unit(3) unit(2);
 }
 
 .blank_slate {
@@ -20,6 +21,6 @@
 
   small {
     display: block;
-    margin-top: unit(1);
+    margin-top: am-unit(1);
   }
 }

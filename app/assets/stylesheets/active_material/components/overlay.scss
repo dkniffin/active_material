@@ -4,5 +4,5 @@
  */
 
 .ui-widget-overlay {
-  @extend %underlay;
+  @include am-underlay;
 }

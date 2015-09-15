@@ -5,7 +5,7 @@
  */
 
 .breadcrumb {
-  @extend %am-type-caption;
+  @include am-type-caption;
   display: block;
-  margin-bottom: unit(1);
+  margin-bottom: am-unit(1);
 }

@@ -6,15 +6,15 @@
 .polymorphic_select {
 
   select:not([multiple]) {
-    @extend %select-input;
+    @include am-select-input;
   }
 
 }
 
 select[multiple] {
-  @extend %multiselect;
+  @include am-multiselect;
 
   option {
-    @extend %multiselect-option;
+    @include am-multiselect-option;
   }
 }

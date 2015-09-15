@@ -4,25 +4,25 @@
  */
 
 .ui-dialog {
-  @extend %dialog;
+  @include am-dialog;
 }
 
 .ui-dialog-toolbar {
-  @extend %toolbar;
+  @include am-toolbar;
 }
 
 .ui-dialog-title {
-  @extend %dialog-title;
+  @include am-dialog-title;
 }
 
 .ui-dialog-buttonset {
-  @extend %dialog-footer;
+  @include am-dialog-footer;
 }
 
 .ui-button {
-  @extend %am-btn;
+  @include am-btn;
 }
 
 .ui-dialog-titlebar-close {
-  @extend %dialog-close;
+  @include am-dialog-close;
 }

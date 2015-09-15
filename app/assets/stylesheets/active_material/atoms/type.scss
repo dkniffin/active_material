@@ -3,58 +3,45 @@
  * These styles mirror the Material Design Stickersheet
  */
 
-%am-type-headline {
-  font-size: sp(24);
+@mixin am-type-subheader {
+  @include am-font-size(16);
   font-weight: 400;
-  line-height: sp(32);
-  letter-spacing: 0;
+  line-height: am-sp(24);
+  letter-spacing: am-tracking(10);
 }
 
-%am-type-title {
-  font-size: sp(20);
-  font-weight: 500;
-  letter-spacing: tracking(5);
-  line-height: sp(28);
-}
-
-%am-type-subheader {
-  font-size: sp(16);
-  font-weight: 400;
-  line-height: sp(24);
-  letter-spacing: tracking(10);
-}
-
-%am-type-menu,
-%am-type-body-2 {
-  font-size: sp(14);
-  font-weight: 500;
-  line-height: sp(24);
-  letter-spacing: tracking(10);
-}
-
-%am-type-body-1 {
-  font-size: sp(14);
-  font-weight: 400;
-  line-height: sp(20);
-  letter-spacing: tracking(10);
-}
-
-%am-type-body-2 {
+@mixin am-type-body-2 {
+  @include am-font-size(14);
   font-weight: 600;
+  line-height: am-sp(24);
+  letter-spacing: am-tracking(10);
 }
 
-%am-type-caption {
-  font-size: sp(12);
+@mixin am-type-body-1 {
+  @include am-font-size(14);
+  font-weight: 400;
+  line-height: am-sp(20);
+  letter-spacing: am-tracking(10);
+}
+
+@mixin am-type-caption {
+  @include am-font-size(12);
+  >>>>>>> Namespace all rules
   font-style: normal;
   font-weight: 500;
-  letter-spacing: tracking(20);
-  line-height: sp(12);
+  letter-spacing: am-tracking(20);
+  line-height: am-sp(12);
 }
 
-%am-type-btn {
-  font-size: sp(14);
+@mixin am-type-btn {
+  @include am-font-size(14);
   font-weight: 500;
-  letter-spacing: tracking(10);
-  line-height: sp(12);
+  letter-spacing: am-tracking(10);
+  line-height: am-sp(12);
   text-transform: uppercase;
+}
+
+@mixin am-type-smooth {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }

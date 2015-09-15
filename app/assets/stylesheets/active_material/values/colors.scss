@@ -1,25 +1,45 @@
-$theme-primary: #009688 !default;
-$theme-primary-600: #0F5B78 !default;
-$theme-primary-700: #0D3C55 !default;
+$am-theme-primary: #009688 !default;
+$am-theme-primary-600: #0F5B78 !default;
+$am-theme-primary-700: #0D3C55 !default;
 
-$theme-accent-fallback: #f44336 !default;
-$theme-accent: #cddc39 !default;
-$theme-error: #f44336 !default;
-$theme-error-400: #FF695E;
+$am-theme-accent: #cddc39 !default;
+$am-theme-error: #f44336 !default;
+$am-theme-error-400: #FF695E;
 
-$theme-backdrop: #eeeeee !default;
-$theme-paper: #ffffff !default;
-$theme-divider: #efefef !default;
-$theme-hint-text: rgba(#000, 0.26) !default;
-$theme-secondary-text: rgba(#000, 0.54) !default;
-$theme-secondary-text-reverse: rgba(#fff, 0.54) !default;
-$theme-tertiary-text: rgba(#000, 0.4) !default;
-$theme-tertiary-text-reverse: rgba(#fff, 0.4) !default;
-$theme-icon: $theme-secondary-text !default;
-$theme-icon-reverse: $theme-secondary-text-reverse !default;
-$theme-text: rgba(#000, 0.70) !default;
-$theme-text-reverse: rgba(#fff, 0.87) !default;
+$am-theme-backdrop: #eeeeee !default;
+$am-theme-paper: white !default;
+$am-theme-divider: #efefef !default;
+$am-theme-hint-text: rgba(black, 0.26) !default;
+$am-theme-secondary-text: rgba(black, 0.54) !default;
+$am-theme-secondary-text-reverse: rgba(white, 0.54) !default;
+$am-theme-tertiary-text: rgba(black, 0.4) !default;
+$am-theme-icon: $am-theme-secondary-text !default;
+$am-theme-text: rgba(black, 0.70) !default;
+$am-theme-text-reverse: white !default;
 
-$state-focus: rgba(#999, 0.2) !default;
-$state-active: rgba(#999, 0.4) !default;
-$state-disabled: rgba(#999, 0.1) !default;
+$am-state-focus: rgba(#999, 0.2) !default;
+$am-state-active: rgba(#999, 0.4) !default;
+$am-state-disabled: rgba(#999, 0.1) !default;
+
+$am-colors: (
+  accent               : $am-theme-accent,
+  accent-active        : lighten($am-theme-accent, 2%),
+  accent-hover         : lighten($am-theme-accent, 5%),
+  backdrop             : $am-theme-backdrop,
+  black                : black,
+  divider              : $am-theme-divider,
+  error                : $am-theme-error,
+  error-400            : $am-theme-error-400,
+  hint                 : $am-theme-hint-text,
+  paper                : $am-theme-paper,
+  primary              : $am-theme-primary,
+  primary-600          : $am-theme-primary-600,
+  primary-700          : $am-theme-primary-700,
+  secondary-text       : $am-theme-secondary-text,
+  secondary-text-light : $am-theme-secondary-text-reverse,
+  text                 : $am-theme-text,
+  text-light           : $am-theme-text-reverse,
+  white                : white,
+  tertiary-text        : $am-theme-tertiary-text,
+  icon                 : $am-theme-icon
+);

@@ -1,12 +1,12 @@
-@mixin min-breakpoint($breakpoint) {
+@mixin am-min-breakpoint($breakpoint) {
   @media screen and (min-width: $breakpoint) {
     @content;
   }
 }
 
-@mixin font-size($pixels) {
-  font-size: $pixels;
-  font-size: sp($pixels);
+@mixin am-font-size($size) {
+  font-size: $size;
+  font-size: am-sp($size);
 }
 
 @mixin web-font($family, $fallback: sans-serif) {

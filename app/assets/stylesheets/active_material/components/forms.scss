@@ -3,81 +3,86 @@
  */
 
 fieldset.inputs {
-  margin-bottom: unit(2);
+  margin-bottom: am-unit(2);
 
   ol {
-    @extend %list-blank;
+    @include am-list-blank;
   }
 
   > legend {
-    @extend %subheader;
+    @include am-subheader;
     border: 0;
   }
 }
 
 .input {
-  @extend %textfield;
+  @include am-textfield;
 
   > label,
   .label > label {
-    @extend %textfield-label;
+    @include am-textfield-label;
   }
 
   &.string input,
   &.stringish input,
   &.numberic input {
-    @extend %textfield-input;
+    @include am-textfield-input;
   }
 
   &.email input {
-    @extend %textfield-input-email;
+    @include am-textfield-input-email;
   }
 
   &.password input {
-    @extend %textfield-input-password;
+    @include am-textfield-input-password;
   }
 
   &.text textarea {
-    @extend %textfield-input, %textfield-textarea;
+    @include am-textfield-input;
+    @include am-textfield-textarea;
   }
 
   select + input {
-    margin-top: unit(2);
+    margin-top: am-unit(2);
   }
 
 }
 
 .field_with_errors input {
-  @extend %textfield-input-error;
+  @include am-textfield-input-error;
 }
 
 .inline-hints {
-  @extend %textfield-hint;
+  @include am-textfield-hint;
 }
 
 .inline-errors {
-  @extend %textfield-hint;
-  @extend %textfield-hint-error;
+  @include am-textfield-hint;
+  @include am-textfield-hint-error;
+
+  + .inline-hints {
+    display: none;
+  }
 }
 
 abbr[title="required"] {
-  @extend %textfield-required;
+  @include am-textfield-required;
 }
 
 fieldset.actions,
 .buttons {
-  @extend %actions-footer;
+  @include am-actions-footer;
 
   ol {
-    @extend %list-blank;
-    @extend %list-inline;
-  }
-
-  button {
-    @extend %am-btn-raised;
+    @include am-list-blank;
+    @include am-list-inline;
   }
 
   .cancel a {
-    @extend %am-btn;
+    @include am-btn-raised;
+  }
+
+  .cancel a {
+    @include am-btn;
   }
 }

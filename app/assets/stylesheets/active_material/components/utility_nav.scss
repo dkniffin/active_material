@@ -5,14 +5,14 @@
 
 #utility_nav {
   background: asset-url("icons/account_circle.svg") no-repeat;
-  background-size: unit(5);
-  width: unit(5);
-  height: unit(5);
-  margin-top: unit(-2.5);
+  background-size: am-unit(5);
+  width: am-unit(5);
+  height: am-unit(5);
+  margin-top: am-unit(-2.5);
   position: absolute;
   z-index: 2;
   top: 50%;
-  right: unit(2);
+  right: am-unit(2);
 
   // Increase the hit region
   &:before {
@@ -79,6 +79,6 @@
   text-align: right;
 
   a {
-    @extend %am-btn;
+    @include am-btn;
   }
 }

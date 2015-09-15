@@ -1,8 +1,8 @@
-%actions-footer {
+@mixin am-actions-footer {
   background: #fefefe;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   box-shadow: inset 0 1px 1px rgba(#000, 0.2);
   display: block;
-  padding: unit(2);
+  padding: am-unit(2);
 }

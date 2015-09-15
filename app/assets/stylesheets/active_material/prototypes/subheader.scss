@@ -4,10 +4,10 @@
  * which require title text
  */
 
-%subheader {
-  color: $theme-secondary-text;
-  font-size: sp(14);
+@mixin am-subheader {
+  @include am-font-size(14);
+  @include am-color(secondary-text);
   font-weight: 500;
-  padding: unit(2);
-  line-height: unit(2);
+  padding: am-unit(2);
+  line-height: am-unit(2);
 }

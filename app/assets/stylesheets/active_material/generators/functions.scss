@@ -1,19 +1,45 @@
-@function tracking($value) {
+@function am-tracking($value) {
   @return ($value / 1000) + 0em;
 }
 
-@function strip-units($number) {
+@function am-strip-units($number) {
   @return $number / ($number * 0 + 1);
 }
 
-@function sp($value, $baseline:16) {
-  @return (strip-units($value) / $baseline) + rem;
+@function am-sp($value, $baseline:16) {
+  @return (am-strip-units($value) / $baseline) + rem;
 }
 
-@function unit($step:1) {
-  @return $unit-base * $step;
+@function am-unit($step:1) {
+  @return $am-unit-base * $step;
 }
 
-@function type-unit($step:1) {
-  @return $unit-type * $step;
+@function am-type-unit($step:1) {
+  @return $am-unit-type * $step;
+}
+
+@function am-color ($key) {
+  @if map-has-key($am-colors, $key) {
+    @return map-get($am-colors, $key);
+  }
+
+  @warn "Unknown color value '#{$key}'";
+  @return null;
+}
+
+@function am-lighten ($color, $amount) {
+  @return lighten(am-color($color), $amount);
+}
+
+@function am-darken ($color, $amount) {
+  @return darken(am-color($color), $amount);
+}
+
+@function am-font-family ($key) {
+  @if map-has-key($am-fonts, $key) {
+    @return map-get($am-fonts, $key);
+  }
+
+  @warn "Unknown font value '#{$key}'";
+  @return null;
 }

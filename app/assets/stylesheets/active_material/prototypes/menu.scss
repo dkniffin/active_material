@@ -3,103 +3,104 @@
  * A dropdown menu. Used for nested navigation and selection
  */
 
-$menu-background: #fff !default;
-$menu-border-radius: 2px !default;
-$menu-offset-x: 0 !default;
-$menu-offset-y: 36px !default;
-$menu-padding: 8px !default;
-$menu-item-padding: 4px 16px !default;
-$menu-transition: 0.2s !default;
-$menu-transition-delay: 0.2s !default;
-$menu-keyline: 56px !default;
-$menu-breakpoint: 1300px !default;
-$menu-carat-size: 5px !default;
+$am-menu-background: #fff !default;
+$am-menu-border-radius: 2px !default;
+$am-menu-offset-x: 0 !default;
+$am-menu-offset-y: 36px !default;
+$am-menu-padding: 8px !default;
+$am-menu-item-padding: 4px 16px !default;
+$am-menu-transition: 0.2s !default;
+$am-menu-transition-delay: 0.2s !default;
+$am-menu-keyline: 56px !default;
+$am-menu-breakpoint: 1300px !default;
+$am-menu-carat-size: 5px !default;
 
-%menu {
+@mixin am-menu {
   display: inline-block;
   outline: 0;
   position: relative;
   text-align: left;
 }
 
-%menu-carat {
-  border: $menu-carat-size solid transparent;
-  border-color: $theme-primary transparent transparent;
+@mixin am-menu-carat {
+  border: $am-menu-carat-size solid transparent;
+  border-color: am-color(primary) transparent transparent;
   content: "";
   height: 0;
-  margin-top: $menu-carat-size / -2;
+  margin-top: $am-menu-carat-size / -2;
   position: absolute;
   right: -15px;
   top: 50%;
   width: 0;
 }
 
-%menu-carat-muted {
-  border-top-color: $theme-hint-text;
+@mixin am-menu-carat-muted {
+  border-top-color: am-color(hint);
 }
 
-%menu-list {
-  background: $menu-background;
-  border-radius: $menu-border-radius;
+@mixin am-menu-list {
+  background: $am-menu-background;
+  border-radius: $am-menu-border-radius;
   box-shadow: 0 1px 1px rgba(#000, 0.24), 0 0 1.5px rgba(#000, 0.12);
   filter: blur(1px);
-  left: $menu-offset-x;
+  left: $am-menu-offset-x;
   list-style: none;
   margin: 0;
-  min-width: $menu-keyline* 2;
-  padding: $menu-padding 0;
+  min-width: $am-menu-keyline* 2;
+  padding: $am-menu-padding 0;
   position: absolute;
   text-align: left;
-  top: $menu-offset-y;
+  top: $am-menu-offset-y;
   transform-origin: 0 0;
   transform: translate3d(0, -4px, 0) scaleY(0);
-  transition: $menu-transition all;
+  transition: $am-menu-transition all;
   width: auto;
   will-change: transform;
-  z-index: $elevation-top;
+  z-index: $am-elevation-top;
 }
 
-%menu-list-right {
+@mixin am-menu-list-right {
   left: auto;
-  right: $menu-offset-x;
+  right: $am-menu-offset-x;
 }
 
-%menu-item {
+@mixin am-menu-item {
   display: block;
   margin: 0;
-  transition: $menu-transition all;
+  transition: $am-menu-transition all;
 }
 
-%menu-link {
-  @extend %link-secondary-text, %link-no-decoration;
+@mixin am-menu-link {
+  @include am-link-secondary-text;
+  @include am-link-no-decoration;
   display: block;
   font-size: 14px;
   opacity: 0;
-  padding: $menu-item-padding;
+  padding: $am-menu-item-padding;
   transition: 0.28s opacity, 0.28s color;
   white-space: nowrap;
 
   &:hover,
   &:focus {
-    color: $theme-primary;
+    @include am-color(primary);
   }
 
-  @include min-breakpoint($menu-breakpoint) {
+  @include am-min-breakpoint($am-menu-breakpoint) {
     font-size: 13px;
   }
 }
 
-%menu-button {
+@mixin am-menu-button {
   position: relative;
 }
 
-%menu-list-open {
+@mixin am-menu-list-open {
   filter: none;
-  transition: $menu-transition all;
+  transition: $am-menu-transition all;
   transform: translateZ(0) scale(1);
 }
 
-%menu-item-open {
+@mixin am-menu-item-open {
   opacity: 1;
-  transition: $menu-transition opacity;
+  transition: $am-menu-transition opacity;
 }

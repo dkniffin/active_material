@@ -7,23 +7,25 @@
 .time_select {
 
   .fragments-group {
-    @extend %list-blank, %list-inline, %select;
+    @include am-list-blank;
+    @include am-list-inline;
+    @include am-select;
   }
 
   .fragment {
-    @extend %select-unit;
+    @include am-select-unit;
 
     select {
-      @extend %select-input-borderless;
+      @include am-select-input-borderless;
     }
   }
 
   .fragment label {
-    @extend %visually-hidden;
+    @include am-hidden;
   }
 
   .fragment select {
-    @extend %select-input;
+    @include am-select-input;
   }
 
 }

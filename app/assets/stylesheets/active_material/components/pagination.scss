@@ -4,13 +4,13 @@
  */
 
 .paginated_collection {
-  @extend .clearfix;
+  @include am-clearfix;
   clear: both;
 
   .pagination_information,
   .download_links {
-    @extend %am-type-caption;
-    padding: unit(2);
+    @include am-type-caption;
+    padding: am-unit(2);
   }
 
   .pagination_information {
@@ -18,7 +18,7 @@
   }
 
   .download_links {
-    line-height: unit(3);
+    line-height: am-unit(3);
     float: right;
     text-align: right;
   }
@@ -30,14 +30,14 @@
   border-bottom: 1px solid #efefef;
   display: flex;
   justify-content: flex-end;
-  padding: 0 unit(2);
+  padding: 0 am-unit(2);
 
   .page,
   .first,
   .prev,
   .next,
   .last {
-    @extend %am-btn;
-    min-width: unit(3);
+    @include am-btn;
+    min-width: am-unit(3);
   }
 }

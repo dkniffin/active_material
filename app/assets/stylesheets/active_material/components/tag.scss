@@ -4,14 +4,14 @@
  */
 
 .status_tag {
-  @extend %tag;
+  @include am-tag;
 
   a & {
-    @extend %tag-pressable;
+    @include am-tag-pressable;
   }
 
   &.yes {
-    @extend %tag-success;
+    @include am-tag-success;
   }
 }
 

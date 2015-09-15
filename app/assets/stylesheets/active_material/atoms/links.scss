@@ -3,16 +3,16 @@
  * Special link text treatment
  */
 
-%link-secondary-text {
-  color: $theme-secondary-text;
+@mixin am-link-secondary-text {
+  @include am-color(secondary-text);
 
   &:hover,
   &:focus {
-    color: $theme-accent;
+    @include am-color(accent);
   }
 }
 
-%link-no-decoration {
+@mixin am-link-no-decoration {
   text-decoration: none;
 
   &:hover,

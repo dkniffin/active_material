@@ -5,9 +5,9 @@
  */
 
 .flash {
-  @extend %snackbar;
+  @include am-snackbar;
 
   &.flash_alert {
-    @extend %snackbar-error;
+    @include am-snackbar-error;
   }
 }

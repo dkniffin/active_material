@@ -3,29 +3,31 @@
  */
 
 .dropdown_menu {
-  @extend %menu;
+  @include am-menu;
 }
 
 .dropdown_menu_button {
-  @extend %menu-button;
+  @include am-menu-button;
 
   &:after {
-    @extend %menu-carat;
+    @include am-menu-carat;
   }
 
   &.disabled {
-    @extend %am-btn-disabled;
+    @include am-btn-disabled;
   }
 }
 
 .dropdown_menu_list {
-  @extend %menu-list, %menu-list-open;
+  @include am-menu-list;
+  @include am-menu-list-open;
 
   li {
-    @extend %menu-item;
+    @include am-menu-item;
   }
 
   li a {
-    @extend %menu-link, %menu-item-open;
+    @include am-menu-link;
+    @incldue am-menu-item-open;
   }
 }

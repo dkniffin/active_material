@@ -1,18 +1,19 @@
-%tag {
-  @extend %am-type-caption, %am-type-smooth;
-  background: $theme-secondary-text;
+@mixin am-tag {
+  @include am-fill(secondary-text);
+  @include am-type-caption;
+  @include am-type-smooth;
   border-radius: 3px;
-  display: inline-block;
   color: #fff;
-  line-height: unit(2);
+  display: inline-block;
   letter-spacing: 0.1em;
-  padding: unit(0.5) unit(1);
-  text-transform: uppercase;
+  line-height: am-unit(2);
+  padding: am-unit(0.5) am-unit(1);
   text-decoration: none;
+  text-transform: uppercase;
   white-space: nowrap;
 }
 
-%tag-pressable {
+@mixin am-tag-pressable {
   transition: 0.2s all;
 
   &:hover,
@@ -26,10 +27,10 @@
   }
 }
 
-%tag-success {
-  background: $theme-primary;
+@mixin am-tag-success {
+  @include am-fill(primary);
 }
 
-%tag-error {
-  background: $theme-error;
+@mixin am-tag-error {
+  @include am-fill(error);
 }

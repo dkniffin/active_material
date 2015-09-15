@@ -2,39 +2,39 @@
  * Tables
  */
 
-$table-background: #fff !default;
-$table-border-color: $theme-divider !default;
+$am-table-background: #fff !default;
+$am-table-border-color: am-color(divider);
 
-%table {
-  background: $table-background;
+@mixin am-table {
+  background: $am-table-background;
   width: 100%;
   word-break: break-word;
 }
 
-%table-header {
-  border-bottom: 1px solid $table-border-color;
+@mixin am-table-header {
+  border-bottom: 1px solid $am-table-border-color;
   display: flex;
-  padding: unit(2);
+  padding: am-unit(2);
 }
 
-%table-column-heading {
-  color: $theme-secondary-text;
-  border-bottom: 1px solid $table-border-color;
-  font-size: 13px;
+@mixin am-table-column-heading {
+  @include am-color(secondary-text);
+  @include am-font-size(13px);
+  border-bottom: 1px solid $am-table-border-color;
   font-weight: 600;
-  line-height: unit(2);
-  height: unit(6);
-  padding: unit(1) unit(2);
+  height: am-unit(6);
+  line-height: am-unit(2);
+  padding: am-unit(1) am-unit(2);
   text-align: left;
   white-space: nowrap;
 }
 
-%table-sort {
+@mixin am-table-sort {
   position: relative;
 
   &:after {
     border: 5px solid transparent;
-    margin-left: $unit-type;
+    margin-left: $am-unit-type;
     content: "";
     margin-top: -1.5px;
     position: absolute;
@@ -45,46 +45,50 @@ $table-border-color: $theme-divider !default;
   }
 }
 
-%table-sort-asc:after {
-  border-bottom-color: $theme-primary;
-  margin-top: -7.5px;
+@mixin am-table-sort-asc {
+  &:after {
+    border-bottom-color: am-color(primary);
+    margin-top: -7.5px;
+  }
 }
 
-%table-sort-desc:after {
-  border-top-color: $theme-primary;
+@mixin am-table-sort-desc {
+  &:after {
+    border-top-color: am-color(primary);
+  }
 }
 
-%table-row {
-  height: unit(6);
+@mixin am-table-row {
+  height: am-unit(6);
   transition: 0.12s background;
 }
 
-%table-row-hover {
+@mixin am-table-row-hover {
   background: #eee;
 
   td,
   th {
     box-shadow: 0 -1px 0 rgba(#000, 0.05);
-    border-bottom: 1px solid darken($table-border-color, 5%);
+    border-bottom: 1px solid darken($am-table-border-color, 5%);
   }
 }
 
-%table-row-selected {
+@mixin am-table-row-selected {
   background: #e0e0e0;
 
   td,
   th {
     box-shadow: 0 -1px 0 rgba(#000, 0.15);
-    border-bottom: 1px solid darken($table-border-color, 15%);
+    border-bottom: 1px solid darken($am-table-border-color, 15%);
   }
 }
 
-%table-cell {
-  border-bottom: 1px solid $table-border-color;
-  color: $theme-text;
-  font-size: 13px;
+@mixin am-table-cell {
+  @include am-color(text);
+  @include am-font-size(13px);
+  border-bottom: 1px solid $am-table-border-color;
   font-weight: 400;
-  padding: unit(1) unit(2);
+  padding: am-unit(1) am-unit(2);
 
   img {
     display: block;
@@ -92,9 +96,9 @@ $table-border-color: $theme-divider !default;
   }
 }
 
-%table-cell-selectable {
-  padding: unit(2) unit(3) unit(2);
-  width: 18px + unit(6);
+@mixin am-table-cell-selectable {
+  padding: am-unit(2) am-unit(3) am-unit(2);
+  width: 18px + am-unit(6);
 
   [type=checkbox] {
     display: inline-block;
@@ -105,8 +109,8 @@ $table-border-color: $theme-divider !default;
   }
 }
 
-%table-cell-actions {
+@mixin am-table-cell-actions {
   background: asset_url("icons/more.svg") 25% 50% no-repeat;
   position: relative;
-  width: unit(6);
+  width: am-unit(6);
 }

@@ -3,94 +3,96 @@
  * A calendar widget
  */
 
-$datepicker-padding: $unit-type !default;
-$datepicker-width: unit(35) !default;
+$am-datepicker-padding: $am-unit-type !default;
+$am-datepicker-width: am-unit(35) !default;
 
-%datepicker {
-  background: #fff;
+@mixin am-datepicker {
+  background: white;
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(#000, 0.25), 0 -1px 1px rgba(#000, 0.12);
-  padding: 0 unit(1.5) unit(1);
-  width: $datepicker-width;
+  padding: 0 am-unit(1.5) am-unit(1);
+  width: $am-datepicker-width;
 }
 
-%datepicker-header {
-  line-height: unit(4);
-  padding: unit(1) 0 unit(0.5);
+@mixin am-datepicker-header {
+  line-height: am-unit(4);
+  padding: am-unit(1) 0 am-unit(0.5);
   position: relative;
   text-align: center;
 }
 
-%datepicker-title {
-  font-size: 14px;
+@mixin am-datepicker-title {
+  @include am-font-size(14px);
   font-weight: 600;
 }
 
-%datepicker-icon:before {
-  display: inline-block;
-  font-size: unit(2);
-  height: unit(4);
-  width: unit(4);
+@mixin am-datepicker-icon {
+  &:before {
+    @include am-font-size(am-unit(2));
+    display: inline-block;
+    height: am-unit(4);
+    width: am-unit(4);
+  }
 }
 
-%datepicker-prev {
+@mixin am-datepicker-prev {
   cursor: pointer;
   float: left;
 
   &:before {
-    @extend %datepicker-icon;
+    @include am-datepicker-icon;
     content: "‹";
   }
 }
 
-%datepicker-next {
+@mixin am-datepicker-next {
   cursor: pointer;
   float: right;
 
   &:before {
-    @extend %datepicker-icon;
+    @include am-datepicker-icon;
     content: "›";
   }
 }
 
-%datepicker-calendar {
+@mixin am-datepicker-calendar {
+  @include am-font-size(12px);
   border-collapse: collapse;
-  font-size: 12px;
   text-align: center;
   width: 100%;
 }
 
-%datepicker-calendar-heading {
-  color: $theme-secondary-text;
+@mixin am-datepicker-calendar-heading {
+  @include am-color(secondary-text);
   font-weight: 500;
-  padding-bottom: 4px;
+  padding-bottom: $am-unit-type;
 }
 
-%datepicker-calendar-day {
+@mixin am-datepicker-calendar-day {
+  height: am-unit(5);
   font-weight: 500;
-  height: unit(5);
 }
 
-%datepicker-calendar-day-disabled {
+@mixin am-datepicker-calendar-day-disabled {
   opacity: 0;
 }
 
-%datepicker-calendar-day-link {
+@mixin am-datepicker-calendar-day-link {
+  @include am-color(text);
   border-radius: 50%;
-  color: $theme-text;
-  height: unit(5);
-  padding: unit(1);
-  width: unit(5);
+  height: am-unit(5);
+  padding: am-unit(1);
+  width: am-unit(5);
 }
 
-%datepicker-calendar-day-link-focus {
-  color: $theme-primary;
+@mixin am-datepicker-calendar-day-link-focus {
+  @include am-color(primary);
   text-decoration: none;
 }
 
-%datepicker-calendar-day-link-current {
+@mixin am-datepicker-calendar-day-link-current {
+  @include am-fill(primary);
+  @include am-color(white);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.25) inset;
-  background: $theme-primary;
-  color: #fff;
   text-shadow: 0 1px 2px rgba(#000, 0.12);
 }

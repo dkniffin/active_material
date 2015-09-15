@@ -1,0 +1,4 @@
+@mixin am-hidden {
+  clip: rect(0, 0, 0, 0) !important;
+  position: absolute !important;
+}

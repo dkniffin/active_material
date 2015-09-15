@@ -4,55 +4,55 @@
  */
 
 .ui-datepicker {
-  @extend %datepicker;
+  @include am-datepicker;
 }
 
 .ui-datepicker-header {
-  @extend %datepicker-header;
+  @include am-datepicker-header;
 
   .ui-icon {
-    @extend %visually-hidden;
+    @include am-hidden;
   }
 }
 
 .ui-datepicker-title {
-  @extend %datepicker-title;
+  @include am-datepicker-title;
 }
 
 .ui-datepicker-prev {
-  @extend %datepicker-prev;
+  @include am-datepicker-prev;
 }
 
 .ui-datepicker-next {
-  @extend %datepicker-next;
+  @include am-datepicker-next;
 }
 
 .ui-datepicker-calendar {
-  @extend %datepicker-calendar;
+  @include am-datepicker-calendar;
 
   th {
-    @extend %datepicker-calendar-heading;
+    @include am-datepicker-calendar-heading;
   }
 
   td {
-    @extend %datepicker-calendar-day;
+    @include am-datepicker-calendar-day;
   }
 
   a {
-    @extend %datepicker-calendar-day-link;
+    @include am-datepicker-calendar-day-link;
 
     &.ui-state-active,
     &:hover,
     &:focus {
-      @extend %datepicker-calendar-day-link-focus
+      @include am-datepicker-calendar-day-link-focus
     }
 
     &.ui-state-highlight {
-      @extend %datepicker-calendar-day-link-current;
+      @include am-datepicker-calendar-day-link-current;
     }
   }
 }
 
 .ui-datepicker-unselectable {
-  @extend %datepicker-calendar-day-disabled;
+  @include am-datepicker-calendar-day-disabled;
 }

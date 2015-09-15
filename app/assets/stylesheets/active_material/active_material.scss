@@ -13,8 +13,8 @@
 @import "values/units";
 @import "values/fonts";
 @import "values/breakpoints";
-@import "values/keylines";
 @import "values/elevation";
+@import "values/*";
 
 /**
  * Generators describe functions, mixins, and classes
@@ -23,18 +23,18 @@
  */
 @import "generators/functions";
 @import "generators/mixins";
-@import "generators/extends";
-
-/**
- * Foundational rules that setup the page
- */
-@import "global/foundation";
-@import "global/utilities";
+@import "generators/*";
 
 /**
  * Atoms are individual styles to enhance reusability
  */
 @import "atoms/*";
+
+/**
+ * Foundational rules that setup the page
+ */
+@import "global/foundation";
+@import "global/*";
 
 /**
  * Prototypes are collections of %selectors to allow for css design

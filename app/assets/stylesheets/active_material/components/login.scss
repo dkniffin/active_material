@@ -3,20 +3,18 @@
  * This screen appears if no session is active
  */
 
-$login-background: $theme-primary-700 !default;
-
 #login {
-  @extend %dialog;
-  margin: unit(-4) auto 0;
-  max-width: unit(50);
+  @include am-dialog;
+  margin: am-unit(-4) auto 0;
+  max-width: am-unit(50);
 
   h2 {
-    @extend %visually-hidden;
+    @include am-hidden;
   }
 
   // This is the "forgot password" button
   > a {
-    @extend %actions-footer;
+    @include am-actions-footer;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
   }
@@ -47,7 +45,7 @@ $login-background: $theme-primary-700 !default;
 }
 
 body.logged_out {
-  background: $login-background;
+  @include am-fill(primary-700);
   background-size: cover;
   display: flex;
   flex-direction: column;

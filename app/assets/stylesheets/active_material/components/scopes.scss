@@ -4,7 +4,8 @@
  */
 
 .scopes {
-  @extend %list-blank, %list-inline;
+  @include am-list-blank;
+  @include am-list-inline;
   flex-grow: 1;
   text-align: right;
 }
@@ -12,17 +13,17 @@
 .scope {
   font-size: 13px;
   font-weight: 500;
-  margin-left: unit(2);
+  margin-left: am-unit(2);
 
   a {
-    @extend %link-secondary-text;
+    @include am-link-secondary-text;
   }
 
   &.selected {
     font-weight: bold;
 
     a {
-      color: $theme-primary;
+      @include am-fill(primary);
     }
   }
 }

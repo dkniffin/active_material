@@ -11,10 +11,10 @@ body.edit #main_content > form,
 body.new #main_content > form,
 body.create #main_content > form,
 body.update #main_content > form {
-  @extend %paper;
+  @include am-paper;
 
   > h3 {
-    @extend %subheader;
+    @include am-subheader;
   }
 
   .header_action {
@@ -23,7 +23,7 @@ body.update #main_content > form {
 
   .row th {
     width: 20%;
-    padding-left: unit(2);
+    padding-left: am-unit(2);
   }
 }
 
@@ -34,5 +34,5 @@ body.update #main_content > form {
 }
 
 .panel_well {
-  padding: 0 unit(2) unit(2);
+  padding: 0 am-unit(2) am-unit(2);
 }

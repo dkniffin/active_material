@@ -1,12 +1,12 @@
 .featured-blocks-message {
   display: block;
-  padding: 0 unit(2) unit(2);
+  padding: 0 am-unit(2) am-unit(2);
 }
 
 .new-featured-block {
-  @extend %actions-footer;
+  @include am-actions-footer;
 
   .button {
-    @extend %am-btn-raised;
+    @include am-btn-raised;
   }
 }

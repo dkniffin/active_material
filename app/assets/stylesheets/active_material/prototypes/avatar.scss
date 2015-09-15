@@ -5,15 +5,15 @@
 
 @import '../values/colors';
 
-$avatar-background: $theme-icon !default;
-$avatar-box-shadow: 0 1px 2px rgba(#000, 0.2) !default;
-$avatar-border-radius: 50% !default;
-$avatar-block-level: block !default;
+$am-avatar-background: am-color(icon) !default;
+$am-avatar-box-shadow: 0 1px 2px rgba(#000, 0.2) !default;
+$am-avatar-border-radius: 50% !default;
+$am-avatar-block-level: block !default;
 
-%avatar {
-  background: $theme-icon;
-  box-shadow: $avatar-box-shadow;
-  border-radius: $avatar-border-radius;
+@mixin am-avatar {
+  background: $am-avatar-background;
+  border-radius: $am-avatar-border-radius;
+  box-shadow: $am-avatar-box-shadow;
   color: transparent;
-  display: $avatar-block-level;
+  display: $am-avatar-block-level;
 }

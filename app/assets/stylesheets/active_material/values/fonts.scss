@@ -1,1 +1,5 @@
-$font-sans: 'RobotoDraft', sans-serif;
+$am-font-sans: 'Roboto', sans-serif !default;
+
+$am-fonts: (
+  sans: $am-font-sans
+)

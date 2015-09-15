@@ -4,22 +4,22 @@
  */
 
 .nav-tabs {
-  @extend %tabs;
-  @extend %tabs-list;
+  @include am-tabs;
+  @include am-tabs-list;
 
   > li {
-    @extend %tabs-list-item;
+    @include am-tabs-list-item;
   }
 
   > li > a {
-    @extend %tabs-btn;
+    @include am-tabs-btn;
   }
 
   > li.ui-state-active > a {
-    @extend %tabs-btn-active;
+    @include am-tabs-btn-active;
   }
 
   > li.tab_with_errors > a {
-    @extend %tabs-btn-error;
+    @include am-tabs-btn-error;
   }
 }

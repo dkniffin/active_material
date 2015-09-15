@@ -3,11 +3,11 @@
  * A modal that appears above all other content
  */
 
-$dialog-background: #fff !default;
-$dialog-border-radius: 2px !default;
-$dialog-title-padding: unit(1) unit(4) unit(1) unit(2) !default;
+$am-dialog-background: #fff !default;
+$am-dialog-border-radius: 2px !default;
+$am-dialog-title-padding: am-unit(1) am-unit(4) am-unit(1) am-unit(2) !default;
 
-@keyframes dialog-fade {
+@keyframes am-dialog-fade {
   from {
     opacity: 0;
     transform: translate3d(0, 10px, 0);
@@ -19,28 +19,28 @@ $dialog-title-padding: unit(1) unit(4) unit(1) unit(2) !default;
   }
 }
 
-%dialog {
-  @extend %elevation-2;
-  animation: 0.6s dialog-fade;
-  background: $dialog-background;
-  border-radius: $dialog-border-radius;
+@mixin am-dialog {
+  animation: 0.6s am-dialog-fade;
+  background: $am-dialog-background;
+  border-radius: $am-dialog-border-radius;
+  box-shadow: 0 3px 3px rgba(#000, 0.23), 0 3px 3px rgba(#000, 0.16);
   outline: none;
-  z-index: $elevation-top;
+  z-index: $am-elevation-top;
 }
 
-%dialog-title {
-  @extend %am-type-subheader;
+@mixin am-dialog-title {
+  @include am-type-subheader;
   display: block;
-  padding: $dialog-title-padding;
+  padding: $am-dialog-title-padding;
 }
 
-%dialog-footer {
-  padding: unit(1) unit(1) 0;
+@mixin am-dialog-footer {
+  padding: am-unit(1) am-unit(1) 0;
   text-align: right;
 }
 
-%dialog-close {
-  @extend %am-btn-icon;
+@mixin am-dialog-close {
+  @include am-btn-icon;
   background: asset_url("icons/ic_clear_24px.svg") 50% 50% no-repeat;
   margin: 0;
   padding: 0;

@@ -9,8 +9,8 @@ html {
 }
 
 ::selection {
-  background: $theme-accent;
-  color: rgba(#fff, 0.87);
+  @include am-fill(accent);
+  @include am-color(text-light);
 }
 
 html,
@@ -19,9 +19,15 @@ body {
 }
 
 body {
+<<<<<<< ba30604c1457debfee56f0d033d61f2f9ac7b899
   @extend %am-type-body-1;
   @include web-font($font-sans);
   color: $theme-text;
+=======
+  @include am-type-body-1;
+  @include am-color(text);
+  @include am-font-family(sans);
+>>>>>>> Namespace all rules
   margin: 0;
 }
 
@@ -31,7 +37,11 @@ img {
 
 b,
 strong {
+<<<<<<< ba30604c1457debfee56f0d033d61f2f9ac7b899
   @extend %am-type-body-2;
+=======
+  @include am-type-body-2;
+>>>>>>> Namespace all rules
 }
 
 h1,
@@ -45,12 +55,16 @@ h6 {
 }
 
 p {
-  margin: 12px 0;
+  margin: am-type-unit(3) 0;
 }
 
 button,
 input {
+<<<<<<< ba30604c1457debfee56f0d033d61f2f9ac7b899
   @include web-font($font-sans);
+=======
+  @include am-font-family(sans);
+>>>>>>> Namespace all rules
 }
 
 button::-moz-focus-inner {
@@ -65,7 +79,7 @@ a {
 
   &:link,
   &:visited {
-    color: $theme-primary;
+    @include am-color(primary);
 
     &:hover {
       text-decoration: underline;
@@ -74,26 +88,26 @@ a {
 
   &:hover,
   &:focus {
-    color: lighten($theme-accent, 5%);
+    @include am-color(accent-hover);
     transition: 0.1s color;
   }
 
   &:active {
-    color: lighten($theme-accent, 2%);
+    @include am-color(accent-active);
     transition: 0.1s color;
   }
 }
 
 blockquote {
-  border-left: 4px solid $theme-hint-text;
-  margin: type-unit(4) 0;
-  padding: type-unit(4);
+  border-left: 4px solid am-color(hint);
+  margin: am-type-unit(4) 0;
+  padding: am-type-unit(4);
 }
 
 hr {
   border: 0;
-  border-bottom: 1px solid $theme-divider;
-  margin: unit(4) 0
+  border-bottom: 1px solid am-color(divider);
+  margin: am-unit(4) 0
 }
 
 ul {

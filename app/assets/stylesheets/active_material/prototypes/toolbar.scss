@@ -3,69 +3,68 @@
  * A basic navigation element, primary used for top level navigation
  */
 
-$toolbar-base-font-size  : sp(14) !default;
-$toolbar-title-font-size : sp(20) !default;
-$toolbar-keyline-small   : 56px !default;
-$toolbar-keyline-medium  : $toolbar-keyline-small + 8px !default;
+$am-toolbar-base-font-size  : am-sp(14) !default;
+$am-toolbar-title-font-size : am-sp(20) !default;
+$am-toolbar-keyline-small   : am-unit(7) !default;
+$am-toolbar-keyline-medium  : $am-toolbar-keyline-small + 8px !default;
 
-%toolbar {
-  @extend %am-type-smooth;
+@mixin am-toolbar {
+  @include am-type-smooth;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  font-size: $toolbar-base-font-size;
+  font-size: $am-toolbar-base-font-size;
   position: relative;
 }
 
-%toolbar-primary {
-  background: $theme-primary;
-  box-shadow: inset 0 -1px 1px rgba(#000, 0.14);
-  color: $theme-text-reverse;
+@mixin am-toolbar-primary {
+  @include am-fill(primary);
+  @include am-color(text-light);
 }
 
-%toolbar-title {
-  font-size: $toolbar-title-font-size;
+@mixin am-toolbar-title {
+  font-size: $am-toolbar-title-font-size;
   font-weight: 500;
-  line-height: unit(2);
-  padding: unit(2);
+  line-height: am-unit(2);
+  padding: am-unit(2);
   width: 100%;
   text-align: left;
 
-  @include min-breakpoint($breakpoint-medium) {
+  @include am-min-breakpoint($am-breakpoint-medium) {
     width: auto;
   }
 }
 
-%toolbar-list {
-  margin: 0 0 0 unit(2);
+@mixin am-toolbar-list {
+  margin: 0 0 0 am-unit(2);
   padding: 0;
   text-align: left;
 }
 
-%toolbar-item {
-  @extend %link-no-decoration;
+@mixin am-toolbar-item {
+  @include am-link-no-decoration;
+  @include am-color(text);
   display: inline-block;
-  color: $theme-text;
   font-weight: 500;
-  line-height: unit(3);
+  line-height: am-unit(3);
   margin: 0;
 }
 
-%toolbar-item-primary {
-  @extend %link-no-decoration;
-  color: $theme-text-reverse;
+@mixin am-toolbar-item-primary {
+  @include am-link-no-decoration;
+  @include am-color(text-light);
   display: block;
-  line-height: unit(2);
-  padding: unit(2) unit(1);
+  line-height: am-unit(2);
+  padding: am-unit(2) am-unit(1);
   text-align: center;
 
   &:hover,
   &:focus {
-    color: $theme-accent;
+    @include am-color(accent);
   }
 }
 
-%toolbar-item-primary-active {
-  color: $theme-accent;
+@mixin am-toolbar-item-primary-active {
+  @include am-color(accent);
   font-weight: 600;
 }

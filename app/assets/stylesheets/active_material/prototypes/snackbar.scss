@@ -4,13 +4,13 @@
  * http://www.google.com/design/spec/components/snackbars-toasts.html
  */
 
-$snackbar-background: #323232 !default;
-$snackbar-color: $theme-text-reverse !default;
-$snackbar-min-width: unit(36) !default;
-$snackbar-max-width: unit(72) !default;
-$snackbar-duration: 9s !default;
+$am-snackbar-background: #323232 !default;
+$am-snackbar-color: am-color(text-light) !default;
+$am-snackbar-min-width: am-unit(36) !default;
+$am-snackbar-max-width: am-unit(72) !default;
+$am-snackbar-duration: 9s !default;
 
-@keyframes snackbar-fade {
+@keyframes am-snackbar-fade {
   from {
     opacity: 0;
     transform: translate3d(0, 5px, 0);
@@ -22,26 +22,26 @@ $snackbar-duration: 9s !default;
   }
 }
 
-%snackbar {
-  animation: 0.6s snackbar-fade, 0.6s snackbar-fade reverse $snackbar-duration forwards;
-  background: $snackbar-background;
+@mixin am-snackbar {
+  animation: 0.6s am-snackbar-fade, 0.6s am-snackbar-fade reverse $am-snackbar-duration forwards;
+  background: $am-snackbar-background;
   border-radius: 2px;
   bottom: 0;
   box-shadow: 0 1px 2px rgba(#000, 0.24);
-  color: $snackbar-color;
+  color: $am-snackbar-color;
   font-weight: 300;
   font-size: 14px;
-  line-height: sp(20);
-  margin: unit(2);
-  min-width: $snackbar-min-width;
-  max-width: $snackbar-max-width;
-  padding: unit(2) unit(3) unit(1.5);
+  line-height: am-sp(20);
+  margin: am-unit(2);
+  min-width: $am-snackbar-min-width;
+  max-width: $am-snackbar-max-width;
+  padding: am-unit(2) am-unit(3) am-unit(1.5);
   position: fixed;
   text-shadow: 0 1px 1px #000;
-  z-index: $elevation-top;
+  z-index: $am-elevation-top;
 }
 
-%snackbar-error {
-  background-color: darken($theme-error, 25%);
-  text-shadow: 0 1px 1px darken($theme-error, 65%)
+@mixin am-snackbar-error {
+  background-color: am-darken(error, 25%);
+  text-shadow: 0 1px 1px am-darken(error, 65%);
 }

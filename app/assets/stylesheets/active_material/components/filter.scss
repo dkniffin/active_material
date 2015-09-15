@@ -6,14 +6,16 @@
 .filter_form_field,
 .select_and_search,
 .filter_date_range {
-  @extend %textfield, %textfield-inline;
+  @include am-textfield;
+  @include am-textfield-inline;
 
   label {
-    @extend %textfield-label, %textfield-label-inline;
+    @include am-textfield-label;
+    @include am-textfield-label-inline;
   }
 
   > select:not([multiple]) {
-    @extend %select-input;
+    @include am-select-input;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     flex-basis: 100px;
@@ -24,7 +26,9 @@
   }
 
   > input.datepicker {
-    @extend %textfield-input, %textfield-input-inline, %textfield-input-date;
+    @include am-textfield-input;
+    @include am-textfield-input-inline;
+    @include am-textfield-input-date;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
   }
@@ -38,7 +42,8 @@
 
 .filter_string input,
 .filter_numeric input {
-  @extend %textfield-input, %textfield-input-inline;
+  @include am-textfield-input;
+  @include am-textfield-input-inline;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   border-left: 0;

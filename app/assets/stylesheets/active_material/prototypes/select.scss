@@ -3,37 +3,37 @@
  * Custom select styles, taken from textfields in material design
  */
 
-%select {
-  border: 1px solid $theme-divider;
+@mixin am-select {
+  border: 1px solid am-color(divider);
   border-radius: 2px;
   display: inline-block;
-  margin-top: unit(1);
+  margin-top: am-unit(1);
 }
 
-%select-input {
+@mixin am-select-input {
+  @include am-font-size(14);
   background: #fafafa asset-url("icons/arrow-dropdown.svg") no-repeat calc(100% - 4px) 50%;
   border: 1px solid #d3d3d3;
   border-radius: 3px;
   box-shadow: inset 0 1px 0 rgba(#fff, 0.8);
-  height: unit(5) + 2px; // line height + border for Firefox
-  line-height: unit(5);
+  height: am-unit(5) + 2px; // line height + border for Firefox
+  line-height: am-unit(5);
   -webkit-appearance: none;
   -moz-appearance: none;
 
   // These rules are so that opening a select will
   // align as closely to the open options as much as possible
-  font-size: sp(14);
   letter-spacing: 0.01em;
-  padding: 0 unit(3) 0 10px;
+  padding: 0 am-unit(3) 0 10px;
 }
 
-%select-input-borderless {
+@mixin am-select-input-borderless {
   border: 0;
   border-radius: 0;
 }
 
-%select-unit {
-  border-left: 1px solid $theme-divider;
+@mixin am-select-unit {
+  border-left: 1px solid am-color(divider);
   text-align: center;
 
   &:first-child {
