@@ -20,8 +20,8 @@ body {
 
 body {
   @extend %am-type-body-1;
+  @include web-font($font-sans);
   color: $theme-text;
-  font-family: $font-sans;
   margin: 0;
 }
 
@@ -50,7 +50,7 @@ p {
 
 button,
 input {
-  font-family: $font-sans;
+  @include web-font($font-sans);
 }
 
 button::-moz-focus-inner {

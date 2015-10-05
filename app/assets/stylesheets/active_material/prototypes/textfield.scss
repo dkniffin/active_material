@@ -3,8 +3,6 @@
  * Character inputs, for simple form fields
  */
 
-$textfield-input-type  : normal sp(14)/24px $font-sans !default;
-$textfield-label-type  : 400 sp(12)/unit(2) $font-sans !default;
 $textfield-margin      : unit(1) 0 !default;
 $textfield-padding     : unit(1) unit(2) !default;
 $textfield-error-color : $theme-error !default;
@@ -19,13 +17,16 @@ $textfield-primary     : $theme-primary !default;
 }
 
 %textfield-input {
+  @include web-font($font-sans);
   background: #fff;
   border: 0;
   border: 1px solid #d3d3d3;
   border-radius: 3px;
   box-shadow: inset 1px 1px 1px rgba(#222, 0.08);
   display: block;
-  font: $textfield-input-type;
+  font-weight: normal;
+  font-size: sp(14);
+  line-height: 24px;
   margin: 0;
   padding: unit(1);
   transition: 0.35s border-color, 0.35s box-shadow;
@@ -69,6 +70,7 @@ $textfield-primary     : $theme-primary !default;
   display: block;
   font-size: sp(13);
   line-height: 16px;
+  font-weight: 400;
   margin-bottom: 8px;
   position: relative;
   transition: 0.28s all;

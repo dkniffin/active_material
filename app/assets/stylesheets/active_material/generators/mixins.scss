@@ -8,3 +8,11 @@
   font-size: $pixels;
   font-size: sp($pixels);
 }
+
+@mixin web-font($family, $fallback: sans-serif) {
+  font-family: $fallback;
+
+  .wf-active & {
+    font-family: $family;
+  }
+}
