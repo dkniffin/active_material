@@ -7,7 +7,7 @@
  */
 
 WebFontConfig = {
-  google: { families: [ 'RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium:latin' ] }
+  google: { families: [ 'RobotoDraft:regular,medium,bold,italic:latin' ] }
 };
 
 (function() {
