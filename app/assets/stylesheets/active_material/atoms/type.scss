@@ -26,7 +26,6 @@
 
 @mixin am-type-caption {
   @include am-font-size(12);
-  >>>>>>> Namespace all rules
   font-style: normal;
   font-weight: 500;
   letter-spacing: am-tracking(20);
