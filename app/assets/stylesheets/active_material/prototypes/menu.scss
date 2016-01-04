@@ -71,7 +71,7 @@ $am-menu-carat-size: 5px !default;
 }
 
 @mixin am-menu-link {
-  @include am-link-secondary-text;
+  @include am-link(secondary-text);
   @include am-link-no-decoration;
   display: block;
   font-size: 14px;

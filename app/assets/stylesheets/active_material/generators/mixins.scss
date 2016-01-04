@@ -7,8 +7,9 @@
 
 /// Assign a given font size in rems, falling back to pixel values
 /// in older browsers.
+/// @param {number} $size - Font size in pixels
 @mixin am-font-size($size) {
-  font-size: $size;
+  font-size: am-strip-units($size) + 0px;
   font-size: am-sp($size);
 }
 
@@ -18,6 +19,6 @@
   font-family: $fallback;
 
   .wf-active & {
-    font-family: $family;
+    @include am-font-family($family);
   }
 }

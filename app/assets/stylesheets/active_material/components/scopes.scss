@@ -16,7 +16,7 @@
   margin-left: am-unit(2);
 
   a {
-    @include am-link-secondary-text;
+    @include am-link(secondary-text);
   }
 
   &.selected {

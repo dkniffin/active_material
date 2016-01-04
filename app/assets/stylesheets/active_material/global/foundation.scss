@@ -21,7 +21,7 @@ body {
 body {
   @include am-type-body-1;
   @include am-color(text);
-  @include am-font-family(sans);
+  @include am-web-font(sans);
   margin: 0;
 }
 

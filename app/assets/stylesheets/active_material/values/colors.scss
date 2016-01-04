@@ -1,3 +1,7 @@
+////
+/// @group colors
+////
+
 /// Primary theme color. This is the main admin theme color, showing itself
 /// on the main header, buttons, and other elements that command attention.
 /// If you want to change the main theme colors, this is the value you want.
@@ -77,8 +81,6 @@ $theme-accent: $am-theme-accent !default;
 /// @deprecated
 $theme-error: $am-theme-error !default;
 
-/// Contains all color values in a single map for easier
-/// access in functions and mixins.
 $am-colors: (
   accent               : $am-theme-accent,
   accent-active        : lighten($am-theme-accent, 2%),

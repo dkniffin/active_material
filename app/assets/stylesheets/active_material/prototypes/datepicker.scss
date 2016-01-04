@@ -1,21 +1,28 @@
-/**
- * Datepicker
- * A calendar widget
- */
+////
+/// Datepicker
+/// A calendar widget
+/// @group datepicker
+////
 
-$am-datepicker-padding: $am-unit-type !default;
+/// The width of the datepicker.
 $am-datepicker-width: am-unit(35) !default;
+/// The shadow cast below the datepicker.
+$am-datepicker-shadow: (0 1px 2px rgba(#000, 0.25), 0 -1px 1px rgba(#000, 0.12)) !default;
+/// The border radius of the picker.
+$am-datepicker-border-radius: 2px !default;
+/// The size of an individual cell in the calendar. Square.
+$am-datepicker-cell-size: am-unit(4) !default;
 
 @mixin am-datepicker {
   background: white;
-  border-radius: 2px;
-  box-shadow: 0 1px 2px rgba(#000, 0.25), 0 -1px 1px rgba(#000, 0.12);
+  border-radius: $am-datepicker-border-radius;
+  box-shadow: $am-datepicker-shadow;
   padding: 0 am-unit(1.5) am-unit(1);
   width: $am-datepicker-width;
 }
 
 @mixin am-datepicker-header {
-  line-height: am-unit(4);
+  line-height: $am-datepicker-cell-size;
   padding: am-unit(1) 0 am-unit(0.5);
   position: relative;
   text-align: center;
@@ -30,8 +37,8 @@ $am-datepicker-width: am-unit(35) !default;
   &:before {
     @include am-font-size(am-unit(2));
     display: inline-block;
-    height: am-unit(4);
-    width: am-unit(4);
+    height: $am-datepicker-cell-size;
+    width: $am-datepicker-cell-size;
   }
 }
 
@@ -65,12 +72,15 @@ $am-datepicker-width: am-unit(35) !default;
 @mixin am-datepicker-calendar-heading {
   @include am-color(secondary-text);
   font-weight: 500;
-  padding-bottom: $am-unit-type;
+  padding: 0 0 am-type-unit(1);
 }
 
 @mixin am-datepicker-calendar-day {
-  height: am-unit(5);
+  height: $am-datepicker-cell-size;
   font-weight: 500;
+  line-height: $am-datepicker-cell-size;
+  padding: 0;
+  width: $am-datepicker-cell-size;
 }
 
 @mixin am-datepicker-calendar-day-disabled {
@@ -78,11 +88,12 @@ $am-datepicker-width: am-unit(35) !default;
 }
 
 @mixin am-datepicker-calendar-day-link {
-  @include am-color(text);
+  @include am-link(text);
   border-radius: 50%;
-  height: am-unit(5);
-  padding: am-unit(1);
-  width: am-unit(5);
+  display: block;
+  height: inherit;
+  margin: 0 auto;
+  width: inherit;
 }
 
 @mixin am-datepicker-calendar-day-link-focus {
@@ -93,6 +104,4 @@ $am-datepicker-width: am-unit(35) !default;
 @mixin am-datepicker-calendar-day-link-current {
   @include am-fill(primary);
   @include am-color(white);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25) inset;
-  text-shadow: 0 1px 2px rgba(#000, 0.12);
 }

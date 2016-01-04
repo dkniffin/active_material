@@ -1,11 +1,14 @@
 /// Assigns a color rule and rules to adjust color to the
 /// accent color upon hover/focus
-@mixin am-link-secondary-text {
-  @include am-color(secondary-text);
+///
+/// @param {any} $initial - A color key for the initial text color
+/// @param {any} $focus - A color key for the focus/hover text color
+@mixin am-link($initial:text, $focus:accent) {
+  @include am-color($initial);
 
   &:hover,
   &:focus {
-    @include am-color(accent);
+    @include am-color($focus);
   }
 }
 
