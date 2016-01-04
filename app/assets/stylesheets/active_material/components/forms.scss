@@ -37,6 +37,10 @@ fieldset.inputs {
     @include am-textfield-input-password;
   }
 
+  &.datepicker input {
+    @include am-textfield-input-date;
+  }
+
   &.text textarea {
     @include am-textfield-input;
     @include am-textfield-textarea;

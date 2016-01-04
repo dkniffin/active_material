@@ -1,15 +1,29 @@
-/**
- * Textfield
- * Character inputs, for simple form fields
- */
+////
+/// Textfield
+/// Character inputs, for simple form fields
+/// @group textfield
+////
 
-$am-textfield-input-type  : normal am-sp(14)/24px $am-font-sans !default;
-$am-textfield-label-type  : 400 am-sp(12)/am-unit(2) $am-font-sans !default;
-$am-textfield-margin      : am-unit(1) 0 !default;
-$am-textfield-padding     : am-unit(1) am-unit(2) !default;
-$am-textfield-error-color : $am-theme-error !default;
-$am-textfield-color       : rgba(#000, 0.70) !default;
-$am-textfield-primary     : am-color(primary) !default;
+/// Textfield input typography.
+$am-textfield-input-type: normal am-sp(14)/24px $am-font-sans !default;
+/// Textfield label typography.
+$am-textfield-label-type: 400 am-sp(12)/am-unit(2) $am-font-sans !default;
+/// Textfield margin.
+$am-textfield-margin: am-unit(1) 0 !default;
+/// Textfield padding.
+$am-textfield-padding: am-unit(1) am-unit(2) !default;
+/// Textfield error color.
+$am-textfield-error-color: $am-theme-error !default;
+/// Textfield color.
+$am-textfield-color: rgba(#000, 0.70) !default;
+/// Textfield highlight color.
+$am-textfield-primary: am-color(primary) !default;
+/// Icon for email fields.
+$am-textfield-email-icon: asset-url("icons/email.svg") !default;
+/// Icon for password fields.
+$am-textfield-password-icon: asset-url("icons/secret.svg") !default;
+/// Icon for date fields.
+$am-textfield-date-icon: asset-url("icons/event.svg") !default;
 
 @mixin am-textfield {
   color: $am-textfield-color;
@@ -40,17 +54,17 @@ $am-textfield-primary     : am-color(primary) !default;
 }
 
 @mixin am-textfield-input-email {
-  background: #fff asset-url("icons/email.svg") am-unit(1) 50% no-repeat;
+  background: #fff $am-textfield-email-icon am-unit(1) 50% no-repeat;
   padding-left: am-unit(5);
 }
 
 @mixin am-textfield-input-password {
-  background: #fff asset-url("icons/secret.svg") am-unit(1) 50% no-repeat;
+  background: #fff $am-textfield-password-icon am-unit(1) 50% no-repeat;
   padding-left: am-unit(5);
 }
 
 @mixin am-textfield-input-date {
-  background: #fff asset-url("icons/event.svg") am-unit(1) 50% no-repeat;
+  background: #fff $am-textfield-date-icon am-unit(1) 50% no-repeat;
   padding-left: am-unit(5);
 }
 
