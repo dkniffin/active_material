@@ -7,30 +7,30 @@
 
 /// $variables, these should always end with !default
 /// so that they can be overriden
-@import "values/colors";
-@import "values/units";
-@import "values/fonts";
-@import "values/breakpoints";
-@import "values/elevation";
-@import "values/*";
+@import "active_material/values/colors";
+@import "active_material/values/units";
+@import "active_material/values/fonts";
+@import "active_material/values/breakpoints";
+@import "active_material/values/elevation";
+@import "active_material/values/*";
 
 /// Generators describe functions, mixins, and classes
 /// intended for extension. More or less, they are "style builders"
 /// instead of "style descriptors"
-@import "generators/functions";
-@import "generators/mixins";
-@import "generators/*";
+@import "active_material/generators/functions";
+@import "active_material/generators/mixins";
+@import "active_material/generators/*";
 
 /// Atoms are individual styles to enhance reusability
-@import "atoms/*";
+@import "active_material/atoms/*";
 
 /// Foundational rules that setup the page
-@import "global/foundation";
-@import "global/*";
+@import "active_material/global/foundation";
+@import "active_material/global/*";
 
-/// Prototypes are collections of %selectors to allow for css design
+/// Prototypes are collections of mixins that allow for css design
 /// without the constraints of limiting ActiveAdmin selectors
-@import "prototypes/*";
+@import "active_material/prototypes/*";
 
 /// Components describe actual implementation within Active Admin
-@import "components/*";
+@import "active_material/components/*";

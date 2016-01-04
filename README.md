@@ -1,8 +1,13 @@
 # ActiveMaterial
 
-ActiveAdmin skin based on Google's Material Design.
+An ActiveAdmin skin based on Google's Material Design.
 
 <img src="http://i.imgur.com/kDkGzYe.png">
+
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Customization](#customization)
+4. [Contributing](#contributing)
 
 ## Installation
 
@@ -14,17 +19,25 @@ gem "active_material", git: "git@github.com:vigetlabs/active_material.git"
 
 And then execute:
 
+```shell
     $ bundle
+```
 
 Or install it yourself as:
 
+```shell
     $ gem install active_material
+```
 
 ## Usage
 
-In `app/assets/stylesheets/active_admin.css.scss`, replace `@import "active_admin/base";` with `@import "active_material/active_material";`. If you wish to override the [default colors][1], do that *before* the `@import` statement.
+In `app/assets/stylesheets/active_admin.css.scss`, replace `@import
+"active_admin/base";` with `@import
+"active_material/active_material";`. with `@import "active_material";`
 
-[1]: https://github.com/vigetlabs/active_material/blob/master/app/assets/stylesheets/active_material/values/colors.scss
+## Customization
+
+Refer to the [Customization Guide](./docs/customization.md')
 
 ## Contributing
 
