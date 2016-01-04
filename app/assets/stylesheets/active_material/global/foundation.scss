@@ -19,15 +19,9 @@ body {
 }
 
 body {
-<<<<<<< ba30604c1457debfee56f0d033d61f2f9ac7b899
-  @extend %am-type-body-1;
-  @include web-font($font-sans);
-  color: $theme-text;
-=======
   @include am-type-body-1;
   @include am-color(text);
   @include am-font-family(sans);
->>>>>>> Namespace all rules
   margin: 0;
 }
 
@@ -37,11 +31,8 @@ img {
 
 b,
 strong {
-<<<<<<< ba30604c1457debfee56f0d033d61f2f9ac7b899
-  @extend %am-type-body-2;
-=======
   @include am-type-body-2;
->>>>>>> Namespace all rules
+
 }
 
 h1,
@@ -60,11 +51,7 @@ p {
 
 button,
 input {
-<<<<<<< ba30604c1457debfee56f0d033d61f2f9ac7b899
-  @include web-font($font-sans);
-=======
   @include am-font-family(sans);
->>>>>>> Namespace all rules
 }
 
 button::-moz-focus-inner {
