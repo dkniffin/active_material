@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.1.0
+
+- Remove restrictive cascading list styles to prevent conflicts with rich text
+  editors such as Redactor.
+
 ## 1.0.0
 
 This version includes several important structural changes to
