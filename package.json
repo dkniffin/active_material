@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "doc": "sassdoc app/assets/stylesheets/active_material/**/*.scss"
+    "doc": "sassdoc --dest docs/api app/assets/stylesheets/active_material/**/*.scss"
   },
   "repository": {
     "type": "git",
