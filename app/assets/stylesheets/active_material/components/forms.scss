@@ -5,7 +5,7 @@
 fieldset.inputs {
   margin-bottom: am-unit(2);
 
-  ol {
+  > ol {
     @include am-list-blank;
   }
 
@@ -73,7 +73,7 @@ fieldset.actions,
 .buttons {
   @include am-actions-footer;
 
-  ol {
+  > ol {
     @include am-list-blank;
     @include am-list-inline;
   }

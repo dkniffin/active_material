@@ -32,7 +32,6 @@ img {
 b,
 strong {
   @include am-type-body-2;
-
 }
 
 h1,
@@ -95,15 +94,6 @@ hr {
   border: 0;
   border-bottom: 1px solid am-color(divider);
   margin: am-unit(4) 0
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  padding: 0;
 }
 
 fieldset {
