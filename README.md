@@ -31,9 +31,13 @@ Or install it yourself as:
 
 ## Usage
 
-In `app/assets/stylesheets/active_admin.css.scss`, replace `@import
-"active_admin/base";` with `@import
-"active_material/active_material";`. with `@import "active_material";`
+In `app/assets/stylesheets/active_admin.css.scss`, replace:
+
+`@import "active_admin/base";`
+
+with
+
+`@import "active_material";`
 
 ## Customization
 
