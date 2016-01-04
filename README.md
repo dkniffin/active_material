@@ -20,13 +20,13 @@ gem "active_material", git: "git@github.com:vigetlabs/active_material.git"
 And then execute:
 
 ```shell
-    $ bundle
+$ bundle
 ```
 
 Or install it yourself as:
 
 ```shell
-    $ gem install active_material
+$ gem install active_material
 ```
 
 ## Usage
