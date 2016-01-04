@@ -3,7 +3,7 @@
 This document is a work in progress. As customization needs arise, it
 will be updated to provide an official answer for customizing ActiveMaterial.
 
-1. Customizing the Color Theme
+1. [Customizing the Color Theme](#customizing-the-color-theme)
 
 ## Customizing the Color Theme
 
