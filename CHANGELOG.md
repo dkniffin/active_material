@@ -13,7 +13,7 @@ https://github.com/vigetlabs/active_material/releases/tag/v1.0.0
 
 - The main stylesheet is now imported using `@import "active_material";`
 - All variables, functions, mixins, and rules are namespaced with `am-*`.
-- All pseudo-selectors (%rule {}) are now mixins.
+- All pseudo-selectors (`%rule {}`) are now mixins.
 
 ### Upgrading
 

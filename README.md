@@ -37,7 +37,7 @@ In `app/assets/stylesheets/active_admin.css.scss`, replace `@import
 
 ## Customization
 
-Refer to the [Customization Guide](./docs/customization.md')
+Refer to the [Customization Guide](./docs/customization.md').
 
 ## Contributing
 
