@@ -1,8 +1,5 @@
-/**
- * Paper
- * Generic, elevated surfaces
- */
-
+/// Inject rules for generic, elevated surfaces. This is used for
+/// elements that overlap other content, such as panels and sidebars.
 @mixin am-paper {
   @include am-fill(paper);
   border-radius: 2px;

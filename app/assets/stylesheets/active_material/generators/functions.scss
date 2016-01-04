@@ -1,45 +1,102 @@
-@function am-tracking($value) {
-  @return ($value / 1000) + 0em;
+/// Emulates letter tracking in Adobe Photoshop, which is used for
+/// adjusting the space between letters in text.
+///
+/// Follows the guidance of https://scotch.io/quick-tips/converting-photoshop-letter-spacing-to-css.
+///
+/// @param {number} $amount - An integer value, such as 100
+/// @return {number} The amount of letter-spacing in ems.
+@function am-tracking($amount) {
+  @return ($amount / 1000) + 0em;
 }
 
+
+/// Removes units (px, em, etc...) from a given number.
+///
+/// @param {number} $number - The numeric value to strip units from.
+/// @return {number} A unitless number value.
 @function am-strip-units($number) {
   @return $number / ($number * 0 + 1);
 }
 
+
+/// Calculates "scalable pixel" values. This is implemented using rems.
+/// Within material design, scalable pixel values are those that respect
+/// the user's font settings.
+///
+/// According to the [Google Material Design Specification](https://www.google.com/design/spec/layout/units-measurements.html#units-measurements-scaleable-pixels-sp-):
+/// > "Users who have larger text settings for accessibility will see
+/// > the font size matched to their text size preferences."
+///
+/// @param {number} $value - A pixel value to be converted into rems.
+/// @param {number} $baseline [16] - The assumed base font size.
+/// @return {number} Scalable pixel value in rems.
 @function am-sp($value, $baseline:16) {
   @return (am-strip-units($value) / $baseline) + rem;
 }
 
+
+/// Calculates measurements along the base unit grid defined under $am-unit-base. This provides
+/// an easy way to align elements upon a baseline mesh grid.
+///
+/// @param {number} $step - The scale of units
+/// @return {number} A pixel value representing the number of units along the mesh grid.
 @function am-unit($step:1) {
   @return $am-unit-base * $step;
 }
 
+
+/// Calculates measurements along the base type grid defined under $am-unit-base. This provides
+/// an easy way to align elements upon a baseline typographic mesh grid.
+///
+/// @param {number} $step - The scale of units
+/// @return {number} A pixel value representing the number of units along the typographic mesh grid.
 @function am-type-unit($step:1) {
   @return $am-unit-type * $step;
 }
 
+
+/// Extracts a color out of the $am-color map. Throws an error if that key is not defined.
+///
+/// @param {any} $key - The desired key in $am-colors.
+/// @return {color} A color value from $am-colors.
 @function am-color ($key) {
   @if map-has-key($am-colors, $key) {
     @return map-get($am-colors, $key);
   }
 
-  @warn "Unknown color value '#{$key}'";
+  @error "Unknown color value '#{$key}'";
   @return null;
 }
 
+
+/// Extracts a color out of the $am-color map and lightens it using the built-in Sass function.
+///
+/// @param {any} $key - The desired key in $am-colors.
+/// @param {number} $amount - The degree of lightness.
+/// @return {color} A lightened color value from $am-colors.
 @function am-lighten ($color, $amount) {
   @return lighten(am-color($color), $amount);
 }
 
+
+/// Extracts a color out of the $am-color map and darkens it using the built-in Sass function.
+///
+/// @param {any} $key - The desired key in $am-colors.
+/// @param {number} $amount - The degree of darkness.
+/// @return {color} A darkened color value from $am-colors.
 @function am-darken ($color, $amount) {
   @return darken(am-color($color), $amount);
 }
 
+/// Extracts a font family out of the $am-fonts map. Throws an error if that key is not defined.
+///
+/// @param {any} $key - The desired key in $am-colors.
+/// @return {font} A font family from $am-colors.
 @function am-font-family ($key) {
   @if map-has-key($am-fonts, $key) {
     @return map-get($am-fonts, $key);
   }
 
-  @warn "Unknown font value '#{$key}'";
+  @error "Unknown font value '#{$key}'";
   @return null;
 }

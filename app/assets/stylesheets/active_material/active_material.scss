@@ -1,14 +1,12 @@
-/**
- * Active Material
- *
- * A redesign of ActiveAdmin that follows Material Design standards
- * www.google.com/design/spec/material-design/introduction.html
- */
+////
+/// Active Material
+/// A redesign of ActiveAdmin that follows Material Design standards
+/// www.google.com/design/spec/material-design/introduction.html
+/// @author Viget Labs
+////
 
-/**
- * $variables, these should always end with !default
- * so that they can be overriden
- */
+/// $variables, these should always end with !default
+/// so that they can be overriden
 @import "values/colors";
 @import "values/units";
 @import "values/fonts";
@@ -16,33 +14,23 @@
 @import "values/elevation";
 @import "values/*";
 
-/**
- * Generators describe functions, mixins, and classes
- * intended for extension. More or less, they are "style builders"
- * instead of "style descriptors"
- */
+/// Generators describe functions, mixins, and classes
+/// intended for extension. More or less, they are "style builders"
+/// instead of "style descriptors"
 @import "generators/functions";
 @import "generators/mixins";
 @import "generators/*";
 
-/**
- * Atoms are individual styles to enhance reusability
- */
+/// Atoms are individual styles to enhance reusability
 @import "atoms/*";
 
-/**
- * Foundational rules that setup the page
- */
+/// Foundational rules that setup the page
 @import "global/foundation";
 @import "global/*";
 
-/**
- * Prototypes are collections of %selectors to allow for css design
- * without the constraints of limiting ActiveAdmin selectors
- */
+/// Prototypes are collections of %selectors to allow for css design
+/// without the constraints of limiting ActiveAdmin selectors
 @import "prototypes/*";
 
-/**
- * Components describe actual implementation within Active Admin
- */
+/// Components describe actual implementation within Active Admin
 @import "components/*";

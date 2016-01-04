@@ -1,8 +1,5 @@
-/**
- * Link Text
- * Special link text treatment
- */
-
+/// Assigns a color rule and rules to adjust color to the
+/// accent color upon hover/focus
 @mixin am-link-secondary-text {
   @include am-color(secondary-text);
 
@@ -12,6 +9,7 @@
   }
 }
 
+/// Strips away text decoration, applying an underline on hover/focus
 @mixin am-link-no-decoration {
   text-decoration: none;
 

@@ -1,3 +1,5 @@
+/// Injects a color property given a key within $am-color.
+/// @param {any} $key - A key within $am-color
 @mixin am-color($key) {
   color: am-color($key);
 }

@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "doc": "sassdoc app/assets/stylesheets/active_material/**/*.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vigetlabs/active_material.git"
+  },
+  "author": "Viget Labs",
+  "license": "MIT",
+  "devDependencies": {
+    "sassdoc": "2.1.19"
+  }
+}

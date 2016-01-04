@@ -1,3 +1,5 @@
+/// Injects a font-family property given a key within $am-font-family.
+/// @param {any} $key - A key within $am-font-family
 @mixin am-font-family($key) {
   font-family: am-font-family($key)
 }

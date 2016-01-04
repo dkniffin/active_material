@@ -1,15 +1,20 @@
+/// Standard logic for management of breakpoints
 @mixin am-min-breakpoint($breakpoint) {
   @media screen and (min-width: $breakpoint) {
     @content;
   }
 }
 
+/// Assign a given font size in rems, falling back to pixel values
+/// in older browsers.
 @mixin am-font-size($size) {
   font-size: $size;
   font-size: am-sp($size);
 }
 
-@mixin web-font($family, $fallback: sans-serif) {
+/// When using the Webfont.js font loader, only show the loaded font-family
+/// when the loader indicates it is active (via the .wf-active) class.
+@mixin am-web-font($family, $fallback: sans-serif) {
   font-family: $fallback;
 
   .wf-active & {
