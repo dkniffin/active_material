@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## 1.2.0
+
+- Significant updates to fix datepicker styles and expose new
+  configuration variables.
+- Webfonts are now configured by pulling in `active_material` in the
+  JavaScript main entrypoint
+
+### Upgrading
+
+Include `active_material` in the main JavaScript endpoint like:
+
+```
+//= require active_material
+```
+
 ## 1.1.0
 
 - Remove restrictive cascading list styles to prevent conflicts with rich text
