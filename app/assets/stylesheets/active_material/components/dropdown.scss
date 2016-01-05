@@ -28,6 +28,6 @@
 
   li a {
     @include am-menu-link;
-    @incldue am-menu-item-open;
+    @include am-menu-item-open;
   }
 }

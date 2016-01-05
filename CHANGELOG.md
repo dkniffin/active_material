@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.3.1
+
+- Fix typo in active state of dropdown menu that caused batch actions
+  to be invisible.
+
 ## 1.3.0
 
 - Added coverage for sortable table rows.

@@ -1,18 +1,30 @@
-/**
- * Menu
- * A dropdown menu. Used for nested navigation and selection
- */
+////
+/// Menu
+/// A dropdown menu. Used for nested navigation and selection
+/// @group menu
+////
 
+/// Background color of the menu
 $am-menu-background: #fff !default;
+/// Border radious of the menu
 $am-menu-border-radius: 2px !default;
+/// X-axis offset of opened menu
 $am-menu-offset-x: 0 !default;
-$am-menu-offset-y: 36px !default;
-$am-menu-padding: 8px !default;
-$am-menu-item-padding: 4px 16px !default;
+/// Y-axis offset of opened menu
+$am-menu-offset-y: am-unit(4) !default;
+/// Padding of opened menu's container
+$am-menu-padding: am-unit(1) !default;
+/// Padding of individual menu items
+$am-menu-item-padding: am-type-unit(1) am-unit(2) !default;
+/// Transition time of menu opening
 $am-menu-transition: 0.2s !default;
+/// Transition delay when a menu opens
 $am-menu-transition-delay: 0.2s !default;
-$am-menu-keyline: 56px !default;
+/// Minimum allowable width of menu
+$am-menu-min-width: am-unit(14) !default;
+/// Desktop breakpoint
 $am-menu-breakpoint: 1300px !default;
+/// The size of the dropdown carot that displays next to the menu toggle
 $am-menu-carat-size: 5px !default;
 
 @mixin am-menu {
@@ -46,7 +58,7 @@ $am-menu-carat-size: 5px !default;
   left: $am-menu-offset-x;
   list-style: none;
   margin: 0;
-  min-width: $am-menu-keyline* 2;
+  min-width: $am-menu-min-width;
   padding: $am-menu-padding 0;
   position: absolute;
   text-align: left;
