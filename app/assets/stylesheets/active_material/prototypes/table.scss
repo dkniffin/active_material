@@ -110,7 +110,7 @@ $am-table-border-color: am-color(divider);
 }
 
 @mixin am-table-cell-actions {
-  background: asset_url("icons/more.svg") 25% 50% no-repeat;
+  background: asset_url("active_material/icons/more.svg") 25% 50% no-repeat;
   position: relative;
   width: am-unit(6);
 }

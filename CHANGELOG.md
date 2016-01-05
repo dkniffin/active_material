@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.3.0
+
+- Added coverage for sortable table rows.
+- Moved icons to `active_material` folder to avoid conflicts.
+
 ## 1.2.0
 
 - Significant updates to fix datepicker styles and expose new

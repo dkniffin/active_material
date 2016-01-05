@@ -1,0 +1,36 @@
+////
+/// Sortable
+/// Generic styles for sortable elements. Leans on
+/// jQuery UI for the bulk of work
+/// @group sortable
+////
+
+/// The icon displayed within a sortable element's drag handle
+$am-sortable-icon: asset-url("active_material/icons/reorder.svg") !default;
+// The size of the draggable handle
+$am-sortable-handle-size: am-unit(7);
+
+.ui-sortable {
+
+  .reorder-handle-col {
+    padding: 0 0 0 am-unit(1);
+    width: $am-sortable-handle-size;
+  }
+
+  .reorder-handle {
+    background: transparent $am-sortable-icon 50% 50% no-repeat;
+    color: transparent;
+    cursor: move;
+    display: block;
+    height: $am-sortable-handle-size;
+    margin: 0 auto;
+    opacity: 0.40;
+    transition: 0.2s all;
+    width: $am-sortable-handle-size;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+}
