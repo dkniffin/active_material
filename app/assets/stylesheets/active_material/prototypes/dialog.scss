@@ -1,11 +1,15 @@
-/**
- * Dialog
- * A modal that appears above all other content
- */
+////
+/// Dialog
+/// A modal that appears above all other content
+/// @group dialog
+////
 
+// Dialog background color
 $am-dialog-background: #fff !default;
+// Dialog container border-radius
 $am-dialog-border-radius: 2px !default;
-$am-dialog-title-padding: am-unit(1) am-unit(4) am-unit(1) am-unit(2) !default;
+// Dialog title padding
+$am-dialog-title-padding: am-unit(4) am-unit(3) am-unit(1) !default;
 
 @keyframes am-dialog-fade {
   from {

@@ -15,12 +15,21 @@
   @include am-dialog-title;
 }
 
+.ui-dialog-content {
+  display: inline;
+
+  ul {
+    margin: 0;
+  }
+}
+
 .ui-dialog-buttonset {
   @include am-dialog-footer;
 }
 
 .ui-button {
   @include am-btn;
+  @include am-link(primary, text);
 }
 
 .ui-dialog-titlebar-close {

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.4.0
+
+- Enhance dialog styles. These are viewable when conducting batch operations
+
 ## 1.3.1
 
 - Fix typo in active state of dropdown menu that caused batch actions
