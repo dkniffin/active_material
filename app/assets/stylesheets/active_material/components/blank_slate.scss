@@ -6,7 +6,7 @@
 
 .blank_slate_container {
   @include am-color(tertiary-text);
-  @include am-type-body-1;
+  @include am-type-body;
   @include am-type-smooth;
   font-weight: 600;
   padding: am-unit(3) am-unit(2);
@@ -15,9 +15,9 @@
 
 .blank_slate {
   border: 1px dashed rgba(#000, 0.2);
-  border-radius: 3px;
+  border-radius: $am-radius-default;
   display: inline-block;
-  padding: 16px 24px;
+  padding: am-unit(2) am-unit(3);
 
   small {
     display: block;

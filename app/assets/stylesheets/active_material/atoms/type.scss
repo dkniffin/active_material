@@ -4,28 +4,70 @@
 /// Material Design standard
 ///
 /// https://www.google.com/design/spec/style/typography.html
+///
+/// @group type
 
-/// Applies rules for subheader text.
-@mixin am-type-subheader {
-  @include am-font-size(16);
-  font-weight: 400;
-  line-height: am-sp(24);
-  letter-spacing: am-tracking(10);
+/// Applies rules for smooth text anti-aliasing.
+@mixin am-type-smooth {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
-/// Applies rules for heavier, more emphasized, body text.
-@mixin am-type-body-2 {
-  @include am-font-size(14);
+@mixin am-type-display-4 {
+  @include am-font-size(112px);
+  @include am-type-smooth;
+  font-weight: 300;
+  line-height: am-sp(128px);
+  letter-spacing: -5px;
+}
+
+@mixin am-type-display-3 {
+  @include am-font-size(56px);
+  @include am-type-smooth;
+  font-weight: 400;
+  line-height: am-sp(64px);
+}
+
+@mixin am-type-display-2 {
+  @include am-font-size(45px);
+  @include am-type-smooth;
+  font-weight: 400;
+  line-height: am-sp(64px);
+}
+
+@mixin am-type-display-1 {
+  @include am-font-size(34px);
+  @include am-type-smooth;
+  font-weight: 400;
+  line-height: am-sp(52px);
+}
+
+@mixin am-type-headline {
+  @include am-font-size(24px);
+  @include am-type-smooth;
+  font-weight: 400;
+  line-height: am-sp(44px);
+}
+
+@mixin am-type-title {
+  @include am-font-size(20px);
+  @include am-type-smooth;
   font-weight: 600;
-  line-height: am-sp(24);
-  letter-spacing: am-tracking(10);
+  line-height: am-sp(44px);
+}
+
+/// Applies rules for subheader text.
+@mixin am-type-subhead {
+  @include am-font-size(16);
+  font-weight: 400;
+  line-height: am-sp(32px);
 }
 
 /// Applies rules for standard body text.
-@mixin am-type-body-1 {
+@mixin am-type-body {
   @include am-font-size(14);
   font-weight: 400;
-  line-height: am-sp(20);
+  line-height: am-sp(25);
   letter-spacing: am-tracking(10);
 }
 
@@ -34,21 +76,21 @@
   @include am-font-size(12);
   font-style: normal;
   font-weight: 500;
-  letter-spacing: am-tracking(20);
-  line-height: am-sp(12);
+  line-height: am-sp(32);
+}
+
+@mixin am-type-menu {
+  @include am-font-size(14);
+  font-style: normal;
+  font-weight: 600;
+  line-height: am-sp(32);
 }
 
 /// Applies rules for button text.
 @mixin am-type-btn {
   @include am-font-size(14);
-  font-weight: 500;
-  letter-spacing: am-tracking(10);
-  line-height: am-sp(12);
+  @include am-type-smooth;
+  font-weight: 600;
+  line-height: am-sp(32);
   text-transform: uppercase;
-}
-
-/// Applies rules for smooth text anti-aliasing.
-@mixin am-type-smooth {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
 }

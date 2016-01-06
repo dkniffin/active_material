@@ -5,23 +5,20 @@
 /// Primary theme color. This is the main admin theme color, showing itself
 /// on the main header, buttons, and other elements that command attention.
 /// If you want to change the main theme colors, this is the value you want.
-$am-theme-primary: #009688 !default;
+$am-theme-primary: #3F51B5 !default;
 
 /// A darker primary theme color for contrast when overlaying important items
 /// containers that are already treated with primary color.
-$am-theme-primary-700: #0D3C55 !default;
+$am-theme-primary-700: #303F9F !default;
 
 /// Used for primary action button and components like switches or sliders.
-$am-theme-accent: #cddc39 !default;
+$am-theme-accent: #66BB6A !default;
 
 /// The color treatment of error messages.
 $am-theme-error: #f44336 !default;
 
 /// A lighter treatment for errors to draw contrast to the main error color.
 $am-theme-error-400: #FF695E;
-
-/// The background color of the document.
-$am-theme-backdrop: #eeeeee !default;
 
 /// The background color of Material Design "paper" elements such as cards.
 /// And other elements that overlap content.
@@ -85,7 +82,6 @@ $am-colors: (
   accent               : $am-theme-accent,
   accent-active        : lighten($am-theme-accent, 2%),
   accent-hover         : lighten($am-theme-accent, 5%),
-  backdrop             : $am-theme-backdrop,
   black                : black,
   divider              : $am-theme-divider,
   error                : $am-theme-error,

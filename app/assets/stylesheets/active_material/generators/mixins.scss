@@ -22,3 +22,12 @@
     @include am-font-family($family);
   }
 }
+
+/// Stretches an element to fill its container
+@mixin am-fillspace($position:absolute) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

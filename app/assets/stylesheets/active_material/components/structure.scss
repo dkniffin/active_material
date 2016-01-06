@@ -3,28 +3,25 @@
  * Global structural elements
  */
 
-body {
-  @include am-fill(backdrop);
-}
-
-#active_admin_content {
-  padding: am-unit(3);
-}
-
-#sidebar {
-  margin-left: am-unit(3);
-}
-
 .with_sidebar {
-  display: flex;
+  display: table;
+  position: relative;
   width: 100%;
+  z-index: 1;
 
-  #main_content_wrapper {
-    flex-grow: 1;
+  #main_content_wrapper,
+  #sidebar {
+    display: table-cell;
+    vertical-align: top;
   }
 
   #sidebar {
-    max-width: am-unit(40);
-    width: 100%;
+    padding-right: am-unit(3);
+    width: am-unit(40);
+    transform: translateY(-24px);
   }
+}
+
+.columns {
+  padding: am-unit(3);
 }

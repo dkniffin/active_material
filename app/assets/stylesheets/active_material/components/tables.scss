@@ -51,7 +51,8 @@
     // ActiveAdmin wraps checkboxes in a div. This rule prevents
     // that div from messing up vertical alignment
     .resource_selection_cell {
-      display: inline;
+      display: block;
+      margin: 0 auto;
     }
   }
 

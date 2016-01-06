@@ -1,0 +1,7 @@
+@mixin am-actions-footer {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top: 1px solid am-color(divider);
+  display: block;
+  padding: am-unit(2);
+}

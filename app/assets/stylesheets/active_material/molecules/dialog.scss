@@ -33,7 +33,7 @@ $am-dialog-title-padding: am-unit(4) am-unit(3) am-unit(1) !default;
 }
 
 @mixin am-dialog-title {
-  @include am-type-subheader;
+  @include am-type-subhead;
   display: block;
   padding: $am-dialog-title-padding;
 }

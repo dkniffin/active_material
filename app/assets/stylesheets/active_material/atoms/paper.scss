@@ -2,6 +2,6 @@
 /// elements that overlap other content, such as panels and sidebars.
 @mixin am-paper {
   @include am-fill(paper);
-  border-radius: 2px;
-  box-shadow: 0 1px 2px rgba(#000, 0.24), 0 0 2px rgba(#000, 0.15);
+  border-radius: $am-radius-default;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24), 0 -1px 3px rgba(0, 0, 0, 0.08);
 }

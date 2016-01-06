@@ -3,3 +3,8 @@
   clip: rect(0, 0, 0, 0) !important;
   position: absolute !important;
 }
+
+@mixin am-not-hidden($position: initial) {
+  clip: auto !important;
+  position: $position !important;
+}
