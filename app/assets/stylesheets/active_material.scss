@@ -19,18 +19,16 @@
 /// instead of "style descriptors"
 @import "active_material/generators/functions";
 @import "active_material/generators/mixins";
-@import "active_material/generators/*";
 
 /// Atoms are individual styles to enhance reusability
 @import "active_material/atoms/*";
 
-/// Foundational rules that setup the page
-@import "active_material/global/foundation";
-@import "active_material/global/*";
-
 /// Prototypes are collections of mixins that allow for css design
 /// without the constraints of limiting ActiveAdmin selectors
-@import "active_material/prototypes/*";
+@import "active_material/molecules/*";
+
+/// Foundational rules that setup the page
+@import "active_material/foundation";
 
 /// Components describe actual implementation within Active Admin
 @import "active_material/components/*";

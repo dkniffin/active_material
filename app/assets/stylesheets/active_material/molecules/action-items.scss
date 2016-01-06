@@ -1,0 +1,35 @@
+@mixin am-action-item {
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  display: block;
+  line-height: am-unit(4);
+  margin: am-unit(1) am-unit(0.5);
+  padding: am-unit(1.5);
+  transition: 0.4s all;
+  white-space: nowrap;
+}
+
+@mixin am-action-item-icon($icon) {
+  background: asset-url('active_material/icons/#{ $icon }.svg') 50% 50% no-repeat;
+  box-shadow: 0 0 1px 4px rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  height: am-unit(5);
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  padding: 0;
+  min-width: 0;
+  width: am-unit(5);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 1.5px am-color(accent);
+    outline: none;
+    transition: 0.2s all;
+  }
+
+  &:active {
+    transform: scale(0.96);
+  }
+}

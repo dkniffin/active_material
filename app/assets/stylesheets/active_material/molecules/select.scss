@@ -5,7 +5,7 @@
 
 @mixin am-select {
   border: 1px solid am-color(divider);
-  border-radius: 2px;
+  border-radius: $am-radius-default;
   display: inline-block;
   margin-top: am-unit(1);
 }

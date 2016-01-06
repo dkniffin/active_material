@@ -3,7 +3,6 @@
  */
 
 fieldset.inputs {
-  margin-bottom: am-unit(2);
 
   > ol {
     @include am-list-blank;
@@ -11,6 +10,7 @@ fieldset.inputs {
 
   > legend {
     @include am-subheader;
+    padding-bottom: am-unit(1);
     border: 0;
   }
 }
@@ -81,12 +81,31 @@ fieldset.actions,
     @include am-list-blank;
     @include am-list-inline;
   }
+}
 
+.buttons {
   .cancel a {
+    @include am-btn;
     @include am-btn-raised;
+  }
+}
+
+fieldset.actions {
+  border: 0;
+  position: absolute;
+  top: 12px;
+  right: 0;
+  z-index: 1;
+
+  li {
+    vertical-align: top;
+  }
+
+  [name=commit] {
+    @include am-action-item-icon(done-light);
   }
 
   .cancel a {
-    @include am-btn;
+    @include am-action-item-icon(close-light);
   }
 }

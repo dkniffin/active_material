@@ -9,7 +9,7 @@ $am-textfield-input-type: normal am-sp(14)/24px $am-font-sans !default;
 /// Textfield label typography.
 $am-textfield-label-type: 400 am-sp(12)/am-unit(2) $am-font-sans !default;
 /// Textfield margin.
-$am-textfield-margin: am-unit(1) 0 !default;
+$am-textfield-margin: 0 !default;
 /// Textfield padding.
 $am-textfield-padding: am-unit(1) am-unit(2) !default;
 /// Textfield error color.
@@ -69,7 +69,7 @@ $am-textfield-date-icon: asset-url("active_material/icons/event.svg") !default;
 }
 
 @mixin am-textfield-textarea {
-  border-radius: 2px;
+  border-radius: $am-radius-default;
   height: am-sp(am-unit(7));
   padding: am-unit(1);
 }

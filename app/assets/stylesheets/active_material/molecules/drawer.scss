@@ -1,0 +1,63 @@
+////
+/// Drawer
+/// Left oriented high level navigation
+/// https://www.google.com/design/spec/patterns/navigation-drawer.html
+///
+/// @group drawer
+////
+
+/// The width of the navigation drawer
+$am-drawer-width: am-unit(32) !default;
+/// The point in which the navigation toggle appears
+$am-drawer-breakpoint: am-unit(128) !default;
+/// The color of the backdrop
+$am-drawer-backdrop-color: rgba(black, 0.2) !default;
+
+@mixin am-drawer {
+  @include am-fill(white);
+  @include am-fillspace;
+  box-shadow: inset -1px 0 am-color(divider);
+  overflow: scroll;
+  width: $am-drawer-width;
+  z-index: 100;
+
+  @media screen and (max-width: $am-drawer-breakpoint) {
+    position: fixed;
+    box-shadow: 1px 0 3px rgba(black, 0.2);
+  }
+}
+
+@mixin am-drawer-backdrop {
+  @include am-fillspace(fixed);
+  background: $am-drawer-backdrop-color;
+  z-index: 100;
+}
+
+@mixin am-drawer-title {
+  @include am-type-title;
+  font-weight: 500;
+  background: rgba(black, 0.54);
+  box-shadow: inset -1px -1px 5px rgba(black, 0.3);
+  @include am-color(white);
+  line-height: am-unit(3);
+  padding: am-unit(10) am-unit(2) am-unit(2);
+}
+
+@mixin am-drawer-item {
+  @include am-color(black);
+  display: block;
+  line-height: am-unit(2);
+  padding: am-unit(2);
+  font-weight: 500;
+
+  &:hover,
+  &:focus {
+    @include am-color(black);
+    @include am-fill(divider);
+    text-decoration: none;
+  }
+}
+
+@mixin am-drawer-item-active {
+  @include am-color(accent);
+}

@@ -1,0 +1,16 @@
+/**
+ * Underlay
+ * Underlays appear below modal content that takes up the entire screen.
+ */
+
+$am-underlay-background: rgba(#000, 0.54) !default;
+
+@mixin am-underlay {
+  background: $am-underlay-background;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: $am-elevation-top;
+}
