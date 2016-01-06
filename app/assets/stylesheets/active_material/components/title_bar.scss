@@ -8,7 +8,7 @@
   @include am-color(white);
   display: flex;
   padding-top: 28px;
-  padding-bottom: 20px;
+  padding-bottom: 28px;
   position: relative;
   z-index: 1;
 
@@ -19,10 +19,13 @@
 
   #titlebar_left {
     padding-top: 48px;
+    padding-left: 8px;
     flex-grow: 1;
   }
 
-  #titlebar_right .action_item a {
+  #titlebar_right .action_item a,
+  #titlebar_right .action_item button {
     @include am-btn;
+    display: block;
   }
 }
