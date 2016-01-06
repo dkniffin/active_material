@@ -1,0 +1,23 @@
+.am-sidebar-toggle {
+  @include am-action-item;
+  @include am-action-item-icon("search-light");
+}
+
+#sidebar {
+  padding-right: am-unit(3);
+  transform: translateY(-24px);
+  min-width: am-unit(40);
+  width: am-unit(40);
+
+  .am-sidebar-enabled & {
+    @include am-hidden;
+  }
+
+  .am-sidebar-open & {
+    @include am-not-hidden;
+  }
+}
+
+.sidebar_section {
+  @include am-paper;
+}
