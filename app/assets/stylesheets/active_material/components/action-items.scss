@@ -1,5 +1,4 @@
 .action_items {
-  padding-right: am-unit(1);
 
   .action_item {
     display: inline-block;
@@ -29,4 +28,5 @@
   [data-method="delete"] {
     @include am-action-item-icon(delete);
   }
+
 }

@@ -4,44 +4,58 @@
  * http://www.google.com/design/spec/components/snackbars-toasts.html
  */
 
+/// Background color of the message
 $am-snackbar-background: #323232 !default;
+/// Text color of the message
 $am-snackbar-color: am-color(text-light) !default;
-$am-snackbar-min-width: am-unit(36) !default;
-$am-snackbar-max-width: am-unit(72) !default;
+/// Minimum width of the message
+$am-snackbar-min-width: 288px !default;
+/// Maximum width of the message
+$am-snackbar-max-width: 548px !default;
+/// Animation duration, greater times will leave the message open longer
 $am-snackbar-duration: 9s !default;
+/// Border radius of the top of the message
+$am-snackbar-border-radius: $am-radius-default !default;
 
-@keyframes am-snackbar-fade {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 5px, 0);
+@keyframes am-alert-hide {
+  0% {
+    transform: translate(-50%, 100%);
   }
 
-  to {
+  7% {
+    transform: translate(-50%, 0);
+  }
+
+  90% {
     opacity: 1;
-    transform: none;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
 
 @mixin am-snackbar {
-  animation: 0.6s am-snackbar-fade, 0.6s am-snackbar-fade reverse $am-snackbar-duration forwards;
+  @include am-type-smooth;
+  animation: $am-snackbar-duration am-alert-hide;
+  animation-fill-mode: forwards;
   background: $am-snackbar-background;
-  border-radius: $am-radius-default;
+  border-top-left-radius: $am-snackbar-border-radius;
+  border-top-right-radius: $am-snackbar-border-radius;
   bottom: 0;
-  box-shadow: 0 1px 2px rgba(#000, 0.24);
   color: $am-snackbar-color;
-  font-weight: 300;
   font-size: 14px;
-  line-height: am-sp(20);
-  margin: am-unit(2);
-  min-width: $am-snackbar-min-width;
-  max-width: $am-snackbar-max-width;
-  padding: am-unit(2) am-unit(3) am-unit(1.5);
+  left: 50%;
+  line-height: 18px;
+  max-width: 568px;
+  min-width: 288px;
+  padding: 14px 24px;
   position: fixed;
-  text-shadow: 0 1px 1px #000;
-  z-index: $am-elevation-top;
+  transform: translateX(-50%);
+  transform-origin: 50% 100%;
 }
 
 @mixin am-snackbar-error {
-  background-color: am-darken(error, 25%);
-  text-shadow: 0 1px 1px am-darken(error, 65%);
+  @include am-fill(error);
+  font-weight: bold;
 }

@@ -40,7 +40,7 @@ $am-drawer-backdrop-color: rgba(black, 0.2) !default;
   box-shadow: inset -1px -1px 5px rgba(black, 0.3);
   @include am-color(white);
   line-height: am-unit(3);
-  padding: am-unit(10) am-unit(2) am-unit(2);
+  padding: am-unit(10) am-unit(2) am-unit(3);
 }
 
 @mixin am-drawer-item {

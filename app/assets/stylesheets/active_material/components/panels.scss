@@ -6,7 +6,11 @@
 
 .panel,
 .has_many_container {
-  @include am-paper;
+
+  + .panel,
+  + .has_many_container {
+    border-top: 1px solid am-color(divider);
+  }
 
   > h3 {
     @include am-subheader;
@@ -19,12 +23,6 @@
   .row th {
     width: 20%;
     padding-left: am-unit(2);
-  }
-}
-
-.panel {
-  & + & {
-    margin-top: 16px;
   }
 }
 
