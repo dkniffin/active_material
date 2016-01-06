@@ -19,10 +19,11 @@ body {
 }
 
 body {
-  @include am-type-body-1;
+  @include am-type-body;
   @include am-color(text);
   @include am-web-font(sans);
   margin: 0;
+  -webkit-text-size-adjust: 100%;
 }
 
 img {
@@ -31,7 +32,7 @@ img {
 
 b,
 strong {
-  @include am-type-body-2;
+  font-weight: 600;
 }
 
 h1,

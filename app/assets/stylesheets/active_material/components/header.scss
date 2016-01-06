@@ -1,64 +1,72 @@
-/**
- * Header
- * Encapsulates several elements related to navigation at
- * the top of the page.
- */
+////
+/// Header
+/// Encapsulates several elements related to navigation at
+/// the top of the page.
+////
+
+body {
+  padding-left: $am-drawer-width;
+
+  &.am-drawer-enabled {
+    @media screen and (max-width: $am-drawer-breakpoint) {
+      padding: 0;
+    }
+  }
+}
 
 .header {
-  @include am-toolbar;
-  @include am-toolbar-primary;
-  padding-right: am-unit(8);
-}
+  @include am-drawer;
 
-.site_title {
-  @include am-toolbar-title;
-  @include am-color(text-light);
-  text-shadow: 0 1px 2px rgba(#000, 0.15);
-}
+  @media screen and (max-width: $am-drawer-breakpoint) {
+    @include am-hidden;
 
-#tabs {
-  flex-grow: 1;
+    .am-drawer-open & {
+      @include am-not-hidden(fixed);
+    }
+  }
 }
 
 .header-item {
-  @include am-toolbar-list;
+  @include am-list-blank;
 }
 
-.header-item > li {
-  @include am-toolbar-item;
+.am-header-backdrop {
+  @include am-drawer-backdrop;
+  display: none;
 
-  > a {
-    @include am-toolbar-item-primary;
-    text-shadow: 0 1px 2px rgba(black, 0.15);
-  }
-
-  &.current > a {
-    @include am-toolbar-item-primary-active;
+  .am-drawer-open & {
+    display: block;
   }
 }
 
-.has_nested {
-  @include am-menu;
+.am-drawer-toggle {
+  @include am-action-item;
+  @include am-action-item-icon("menu");
+  left: am-unit(-1);
+  margin-right: am-unit(1);
+  position: relative;
 
-  ul {
-    @include am-menu-list;
-
-    li {
-      @include am-menu-item;
-    }
-
-    li a {
-      @include am-menu-link;
-    }
+  @media screen and (min-width: $am-drawer-breakpoint) {
+    display: none;
   }
 
-  &:hover ul,
-  &:focus ul {
-    @include am-menu-list-open;
+  .am-drawer-open & {
+    @include am-action-item-icon("close");
+  }
+}
 
-    li a {
-      @include am-menu-item-open
-    }
+.header-item li {
+  @include am-list-blank;
+
+  a {
+    @include am-drawer-item;
   }
 
+  &.current a {
+    @include am-drawer-item-active;
+  }
+}
+
+.site_title {
+  @include am-drawer-title;
 }

@@ -5,7 +5,23 @@
  */
 
 .breadcrumb {
-  @include am-type-caption;
-  display: block;
-  margin-bottom: am-unit(1);
+  @include am-font-size(10px);
+  background: rgba(black, 0.3);
+  font-weight: 400;
+  left: 0;
+  letter-spacing: am-tracking(70);
+  line-height: 22px;
+  padding: 2px am-unit(2) 0;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  width: 100%;
+
+  a {
+    @include am-link(white, accent);
+  }
+}
+
+.breadcrumb_sep {
+  color: rgba(white, 0.24);
 }

@@ -1,0 +1,19 @@
+/**
+ * Avatar
+ * A circular image
+ */
+
+@import '../values/colors';
+
+$am-avatar-background: am-color(icon) !default;
+$am-avatar-box-shadow: 0 1px 2px rgba(#000, 0.2) !default;
+$am-avatar-border-radius: 50% !default;
+$am-avatar-block-level: block !default;
+
+@mixin am-avatar {
+  background: $am-avatar-background;
+  border-radius: $am-avatar-border-radius;
+  box-shadow: $am-avatar-box-shadow;
+  color: transparent;
+  display: $am-avatar-block-level;
+}

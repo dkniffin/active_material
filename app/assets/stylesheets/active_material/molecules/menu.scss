@@ -85,8 +85,9 @@ $am-menu-carat-size: 5px !default;
 @mixin am-menu-link {
   @include am-link(secondary-text);
   @include am-link-no-decoration;
+  @include am-font-size(14px);
   display: block;
-  font-size: 14px;
+  line-height: am-unit(3);
   opacity: 0;
   padding: $am-menu-item-padding;
   transition: 0.28s opacity, 0.28s color;

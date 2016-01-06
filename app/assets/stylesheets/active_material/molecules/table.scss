@@ -12,24 +12,33 @@ $am-table-border-color: am-color(divider);
 }
 
 @mixin am-table-header {
-  border-bottom: 1px solid $am-table-border-color;
+  box-shadow: inset 0 -1px 0 $am-table-border-color;
   display: flex;
-  padding: am-unit(2);
+  line-height: am-unit(6);
+  padding: 0 am-unit(2) 0 am-unit(3);
 }
 
 @mixin am-table-column-heading {
   @include am-color(secondary-text);
   @include am-font-size(13px);
-  border-bottom: 1px solid $am-table-border-color;
+  box-shadow: inset 0 -1px 0 $am-table-border-color;
   font-weight: 600;
-  height: am-unit(6);
+  height: am-unit(6) - 1px;
   line-height: am-unit(2);
-  padding: am-unit(1) am-unit(2);
+  padding: 0 am-unit(7) 0  0;
   text-align: left;
   white-space: nowrap;
+
+  &:first-child {
+  &:first-child {
+    padding-left: am-unit(3);
+    padding-right: am-unit(3);
+  }
+  }
 }
 
 @mixin am-table-sort {
+  @include am-link(secondary-text);
   position: relative;
 
   &:after {
@@ -68,42 +77,45 @@ $am-table-border-color: am-color(divider);
 
   td,
   th {
-    box-shadow: 0 -1px 0 rgba(#000, 0.05);
-    border-bottom: 1px solid darken($am-table-border-color, 5%);
+    box-shadow: 0 -1px 0 rgba(#000, 0.05), inset 0 -1px 0 darken($am-table-border-color, 5%);
   }
 }
 
 @mixin am-table-row-selected {
-  background: #e0e0e0;
+  background: #F5F5F5;
 
   td,
   th {
-    box-shadow: 0 -1px 0 rgba(#000, 0.15);
-    border-bottom: 1px solid darken($am-table-border-color, 15%);
+    box-shadow: 0 -1px 0 rgba(#000, 0.07), inset 0 -1px #DEDEDE;
   }
 }
 
 @mixin am-table-cell {
   @include am-color(text);
   @include am-font-size(13px);
-  border-bottom: 1px solid $am-table-border-color;
+  box-shadow: inset 0 -1px 0 $am-table-border-color;
   font-weight: 400;
-  padding: am-unit(1) am-unit(2);
+  padding: 0 am-unit(7) 0 0;
 
   img {
     display: block;
     max-width: 320px;
   }
+
+  &:first-child {
+    padding-left: am-unit(3);
+    padding-right: am-unit(3);
+  }
 }
 
 @mixin am-table-cell-selectable {
-  padding: am-unit(2) am-unit(3) am-unit(2);
-  width: 18px + am-unit(6);
+  padding: 0 am-unit(3);
+  width: 66px;
 
   [type=checkbox] {
-    display: inline-block;
+    display: block;
     height: 18px;
-    margin: 0;
+    margin: 0 auto;
     vertical-align: middle;
     width: 18px;
   }

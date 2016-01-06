@@ -1,0 +1,32 @@
+.action_items {
+  padding-right: am-unit(1);
+
+  .action_item {
+    display: inline-block;
+    vertical-align: top;
+
+    a,
+    button {
+      @include am-action-item;
+    }
+  }
+
+  [href$="/new"],
+  [href*="/new?"] {
+    @include am-action-item-icon(create);
+  }
+
+  [href$="/bulk_new"],
+  [href*="/bulk_new?"] {
+    @include am-action-item-icon(bulk);
+  }
+
+  [href$="/edit"],
+  [href*="/edit?"] {
+    @include am-action-item-icon(edit);
+  }
+
+  [data-method="delete"] {
+    @include am-action-item-icon(delete);
+  }
+}
