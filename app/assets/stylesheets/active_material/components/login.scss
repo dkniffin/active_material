@@ -1,7 +1,11 @@
-/**
- * Login
- * This screen appears if no session is active
- */
+////
+/// Login
+/// This screen appears if no session is active
+/// @group login
+////
+
+/// The background of the login page
+$am-login-background: am-color(primary-700) !default;
 
 #login {
   @include am-dialog;
@@ -15,38 +19,16 @@
   // This is the "forgot password" button
   > a {
     @include am-actions-footer;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
   }
 
   // Annoying br included for whatever reason
   > br {
     display: none;
   }
-
-  .inputs {
-    margin-bottom: 0;
-  }
-
-  // Override actions, in this case the border and shadow are
-  // not applicable
-  .actions {
-    background: transparent;
-    box-shadow: none;
-    padding-top: 0;
-    box-shadow: none;
-
-    .action,
-    input[type='submit'] {
-      margin: 0;
-      width: 100%;
-    }
-  }
 }
 
 body.logged_out {
-  @include am-fill(primary-700);
-  background-size: cover;
+  background: $am-login-background;
   display: flex;
   flex-direction: column;
   justify-content: center;

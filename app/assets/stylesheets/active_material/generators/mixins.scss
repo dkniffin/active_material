@@ -13,16 +13,6 @@
   font-size: am-sp($size);
 }
 
-/// When using the Webfont.js font loader, only show the loaded font-family
-/// when the loader indicates it is active (via the .wf-active) class.
-@mixin am-web-font($family, $fallback: sans-serif) {
-  font-family: $fallback;
-
-  .wf-active & {
-    @include am-font-family($family);
-  }
-}
-
 /// Stretches an element to fill its container
 @mixin am-fillspace($position:absolute) {
   position: fixed;

@@ -21,7 +21,7 @@ body {
 body {
   @include am-type-body;
   @include am-color(text);
-  @include am-web-font(sans);
+  font-family: am-font-family(sans);
   margin: 0;
   -webkit-text-size-adjust: 100%;
 }

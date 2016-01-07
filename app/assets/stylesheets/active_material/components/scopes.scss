@@ -11,9 +11,8 @@
 }
 
 .scope {
-  font-size: 13px;
-  font-weight: 500;
-  margin-left: am-unit(2);
+  @include am-type-caption;
+  margin-left: am-unit(1);
 
   a {
     @include am-link(secondary-text);
@@ -23,7 +22,7 @@
     font-weight: bold;
 
     a {
-      @include am-fill(primary);
+      @include am-color(primary);
     }
   }
 }

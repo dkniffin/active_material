@@ -1,12 +1,15 @@
 .action_items {
+  display: table;
 
   .action_item {
-    display: inline-block;
-    vertical-align: top;
+    display: table-cell;
 
     a,
-    button {
+    button,
+    [type="button"],
+    [type="submit"] {
       @include am-action-item;
+      display: block;
     }
   }
 
