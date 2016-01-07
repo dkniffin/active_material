@@ -25,7 +25,7 @@ $am-theme-error-400: #FF695E !default;
 $am-theme-paper: white !default;
 
 /// The color of tooling lines used to aid the eye when breaking down content.
-$am-theme-divider: #efefef !default;
+$am-theme-divider: rgba(black, 0.12) !default;
 
 /// The text color for hints. Displays itself in helper text under inputs and
 /// other guiding copy.

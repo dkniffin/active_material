@@ -12,7 +12,7 @@
 
 @mixin am-action-item-icon($icon) {
   background: asset-url('active_material/icons/#{ $icon }.svg') 50% 50% no-repeat;
-  box-shadow: 0 0 1px 4px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 1px 4px rgba(0, 0, 0, 0);
   border-radius: 50%;
   height: am-unit(5);
   display: inline-block;
@@ -24,7 +24,7 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0 0 0 1.5px am-color(accent);
+    box-shadow: inset 0 0 0 1.5px am-color(accent);
     outline: none;
     transition: 0.2s all;
   }

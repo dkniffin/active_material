@@ -26,6 +26,7 @@
   #titlebar_right .action_item a,
   #titlebar_right .action_item button {
     @include am-btn;
+    @include am-btn-icon;
     display: block;
   }
 }

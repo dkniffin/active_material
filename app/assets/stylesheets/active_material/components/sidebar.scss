@@ -1,3 +1,14 @@
+@keyframes am-sidebar-open {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-24px);
+  }
+}
+
 .am-sidebar-toggle {
   @include am-action-item;
   @include am-action-item-icon("search-light");
@@ -15,6 +26,7 @@
 
   .am-sidebar-open & {
     @include am-not-hidden;
+    animation: 0.4s am-sidebar-open;
   }
 }
 

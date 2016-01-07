@@ -19,7 +19,8 @@ fieldset.inputs {
   @include am-textfield;
 
   > label,
-  .label > label {
+  .label > label,
+  .field_with_errors > label {
     @include am-textfield-label;
   }
 
@@ -27,14 +28,6 @@ fieldset.inputs {
   &.stringish input,
   &.numeric input {
     @include am-textfield-input;
-  }
-
-  &.email input {
-    @include am-textfield-input-email;
-  }
-
-  &.password input {
-    @include am-textfield-input-password;
   }
 
   &.datepicker input {
@@ -52,7 +45,7 @@ fieldset.inputs {
 
 }
 
-.field_with_errors input {
+.input .field_with_errors input {
   @include am-textfield-input-error;
 }
 
@@ -90,11 +83,12 @@ fieldset.actions,
   }
 }
 
-fieldset.actions {
+.logged_in fieldset.actions {
   border: 0;
   position: absolute;
   top: 12px;
   right: 0;
+  padding-right: am-unit(1);
   z-index: 1;
 
   li {

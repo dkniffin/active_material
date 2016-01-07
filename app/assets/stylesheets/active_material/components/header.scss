@@ -4,7 +4,7 @@
 /// the top of the page.
 ////
 
-body {
+body.logged_in {
   padding-left: $am-drawer-width;
 
   &.am-drawer-enabled {

@@ -10,27 +10,28 @@ $am-sortable-icon: asset-url("active_material/icons/reorder.svg") !default;
 // The size of the draggable handle
 $am-sortable-handle-size: am-unit(6);
 
-.ui-sortable {
+.reorder-handle-col {
+  display: none;
+  padding: 0 0 0 am-unit(1);
+  width: $am-sortable-handle-size;
 
-  .reorder-handle-col {
-    padding: 0 0 0 am-unit(1);
-    width: $am-sortable-handle-size;
+  .am-js .ui-sortable & {
+    display: table-cell;
   }
+}
 
-  .reorder-handle {
-    background: transparent $am-sortable-icon 50% 50% no-repeat;
-    color: transparent;
-    cursor: move;
-    display: block;
-    height: $am-sortable-handle-size;
-    margin: 0 auto;
-    opacity: 0.40;
-    transition: 0.2s all;
-    width: $am-sortable-handle-size;
+.reorder-handle {
+  background: transparent $am-sortable-icon 50% 50% no-repeat;
+  color: transparent;
+  cursor: move;
+  display: block;
+  height: $am-sortable-handle-size;
+  margin: 0 auto;
+  opacity: 0.40;
+  transition: 0.2s opacity;
+  width: $am-sortable-handle-size;
 
-    &:hover {
-      opacity: 1;
-    }
+  &:hover {
+    opacity: 1;
   }
-
 }
