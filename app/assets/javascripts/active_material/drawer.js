@@ -10,6 +10,8 @@ $(function() {
   var $header = $("#header")
   var $wrapper = $("#wrapper")
 
+  if ($header.length <= 0) return
+
   // .am-drawer-enabled allows specific style hooks to create
   // a collapseable, responsive navigation drawer
   $body.addClass("am-drawer-enabled")

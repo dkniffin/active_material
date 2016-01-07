@@ -27,6 +27,7 @@ $am-toolbar-keyline-medium  : $am-toolbar-keyline-small + 8px !default;
   font-weight: 500;
   line-height: am-unit(2);
   padding: am-unit(2);
+  padding-right: am-unit(1);
   width: 100%;
   text-align: left;
 

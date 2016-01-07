@@ -32,6 +32,10 @@ $am-btn-active-color: rgba(#999, 0.4) !default;
   }
 }
 
+@mixin am-btn-icon {
+  border-radius: 50%;
+}
+
 @mixin am-btn-raised {
   @include am-type-smooth;
   @include am-fill(primary);

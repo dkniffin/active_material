@@ -18,7 +18,7 @@ $(function() {
   $toggle.appendTo("#titlebar_right .action_items")
 
   // Whenever the toggle is pressed, toggle an active class on the body
-  $toggle.click(function(event) {
+  $toggle.on('click', '.am-sidebar-toggle', function(event) {
     event.preventDefault()
     $body.toggleClass("am-sidebar-open")
   })
