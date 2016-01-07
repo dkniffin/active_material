@@ -14,12 +14,6 @@ $am-textfield-error-color: $am-theme-error !default;
 $am-textfield-color: rgba(#000, 0.70) !default;
 /// Textfield highlight color.
 $am-textfield-primary: am-color(primary) !default;
-/// Icon for email fields.
-$am-textfield-email-icon: asset-url("active_material/icons/email.svg") !default;
-/// Icon for password fields.
-$am-textfield-password-icon: asset-url("active_material/icons/secret.svg") !default;
-/// Icon for date fields.
-$am-textfield-date-icon: asset-url("active_material/icons/event.svg") !default;
 
 @mixin am-textfield {
   color: $am-textfield-color;
@@ -46,11 +40,6 @@ $am-textfield-date-icon: asset-url("active_material/icons/event.svg") !default;
     box-shadow: inset 0 -2px 0 am-color(primary);
     outline: 0;
   }
-}
-
-@mixin am-textfield-input-date {
-  background: transparent $am-textfield-date-icon 0 50% no-repeat;
-  padding-left: am-unit(3.5);
 }
 
 @mixin am-textfield-textarea {
