@@ -42,7 +42,6 @@
   > input.datepicker {
     @include am-textfield-input;
     @include am-textfield-input-inline;
-    @include am-textfield-input-date;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
   }
