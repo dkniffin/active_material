@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.4.1
+
+- Add `!default` flag to `$am-theme-error-400` color
+
 ## 1.4.0
 
 - Enhance dialog styles. These are viewable when conducting batch operations

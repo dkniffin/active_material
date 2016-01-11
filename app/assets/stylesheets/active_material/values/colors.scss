@@ -18,7 +18,7 @@ $am-theme-accent: #cddc39 !default;
 $am-theme-error: #f44336 !default;
 
 /// A lighter treatment for errors to draw contrast to the main error color.
-$am-theme-error-400: #FF695E;
+$am-theme-error-400: #FF695E !default;
 
 /// The background color of the document.
 $am-theme-backdrop: #eeeeee !default;
