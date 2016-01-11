@@ -5,6 +5,10 @@
 /// The default sans-serif font. We use whatever system font is available
 $am-font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !default;
 
+/// Legacy supported ActiveMaterial variable
+/// @deprecated
+$font-sans: $am-font-sans !default;
+
 $am-fonts: (
   sans: $am-font-sans
 )
