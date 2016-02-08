@@ -41,7 +41,7 @@ with
 
 ## Customization
 
-Refer to the [Customization Guide](./docs/customization.md').
+Refer to the [Customization Guide](./docs/customization.md).
 
 ## Contributing
 
