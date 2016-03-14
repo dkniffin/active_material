@@ -19,6 +19,13 @@
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     flex-basis: 100px;
+
+    + .filter_string input,
+    + .filter_numeric input {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      border-left: 0;
+    }
   }
 
   > select[multiple] {
@@ -44,7 +51,4 @@
 .filter_numeric input {
   @include am-textfield-input;
   @include am-textfield-input-inline;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  border-left: 0;
 }
