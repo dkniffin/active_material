@@ -35,3 +35,21 @@ $am-sortable-handle-size: am-unit(6);
     opacity: 1;
   }
 }
+
+@keyframes lift {
+  0% {
+    box-shadow: none;
+    transform: none;
+  }
+
+  100% {
+    transform: perspective(2000px) translateZ(10px);
+    box-shadow: 0 3px 5px rgba(black, 0.08);
+  }
+}
+
+.ui-sortable-helper {
+  animation: 0.1s lift;
+  animation-fill-mode: backwards;
+  z-index: 100;
+}
