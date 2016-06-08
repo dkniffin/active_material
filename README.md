@@ -39,6 +39,13 @@ with
 
 `@import "active_material";`
 
+Additionally, ActiveMaterial comes with an optional JavaScript bundle that adds a few additional features. It should be included right after the active_admin base script:
+
+```
+// active_admin/base
+// active_material
+```
+
 ## Customization
 
 Refer to the [Customization Guide](./docs/customization.md).
