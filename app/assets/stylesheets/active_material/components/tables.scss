@@ -55,6 +55,11 @@
     }
   }
 
+  // Styles for non-js actions
+  td.col-actions a {
+    padding: 0 4px
+  }
+
   .am-js & {
 
     td.col-actions {
@@ -74,7 +79,7 @@
 
       &:hover,
       &:focus,
-      .active {
+      &.active {
         .table_actions {
           @include am-menu-list-open;
 
