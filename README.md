@@ -14,7 +14,7 @@ An ActiveAdmin skin based on Google's Material Design.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "active_material", git: "git@github.com:vigetlabs/active_material.git"
+gem "active_material", github: "vigetlabs/active_material"
 ```
 
 And then execute:
