@@ -39,7 +39,9 @@ with
 
 `@import "active_material";`
 
-Additionally, ActiveMaterial comes with an optional JavaScript bundle that adds a few additional features. It should be included right after the active_admin base script:
+Additionally, ActiveMaterial comes with an optional JavaScript bundle that adds a few additional features. It should be included right after the active_admin base script.
+
+In app/assets/javascripts/active_admin.js, add:
 
 ```
 // active_admin/base
