@@ -53,6 +53,7 @@ $am-snackbar-border-radius: $am-radius-default !default;
   position: fixed;
   transform: translateX(-50%);
   transform-origin: 50% 100%;
+  text-shadow: 0 1px 1px rgba(black, 0.24);
 }
 
 @mixin am-snackbar-error {
