@@ -55,31 +55,35 @@
     }
   }
 
-  td.col-actions {
-    @include am-table-cell-actions;
+  .am-js & {
 
-    .table_actions {
-      @include am-menu-list;
-      @include am-menu-list-right;
-      top: 50%;
-      margin-top: am-unit(-2);
-      margin-right: am-unit(2);
+    td.col-actions {
+      @include am-table-cell-actions;
 
-      a {
-        @include am-menu-link;
-      }
-    }
-
-    &:hover,
-    &:focus {
       .table_actions {
-        @include am-menu-list-open;
+        @include am-menu-list;
+        @include am-menu-list-right;
+        top: 50%;
+        margin-top: am-unit(-2);
+        margin-right: am-unit(2);
 
         a {
-          @include am-menu-item-open;
+          @include am-menu-link;
         }
       }
-    }
 
+      &:hover,
+      &:focus,
+      .active {
+        .table_actions {
+          @include am-menu-list-open;
+
+          a {
+            @include am-menu-item-open;
+          }
+        }
+      }
+
+    }
   }
 }
