@@ -78,7 +78,6 @@
       }
 
       &:hover,
-      &:focus,
       &.active {
         .table_actions {
           @include am-menu-list-open;
