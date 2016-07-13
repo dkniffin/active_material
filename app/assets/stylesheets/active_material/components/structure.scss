@@ -3,18 +3,28 @@
  * Global structural elements
  */
 
-.with_sidebar {
-  display: table;
+#wrapper {
   position: relative;
+}
+
+#main_content_wrapper { 
+  box-shadow: 1px -0 0 am-color(divider);
   width: 100%;
+}
+
+.with_sidebar {
+  display: flex;
+  position: relative;
   z-index: 1;
 
-  #main_content_wrapper,
-  #sidebar {
-    display: table-cell;
-    vertical-align: top;
-  }
+  @media screen and (min-width: $am-breakpoint-medium) {
+    display: flex;
+    width: 100%;
 
+    #main_content_wrapper {
+      flex-grow: 1;
+    }
+  }
 }
 
 .columns {

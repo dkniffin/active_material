@@ -6,8 +6,19 @@
 .scopes {
   @include am-list-blank;
   @include am-list-inline;
-  flex-grow: 1;
-  text-align: right;
+  border-top: 1px solid $am-table-border-color;
+  float: none !important;
+  overflow: auto;
+  padding: am-unit(0.5) am-unit(1);
+  text-align: left;
+  width: 100% !important;
+
+  @include am-min-breakpoint($am-breakpoint-large) {
+    border: 0;
+    float: right !important;
+    padding: am-unit(0.5) am-unit(2);
+    width: auto !important;
+  }
 }
 
 .scope {

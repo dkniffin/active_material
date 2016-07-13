@@ -6,8 +6,4 @@
 
 .flash {
   @include am-snackbar;
-
-  &.flash_alert {
-    @include am-snackbar-error;
-  }
 }

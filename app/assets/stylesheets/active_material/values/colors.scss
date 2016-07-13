@@ -5,14 +5,14 @@
 /// Primary theme color. This is the main admin theme color, showing itself
 /// on the main header, buttons, and other elements that command attention.
 /// If you want to change the main theme colors, this is the value you want.
-$am-theme-primary: #3F51B5 !default;
+$am-theme-primary: #3a4f5c !default;
 
 /// A darker primary theme color for contrast when overlaying important items
 /// containers that are already treated with primary color.
-$am-theme-primary-700: #303F9F !default;
+$am-theme-primary-700: #121f28 !default;
 
 /// Used for primary action button and components like switches or sliders.
-$am-theme-accent: #66BB6A !default;
+$am-theme-accent: #72C76D !default;
 
 /// The color treatment of error messages.
 $am-theme-error: #f44336 !default;

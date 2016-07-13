@@ -39,6 +39,7 @@
   @include am-font-size(34px);
   @include am-type-smooth;
   font-weight: 400;
+  letter-spacing: am-tracking(-10);
   line-height: am-sp(52px);
 }
 

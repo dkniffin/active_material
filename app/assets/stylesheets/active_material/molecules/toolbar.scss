@@ -9,63 +9,49 @@ $am-toolbar-keyline-small   : am-unit(7) !default;
 $am-toolbar-keyline-medium  : $am-toolbar-keyline-small + 8px !default;
 
 @mixin am-toolbar {
-  @include am-type-smooth;
-  align-items: flex-start;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: $am-toolbar-base-font-size;
-  position: relative;
-}
-
-@mixin am-toolbar-primary {
   @include am-fill(primary);
-  @include am-color(text-light);
-}
-
-@mixin am-toolbar-title {
+  @include am-color(white);
+  display: flex;
   font-size: $am-toolbar-title-font-size;
   font-weight: 500;
   line-height: am-unit(2);
-  padding: am-unit(2);
-  padding-right: am-unit(1);
-  width: 100%;
+  padding: am-unit(3.5) am-unit(0.5) am-unit(0.5);
+  position: relative;
   text-align: left;
+  width: 100%;
+  z-index: 1;
 
   @include am-min-breakpoint($am-breakpoint-medium) {
+    padding-bottom: am-unit(2);
+    padding-left: am-unit(1);
+    padding-right: am-unit(1);
     width: auto;
   }
 }
 
-@mixin am-toolbar-list {
-  margin: 0 0 0 am-unit(2);
-  padding: 0;
-  text-align: left;
-}
+@mixin am-toolbar-title {
+  @include am-type-title;
+  @include am-type-smooth;
+  line-height: am-unit(6);
+  text-shadow: 0 1px 2px rgba(black, 0.25);
 
-@mixin am-toolbar-item {
-  @include am-link-no-decoration;
-  @include am-color(text);
-  display: inline-block;
-  font-weight: 500;
-  line-height: am-unit(3);
-  margin: 0;
-}
-
-@mixin am-toolbar-item-primary {
-  @include am-link-no-decoration;
-  @include am-color(text-light);
-  display: block;
-  line-height: am-unit(2);
-  padding: am-unit(2) am-unit(1);
-  text-align: center;
-
-  &:hover,
-  &:focus {
-    @include am-color(accent);
+  @media screen and (min-width: $am-breakpoint-medium) {
+    @include am-type-display-1;
   }
 }
 
-@mixin am-toolbar-item-primary-active {
-  @include am-color(accent);
-  font-weight: 600;
+@mixin am-toolbar-left {
+  flex-grow: 1;
+  padding-left: am-unit(1);
+
+  @media screen and (min-width: $am-breakpoint-medium) {
+    padding-top: am-unit(6);
+    padding-left: am-unit(2);
+  }
+}
+
+@mixin am-toolbar-action {
+  @include am-btn;
+  @include am-btn-icon;
+  display: block;
 }

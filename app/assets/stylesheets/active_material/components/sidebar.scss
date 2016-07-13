@@ -15,17 +15,17 @@
 }
 
 #sidebar {
+  flex-shrink: 0;
+  min-width: am-unit(40);
   padding-right: am-unit(3);
   transform: translateY(-24px);
-  min-width: am-unit(40);
   width: am-unit(40);
 
-  .am-sidebar-enabled & {
-    @include am-hidden;
+  .am-sidebar-enabled:not(.am-sidebar-open) & {
+    display: none !important;
   }
 
   .am-sidebar-open & {
-    @include am-not-hidden;
     animation: 0.4s am-sidebar-open;
   }
 }
