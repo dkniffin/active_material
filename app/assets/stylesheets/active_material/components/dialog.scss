@@ -7,10 +7,6 @@
   @include am-dialog;
 }
 
-.ui-dialog-toolbar {
-  @include am-toolbar;
-}
-
 .ui-dialog-title {
   @include am-dialog-title;
 }

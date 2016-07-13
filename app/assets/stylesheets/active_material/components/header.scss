@@ -9,7 +9,7 @@ body.logged_in {
 
   &.am-drawer-enabled {
     @media screen and (max-width: $am-drawer-breakpoint) {
-      padding: 0;
+      padding-left: 0;
     }
   }
 }
@@ -21,14 +21,63 @@ body.logged_in {
     @include am-hidden;
 
     .am-drawer-open & {
-      @include am-not-hidden(fixed);
+      @include am-drawer-open;
     }
   }
 }
 
-.header-item {
+.header-item,
+.has_nested ul {
   @include am-list-blank;
 }
+
+.am-nav-enabled .has_nested {
+  ul {
+    display: none;
+  }
+
+  &.am-nav-open ul,
+  &.current ul {
+    display: block;
+  }
+
+  .am-nav-toggle {
+    background: none;
+    border: 0;
+    color: rgba(black, 0.4);
+    cursor: pointer;
+    height: am-unit(4);
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    right: am-unit(1);
+    text-indent: 100%;
+    top: 0;
+    white-space: nowrap;
+    width: am-unit(4);
+
+    &:before {
+      border: 2px solid;
+      border-width: 2px 2px 0 0;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -3px 0 0 -3px;
+      height: 6px;
+      width: 6px;
+      transform: rotateZ(135deg);
+    }
+  }
+  
+  &.am-nav-open .am-nav-toggle:before {
+    border-width: 0 0 2px 2px;
+    margin-top: -1px;
+  }
+}
+
+
 
 .am-header-backdrop {
   @include am-drawer-backdrop;
@@ -42,8 +91,7 @@ body.logged_in {
 .am-drawer-toggle {
   @include am-action-item;
   @include am-action-item-icon("menu");
-  left: am-unit(-1);
-  margin-right: am-unit(1);
+  margin: 4px;
   position: relative;
 
   @media screen and (min-width: $am-drawer-breakpoint) {
@@ -57,16 +105,41 @@ body.logged_in {
 
 .header-item li {
   @include am-list-blank;
+  position: relative;
 
   a {
     @include am-drawer-item;
   }
 
-  &.current a {
+  &.current > a {
     @include am-drawer-item-active;
+  }
+
+  > ul li a {
+    @include am-drawer-secondary-item;
   }
 }
 
-.site_title {
+#site_title {
   @include am-drawer-title;
+  flex-shrink: 0;
+  order: 0;
+}
+
+#utility_nav {
+  border-bottom: 1px solid am-color(divider);
+  flex-shrink: 0;
+  order: 1;
+  padding: am-unit(1) 0;
+
+  a {
+    font-size: 12px;
+    padding: am-unit(0.5) am-unit(2);
+  }
+}
+
+#tabs {
+  flex-shrink: 0;
+  order: 2;
+  padding: am-unit(1) 0;
 }

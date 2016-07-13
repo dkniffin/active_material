@@ -5,11 +5,11 @@
 ////
 
 /// The background of the login page
-$am-login-background: am-color(primary-700) !default;
+$am-login-background: #333 asset-url("active_material/backdrop.jpeg") 50% 50%;
 
 #login {
   @include am-dialog;
-  margin: am-unit(-4) auto 0;
+  margin: 0 auto;
   max-width: am-unit(50);
 
   h2 {
@@ -29,6 +29,7 @@ $am-login-background: am-color(primary-700) !default;
 
 body.logged_out {
   background: $am-login-background;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;

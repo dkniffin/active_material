@@ -4,26 +4,28 @@
  */
 
 .paginated_collection {
-  @include am-clearfix;
-  clear: both;
 
   .pagination_information,
   .download_links {
     @include am-type-caption;
-    line-height: am-unit(7);
-    padding: 0 am-unit(2);
-  }
-
-  .pagination_information {
-    float: left;
+    display: inline;
+    line-height: am-unit(2);
+    padding: am-unit(2);
+    display: inline-block;
   }
 
   .download_links {
-    float: right;
-    text-align: right;
+    @include am-min-breakpoint($am-breakpoint-large) {
+      float: right; 
+    }
   }
 }
 
+.paginated_collection_contents {
+//  overflow: visible;
+//  overflow-x: scroll;
+  max-width: 100%;
+}
 
 .pagination {
   background: #fff;

@@ -13,14 +13,11 @@ $am-table-border-color: am-color(divider);
 
 @mixin am-table-header {
   box-shadow: inset 0 -1px 0 $am-table-border-color;
-  display: flex;
-  line-height: am-unit(6);
-  padding: 0 am-unit(2) 0 am-unit(3);
 }
 
 @mixin am-table-column-heading {
   @include am-color(secondary-text);
-  @include am-font-size(13px);
+  @include am-font-size(12px);
   box-shadow: inset 0 -1px 0 $am-table-border-color;
   font-weight: 600;
   height: am-unit(6) - 1px;
@@ -30,10 +27,12 @@ $am-table-border-color: am-color(divider);
   white-space: nowrap;
 
   &:first-child {
-  &:first-child {
-    padding-left: am-unit(3);
-    padding-right: am-unit(3);
-  }
+    padding-left: am-unit(2);
+    padding-right: am-unit(2);
+
+    @media screen and (min-width: $am-breakpoint-medium) {
+      padding-left: am-unit(3);
+    }
   }
 }
 
@@ -42,28 +41,24 @@ $am-table-border-color: am-color(divider);
   position: relative;
 
   &:after {
-    border: 5px solid transparent;
+    border: 2px solid;
+    border-width: 2px 2px 0 0;
     margin-left: $am-unit-type;
     content: "";
-    margin-top: -1.5px;
+    margin-top: -4px;
     position: absolute;
     top: 50%;
     right: -15px;
-    width: 0;
-    height: 0;
+    height: 6px;
+    width: 6px;
+    transform: rotateZ(135deg);
   }
 }
 
 @mixin am-table-sort-asc {
   &:after {
-    border-bottom-color: am-color(primary);
-    margin-top: -7.5px;
-  }
-}
-
-@mixin am-table-sort-desc {
-  &:after {
-    border-top-color: am-color(primary);
+    border-width: 0 0 2px 2px;
+    margin-top: -1px;
   }
 }
 
@@ -92,32 +87,40 @@ $am-table-border-color: am-color(divider);
 
 @mixin am-table-cell {
   @include am-color(text);
-  @include am-font-size(13px);
+  @include am-font-size(12px);
   box-shadow: inset 0 -1px 0 $am-table-border-color;
   font-weight: 400;
-  padding: 0 am-unit(7) 0 0;
+  line-height: am-unit(2);
+  min-width: am-unit(14);
+  padding: am-unit(0.5) am-unit(2) am-unit(0.5) 0;
 
   img {
     display: block;
     max-width: 320px;
+    margin: am-unit(1);
   }
 
   &:first-child {
-    padding-left: am-unit(3);
-    padding-right: am-unit(3);
+    padding-left: am-unit(2);
+    padding-right: am-unit(2);
+
+    @media screen and (min-width: $am-breakpoint-medium) {
+      padding-left: am-unit(3);
+    }
   }
 }
 
 @mixin am-table-cell-selectable {
+  min-width: 0;
   padding: 0 am-unit(3);
   width: 66px;
 
   [type=checkbox] {
     display: block;
-    height: 18px;
+    height: 14px;
     margin: 0 auto;
     vertical-align: middle;
-    width: 18px;
+    width: 14px;
   }
 }
 
@@ -125,4 +128,6 @@ $am-table-border-color: am-color(divider);
   background: asset_url("active_material/icons/more.svg") 25% 50% no-repeat;
   position: relative;
   width: am-unit(6);
+  min-width: 0;
+  padding: 0;
 }
