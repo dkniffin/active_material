@@ -7,7 +7,7 @@
 /// Textfield margin.
 $am-textfield-margin: 0 !default;
 /// Textfield padding.
-$am-textfield-padding: am-unit(1) am-unit(2) !default;
+$am-textfield-padding: am-unit(2) am-unit(4) !default;
 /// Textfield error color.
 $am-textfield-error-color: $am-theme-error !default;
 /// Textfield color.
@@ -30,7 +30,7 @@ $am-textfield-primary: am-color(primary) !default;
   font-size: am-sp(14);
   font-weight: normal;
   line-height: am-unit(3);
-  margin: 0;
+  margin: 0 0 am-type-unit(1);
   padding: am-type-unit(1) 0;
   position: relative;
   transition: 0.15s box-shadow;
@@ -43,9 +43,11 @@ $am-textfield-primary: am-color(primary) !default;
 }
 
 @mixin am-textfield-textarea {
+  border: 1px solid #e0e0e0;
   border-radius: $am-radius-default;
-  height: am-sp(am-unit(7));
+  height: am-sp(am-unit(15));
   padding: am-unit(1);
+  margin-top: am-unit(2);
 }
 
 @mixin am-textfield-input-error {
@@ -59,7 +61,7 @@ $am-textfield-primary: am-color(primary) !default;
   display: block;
   line-height: am-unit(2);
   font-weight: 400;
-  margin: am-unit(1) 0 0;
+  margin: am-unit(1) 0;
   width: 100%;
 }
 

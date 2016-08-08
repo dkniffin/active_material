@@ -117,5 +117,6 @@ $am-drawer-profile-image: asset-url("active_material/profile.jpg") 50% 50%;
 }
 
 @mixin am-drawer-item-active {
-  @include am-color(primary);
+  @include am-color(accent);
+  font-weight: 500;
 }

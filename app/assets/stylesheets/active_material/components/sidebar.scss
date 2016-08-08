@@ -21,7 +21,10 @@
 
 .am-sidebar-toggle {
   @include am-action-item;
-  @include am-action-item-icon("search-light");
+}
+
+body.am-sidebar-open {
+  overflow: hidden;
 }
 
 #sidebar {

@@ -5,6 +5,10 @@
 .title_bar {
   @include am-toolbar;
 
+  // TODO: This is temporary until we can figure out a good way
+  // iconize the action buttons
+  flex-wrap: wrap;
+
   #page_title {
     @include am-toolbar-title;
   }
@@ -16,5 +20,6 @@
   #titlebar_right .action_item a,
   #titlebar_right .action_item button {
     @include am-toolbar-action;
+    color: white;
   }
 }

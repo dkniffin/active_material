@@ -4,15 +4,12 @@
  */
 
 #wrapper {
+  height: 100%;
   position: relative;
 }
 
-// Tables are wide. Allow for scrolling on small screens 
-#main_content {
-  overflow: auto;
-}
-
-#main_content_wrapper { 
+#main_content_wrapper {
+  height: 100%;
   width: 100%;
 }
 

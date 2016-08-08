@@ -42,6 +42,7 @@ $am-toolbar-keyline-medium  : $am-toolbar-keyline-small + 8px !default;
 
 @mixin am-toolbar-left {
   flex-grow: 1;
+  flex-shrink: 0;
   padding-left: am-unit(1);
 
   @media screen and (min-width: $am-breakpoint-medium) {

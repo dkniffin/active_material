@@ -12,24 +12,4 @@
       display: block;
     }
   }
-
-  [href$="/new"],
-  [href*="/new?"] {
-    @include am-action-item-icon(create);
-  }
-
-  [href$="/bulk_new"],
-  [href*="/bulk_new?"] {
-    @include am-action-item-icon(bulk);
-  }
-
-  [href$="/edit"],
-  [href*="/edit?"] {
-    @include am-action-item-icon(edit);
-  }
-
-  [data-method="delete"] {
-    @include am-action-item-icon(delete);
-  }
-
 }
