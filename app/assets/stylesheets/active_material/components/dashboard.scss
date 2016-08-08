@@ -1,0 +1,24 @@
+/**
+ * Special styles for the dashboard page
+ */
+
+$am-dashboard-bg: #f0f0f0 !default;
+
+body.admin_dashboard {
+
+  background: $am-dashboard-bg;
+
+  #active_admin_content {
+    padding: 8px 12px 0;
+  }
+  
+  .panel {
+    background: white;
+    border-radius: 2px;
+    border: 1px solid #d5d5d5;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin: 12px auto 24px;
+    max-width: 768px;
+    padding: 8px;
+  }
+}

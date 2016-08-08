@@ -13,13 +13,28 @@ $(function() {
   // a collapseable, responsive navigation sidebar
   $body.addClass("am-sidebar-enabled")
 
-  var $toggle = $("<span class='action_item am-sidebar-toggle-wrapper'><button class='am-sidebar-toggle'>Toggle Sidebar</button></span>")
+  // Insert a backdrop helper
+  var $backdrop = $("<div class='am-sidebar-backdrop' aria-hidden='true' />")
+  $sidebar.parent().prepend($backdrop)
 
+  function close () {
+    $body.removeClass("am-sidebar-open")
+  }
+
+  function open () {
+    $body.addClass("am-sidebar-open")
+  }
+
+  // Close the drawer whenever the wrapper is clicked
+  $backdrop.on('click', close)
+
+  // In order to toggle that navigation drawer, we append a button
+  var $toggle = $("<span class='action_item am-sidebar-toggle-wrapper'><button class='am-sidebar-toggle'>Toggle Sidebar</button></span>")
   $toggle.appendTo("#titlebar_right .action_items")
 
   // Whenever the toggle is pressed, toggle an active class on the body
   $toggle.on('click', '.am-sidebar-toggle', function(event) {
     event.preventDefault()
-    $body.toggleClass("am-sidebar-open")
+    $body.is(".am-sidebar-open") ? close() : open()
   })
 })

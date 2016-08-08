@@ -7,8 +7,12 @@
   position: relative;
 }
 
+// Tables are wide. Allow for scrolling on small screens 
+#main_content {
+  overflow: auto;
+}
+
 #main_content_wrapper { 
-  box-shadow: 1px -0 0 am-color(divider);
   width: 100%;
 }
 
@@ -22,6 +26,7 @@
     width: 100%;
 
     #main_content_wrapper {
+      box-shadow: 1px -0 0 am-color(divider);
       flex-grow: 1;
     }
   }
