@@ -9,6 +9,16 @@
   }
 }
 
+@keyframes am-sidebar-right {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .am-sidebar-toggle {
   @include am-action-item;
   @include am-action-item-icon("search-light");
@@ -32,4 +42,41 @@
 
 .sidebar_section {
   @include am-paper;
+}
+
+.am-sidebar-backdrop {
+  display: none;
+
+  @media screen and (max-width: $am-breakpoint-medium) {  
+    .am-sidebar-open & {
+      @include am-drawer-backdrop;
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: $am-breakpoint-medium) {
+  #sidebar {
+    background: white;
+    height: 100%;
+    max-width: 400px;
+    min-width: 0;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: none;
+    width: calc(100% - 56px);
+    z-index: 101;
+  } 
+
+  .am-sidebar-open #sidebar {
+    animation: 0.3s am-sidebar-right cubic-bezier(.07,.64,.48,1);
+  }
+
+  .sidebar_section {
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+  }
 }

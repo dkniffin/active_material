@@ -43,3 +43,8 @@
     min-width: am-unit(3);
   }
 }
+
+#index_footer {
+  display: flex;
+  justify-content: space-between;
+}
