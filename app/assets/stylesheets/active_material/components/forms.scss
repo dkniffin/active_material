@@ -81,21 +81,9 @@ fieldset.actions,
 
 .logged_in fieldset.actions {
   border: 0;
-  position: absolute;
-  top: 12px;
-  right: 0;
   padding-right: am-unit(1);
-  z-index: 1;
 
   li {
     vertical-align: top;
-  }
-
-  [name=commit] {
-    @include am-action-item-icon(done-light);
-  }
-
-  .cancel a {
-    @include am-action-item-icon(close-light);
   }
 }

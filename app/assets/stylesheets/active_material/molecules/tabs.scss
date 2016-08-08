@@ -3,7 +3,7 @@
  * http://www.google.com/design/spec/components/tabs.html
  */
 
-$am-tabs-padding: 0 24px !default;
+$am-tabs-padding: am-unit(2) am-unit(3) 0 !default;
 $am-tabs-background: am-color(primary) !default;
 $am-tabs-border-width: 3px !default;
 $am-tabs-color: rgba(#fff, 0.6) !default;
@@ -87,7 +87,7 @@ $am-tabs-font: 400 14px/16px $am-font-sans !default;
 
   &:after {
     @include am-fill(accent);
-    box-shadow: 0 -1px 1px rgba(#000, 0.1), inset 0 1px 1px rgba(#fff, 0.50);
+    box-shadow: 0 -1px 1px rgba(#000, 0.1);
     transform: none;
   }
 }

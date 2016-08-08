@@ -14,6 +14,10 @@ body.logged_in {
   }
 }
 
+body.am-drawer-open {
+  overflow: hidden;
+}
+
 .header {
   @include am-drawer;
 
@@ -36,8 +40,7 @@ body.logged_in {
     display: none;
   }
 
-  &.am-nav-open ul,
-  &.current ul {
+  &.am-nav-open ul { 
     display: block;
   }
 
@@ -77,8 +80,6 @@ body.logged_in {
   }
 }
 
-
-
 .am-header-backdrop {
   @include am-drawer-backdrop;
   display: none;
@@ -91,6 +92,7 @@ body.logged_in {
 .am-drawer-toggle {
   @include am-action-item;
   @include am-action-item-icon("menu");
+  flex-shrink: 0;
   margin: 4px;
   position: relative;
 
@@ -123,11 +125,12 @@ body.logged_in {
 #site_title {
   @include am-drawer-title;
   flex-shrink: 0;
+  height: am-unit(18);
   order: 0;
 }
 
 #utility_nav {
-  border-bottom: 1px solid am-color(divider);
+  box-shadow: inset 0 -1px 0 0 am-color(divider);
   flex-shrink: 0;
   order: 1;
   padding: am-unit(1) 0;

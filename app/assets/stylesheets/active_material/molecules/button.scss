@@ -1,5 +1,5 @@
 $am-btn-min-width: 88px !default;
-$am-btn-padding: 12px 8px !default;
+$am-btn-padding: am-unit(1.5) am-unit(1) !default;
 $am-btn-border-radius: 2px !default;
 $am-btn-focus-color: rgba(#999, 0.2) !default;
 $am-btn-active-color: rgba(#999, 0.4) !default;
@@ -27,7 +27,7 @@ $am-btn-active-color: rgba(#999, 0.4) !default;
   }
 
   &:hover {
-    @include am-color(primary);
+    @include am-color(accent);
     text-decoration: none;
   }
 }
