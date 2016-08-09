@@ -12,6 +12,10 @@
     line-height: am-unit(2);
     padding: am-unit(2);
     display: inline-block;
+
+    @include am-min-breakpoint($am-breakpoint-medium) {
+      padding: am-unit(2) am-unit(3);
+    }
   }
 
   .download_links {
@@ -22,8 +26,8 @@
 }
 
 .paginated_collection_contents {
-//  overflow: visible;
-//  overflow-x: scroll;
+  //  overflow: visible;
+  //  overflow-x: scroll;
   max-width: 100%;
 }
 
