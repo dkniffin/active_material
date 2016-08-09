@@ -3,6 +3,7 @@
  */
 
 fieldset.inputs {
+  @include am-fieldset;
 
   > ol {
     @include am-list-blank;
