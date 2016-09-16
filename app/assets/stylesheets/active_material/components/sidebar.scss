@@ -27,7 +27,7 @@ body.am-sidebar-open {
   overflow: hidden;
 }
 
-#sidebar {
+#active_admin_content > #sidebar {
   flex-shrink: 0;
   min-width: am-unit(40);
   padding-right: am-unit(3);
