@@ -5,7 +5,7 @@
 
 $(function() {
   var $body = $("body")
-  var $sidebar = $("#sidebar")
+  var $sidebar = $(".with_sidebar #sidebar")
 
   if (!$sidebar.length) return
 
