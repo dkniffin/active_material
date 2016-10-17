@@ -26,6 +26,11 @@ $am-toolbar-keyline-medium  : $am-toolbar-keyline-small + 8px !default;
     padding-right: am-unit(1);
     width: auto;
   }
+
+  @include am-min-breakpoint($am-breakpoint-large + 1) {
+    align-items: flex-end;
+    min-height: am-unit(18);
+  }
 }
 
 @mixin am-toolbar-title {
@@ -45,7 +50,7 @@ $am-toolbar-keyline-medium  : $am-toolbar-keyline-small + 8px !default;
   padding-left: am-unit(1);
 
   @media screen and (min-width: $am-breakpoint-large + 1) {
-    padding-top: am-unit(6);
+    padding-bottom: am-unit(0.5);
     padding-left: am-unit(2);
   }
 }
