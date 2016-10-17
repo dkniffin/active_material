@@ -92,12 +92,13 @@ body.am-drawer-open {
 .am-drawer-toggle {
   @include am-action-item;
   @include am-action-item-icon("menu");
+  display: none;
   flex-shrink: 0;
   margin: 4px;
   position: relative;
 
-  @media screen and (min-width: $am-drawer-breakpoint) {
-    display: none;
+  @media screen and (max-width: $am-drawer-breakpoint) {
+    display: block;
   }
 
   .am-drawer-open & {
