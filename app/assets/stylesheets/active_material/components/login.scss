@@ -5,12 +5,23 @@
 ////
 
 /// The background of the login page
-$am-login-background: #333 asset-url("active_material/backdrop.jpeg") 50% 50%;
+$am-login-background: #333 linear-gradient(135deg, $am-theme-primary, $am-theme-primary-700) !default;
 
 #login {
   @include am-dialog;
   margin: 0 auto;
   max-width: am-unit(50);
+  overflow: auto;
+
+  fieldset.inputs {
+    border: 0;
+    box-shadow: 0;
+    margin: 0;
+  }
+
+  .input {
+    padding: am-unit(2);
+  }
 
   h2 {
     @include am-hidden;
@@ -33,4 +44,8 @@ body.logged_out {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  #wrapper {
+    height: auto;
+  }
 }
