@@ -10,6 +10,7 @@
 
 #main_content_wrapper {
   height: 100%;
+  overflow: auto;
   width: 100%;
 }
 
@@ -18,7 +19,7 @@
   position: relative;
   z-index: 1;
 
-  @media screen and (min-width: $am-breakpoint-medium) {
+  @media screen and (min-width: $am-breakpoint-large + 1) {
     display: flex;
     width: 100%;
 

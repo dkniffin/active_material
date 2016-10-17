@@ -24,10 +24,12 @@
 }
 
 body.am-sidebar-open {
-  overflow: hidden;
+  @media screen and (max-width: $am-breakpoint-large) {
+    overflow: hidden;
+  }
 }
 
-#active_admin_content > #sidebar {
+.with_sidebar #sidebar {
   flex-shrink: 0;
   min-width: am-unit(40);
   padding-right: am-unit(3);
@@ -50,7 +52,7 @@ body.am-sidebar-open {
 .am-sidebar-backdrop {
   display: none;
 
-  @media screen and (max-width: $am-breakpoint-medium) {  
+  @media screen and (max-width: $am-breakpoint-large) {
     .am-sidebar-open & {
       @include am-drawer-backdrop;
       display: block;
@@ -58,12 +60,13 @@ body.am-sidebar-open {
   }
 }
 
-@media screen and (max-width: $am-breakpoint-medium) {
-  #sidebar {
+@media screen and (max-width: $am-breakpoint-large) {
+  .with_sidebar > #sidebar {
     background: white;
     height: 100%;
     max-width: 400px;
     min-width: 0;
+    overflow: auto;
     padding: 0;
     position: fixed;
     right: 0;
@@ -71,9 +74,9 @@ body.am-sidebar-open {
     transform: none;
     width: calc(100% - 56px);
     z-index: 101;
-  } 
+  }
 
-  .am-sidebar-open #sidebar {
+  .am-sidebar-open .with_sidebar > #sidebar {
     animation: 0.3s am-sidebar-right cubic-bezier(.07,.64,.48,1);
   }
 
