@@ -16,7 +16,7 @@ $am-drawer-breakpoint: $am-breakpoint-large !default;
 $am-drawer-backdrop-color: rgba(black, 0.2) !default;
 
 /// The background image for the sidebar
-$am-drawer-profile-image: asset-url("active_material/profile.jpg") 50% 50%;
+$am-drawer-background: $am-theme-primary !default;
 
 @keyframes am-drawer-backdrop-in {
   0% {
@@ -72,25 +72,13 @@ $am-drawer-profile-image: asset-url("active_material/profile.jpg") 50% 50%;
 @mixin am-drawer-title {
   @include am-type-title;
   @include am-color(white);
-  background: rgba(black, 0.35);
-  box-shadow: inset -1px -1px 5px rgba(black, 0.3);
+  background: $am-drawer-background;
+  box-shadow: inset -1px 0 0 rgba(black, 0.5);
   font-weight: 400;
   line-height: am-unit(3);
   padding: am-unit(12) am-unit(2) am-unit(3);
   position: relative;
   text-shadow: 0 1px 2px rgba(black, 0.2);
-
-  &:before {
-    background-size: cover;
-    background: $am-drawer-profile-image;
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-  }
 }
 
 @mixin am-drawer-item {
