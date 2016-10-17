@@ -22,7 +22,6 @@ $am-toolbar-keyline-medium  : $am-toolbar-keyline-small + 8px !default;
   z-index: 1;
 
   @include am-min-breakpoint($am-breakpoint-medium) {
-    padding-bottom: am-unit(2);
     padding-left: am-unit(1);
     padding-right: am-unit(1);
     width: auto;
@@ -35,7 +34,7 @@ $am-toolbar-keyline-medium  : $am-toolbar-keyline-small + 8px !default;
   line-height: am-unit(6);
   text-shadow: 0 1px 2px rgba(black, 0.17);
 
-  @media screen and (min-width: $am-breakpoint-medium) {
+  @media screen and (min-width: $am-breakpoint-large + 1) {
     @include am-type-display-1;
   }
 }
@@ -45,7 +44,7 @@ $am-toolbar-keyline-medium  : $am-toolbar-keyline-small + 8px !default;
   flex-shrink: 0;
   padding-left: am-unit(1);
 
-  @media screen and (min-width: $am-breakpoint-medium) {
+  @media screen and (min-width: $am-breakpoint-large + 1) {
     padding-top: am-unit(6);
     padding-left: am-unit(2);
   }

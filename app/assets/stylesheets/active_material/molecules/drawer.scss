@@ -10,7 +10,7 @@
 $am-drawer-width: am-unit(32) !default;
 
 /// The point in which the navigation toggle appears
-$am-drawer-breakpoint: am-unit(128) !default;
+$am-drawer-breakpoint: $am-breakpoint-large !default;
 
 /// The color of the backdrop
 $am-drawer-backdrop-color: rgba(black, 0.2) !default;
