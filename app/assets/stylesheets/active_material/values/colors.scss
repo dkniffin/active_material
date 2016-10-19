@@ -9,7 +9,7 @@ $am-theme-primary: #3a4f5c !default;
 
 /// A darker primary theme color for contrast when overlaying important items
 /// containers that are already treated with primary color.
-$am-theme-primary-700: #121f28 !default;
+$am-theme-primary-700: darken($am-theme-primary, 15%) !default;
 
 /// Used for primary action button and components like switches or sliders.
 $am-theme-accent: #72C76D !default;
@@ -18,7 +18,7 @@ $am-theme-accent: #72C76D !default;
 $am-theme-error: #f44336 !default;
 
 /// A lighter treatment for errors to draw contrast to the main error color.
-$am-theme-error-400: #FF695E !default;
+$am-theme-error-400: lighten($am-theme-error, 20%) !default;
 
 /// The background color of Material Design "paper" elements such as cards.
 /// And other elements that overlap content.
