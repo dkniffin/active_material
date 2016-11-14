@@ -5,11 +5,14 @@ $am-fieldset-border: 1px solid #d9d9d9 !default;
 @mixin am-fieldset {
   background: $am-fieldset-bg;
   border: $am-fieldset-border;
-  border-width: 0 1px 1px;
-  margin: 0 $am-fieldset-gap;
+  margin: $am-fieldset-gap;
   box-shadow: 0 1px 2px rgba(black, 0.07);
   padding-bottom: am-unit(1);
   position: relative;
+
+  legend {
+    display: none;
+  }
 
   &:first-child,
   &:first-of-type {
