@@ -25,7 +25,7 @@ fieldset.inputs {
 
   &.string input,
   &.stringish input,
-  &.numberic input {
+  &.numeric input {
     @include am-textfield-input;
   }
 
