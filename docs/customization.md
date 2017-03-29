@@ -1,7 +1,8 @@
 # Customizing ActiveMaterial
 
 1. [Customizing the Color Theme](#customizing-the-color-theme)
-2. [Available colors](#customizing-the-color-theme)
+2. [Color Variables](#color-variables)
+3. [Font Variables](#font-variables)
 
 ## Customizing the Color Theme
 
@@ -10,7 +11,7 @@ Definitions of all colors exist in
 color variables are assigned using the `!default` Sass flag, so they
 can be easily overridden.
 
-**Variables need to be overriden before importing active_material.** For example, to customize the primary 
+**Variables need to be overriden before importing active_material.** For example, to customize the primary
 color:
 
 ```scss
@@ -54,3 +55,15 @@ $theme-accent-fallback: #ff7547;
 **$am-theme-text:** The default color for all text.
 
 **$am-theme-text-reverse:** The default color for all text on dark backgrounds.
+
+## Font Variables
+
+**$am-font-sans:** The font family used by active_material
+
+**$am-font-weight-bold:** The weight of bold type
+
+**$am-font-weight-semi-bold:** The weight of semi-bold type
+
+**$am-font-weight-medium:** The weight of medium type
+
+**$am-font-weight-regular:** The weight of regular type

@@ -21,7 +21,7 @@ $am-table-border-color: am-color(divider);
   @include am-color(secondary-text);
   @include am-font-size(13px);
   border-bottom: 1px solid $am-table-border-color;
-  font-weight: 600;
+  font-weight: $am-font-weight-semi-bold;
   height: am-unit(6);
   line-height: am-unit(2);
   padding: am-unit(1) am-unit(2);
@@ -87,7 +87,7 @@ $am-table-border-color: am-color(divider);
   @include am-color(text);
   @include am-font-size(13px);
   border-bottom: 1px solid $am-table-border-color;
-  font-weight: 400;
+  font-weight: $am-font-weight-regular;
   padding: am-unit(1) am-unit(2);
 
   img {

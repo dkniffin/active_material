@@ -37,7 +37,7 @@ $am-btn-active-color: rgba(#999, 0.4) !default;
   @include am-fill(primary);
   @include am-color(white);
   box-shadow: 0 0 2px rgba(#000, 0.12);
-  font-weight: 600;
+  font-weight: $am-font-weight-semi-bold;
   min-width: $am-btn-min-width;
 
   &:focus,

@@ -7,7 +7,7 @@
 /// Textfield input typography.
 $am-textfield-input-type: normal am-sp(14)/24px $am-font-sans !default;
 /// Textfield label typography.
-$am-textfield-label-type: 400 am-sp(12)/am-unit(2) $am-font-sans !default;
+$am-textfield-label-type: $am-font-weight-regular am-sp(12)/am-unit(2) $am-font-sans !default;
 /// Textfield margin.
 $am-textfield-margin: am-unit(1) 0 !default;
 /// Textfield padding.
@@ -84,7 +84,7 @@ $am-textfield-date-icon: asset-url("active_material/icons/event.svg") !default;
   @include am-color(secondary-text);
   display: block;
   line-height: 16px;
-  font-weight: 400;
+  font-weight: $am-font-weight-regular;
   margin-bottom: 8px;
   position: relative;
   transition: 0.28s all;

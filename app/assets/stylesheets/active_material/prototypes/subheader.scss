@@ -7,7 +7,7 @@
 @mixin am-subheader {
   @include am-font-size(14);
   @include am-color(secondary-text);
-  font-weight: 500;
+  font-weight: $am-font-weight-medium;
   padding: am-unit(2);
   line-height: am-unit(2);
 }

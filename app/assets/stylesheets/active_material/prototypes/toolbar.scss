@@ -24,7 +24,7 @@ $am-toolbar-keyline-medium  : $am-toolbar-keyline-small + 8px !default;
 
 @mixin am-toolbar-title {
   font-size: $am-toolbar-title-font-size;
-  font-weight: 500;
+  font-weight: $am-font-weight-medium;
   line-height: am-unit(2);
   padding: am-unit(2);
   width: 100%;
@@ -45,7 +45,7 @@ $am-toolbar-keyline-medium  : $am-toolbar-keyline-small + 8px !default;
   @include am-link-no-decoration;
   @include am-color(text);
   display: inline-block;
-  font-weight: 500;
+  font-weight: $am-font-weight-medium;
   line-height: am-unit(3);
   margin: 0;
 }
@@ -66,5 +66,5 @@ $am-toolbar-keyline-medium  : $am-toolbar-keyline-small + 8px !default;
 
 @mixin am-toolbar-item-primary-active {
   @include am-color(accent);
-  font-weight: 600;
+  font-weight: $am-font-weight-semi-bold;
 }

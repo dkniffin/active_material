@@ -8,7 +8,7 @@
   @include am-color(tertiary-text);
   @include am-type-body-1;
   @include am-type-smooth;
-  font-weight: 600;
+  font-weight: $am-font-weight-semi-bold;
   padding: am-unit(3) am-unit(2);
   text-align: center;
 }

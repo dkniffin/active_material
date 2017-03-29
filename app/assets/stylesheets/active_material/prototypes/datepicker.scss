@@ -30,7 +30,7 @@ $am-datepicker-cell-size: am-unit(4) !default;
 
 @mixin am-datepicker-title {
   @include am-font-size(14px);
-  font-weight: 600;
+  font-weight: $am-font-weight-semi-bold;
 }
 
 @mixin am-datepicker-icon {
@@ -71,13 +71,13 @@ $am-datepicker-cell-size: am-unit(4) !default;
 
 @mixin am-datepicker-calendar-heading {
   @include am-color(secondary-text);
-  font-weight: 500;
+  font-weight: $am-font-weight-medium;
   padding: 0 0 am-type-unit(1);
 }
 
 @mixin am-datepicker-calendar-day {
   height: $am-datepicker-cell-size;
-  font-weight: 500;
+  font-weight: $am-font-weight-medium;
   line-height: $am-datepicker-cell-size;
   padding: 0;
   width: $am-datepicker-cell-size;
