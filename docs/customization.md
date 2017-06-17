@@ -16,9 +16,9 @@ color:
 
 ```scss
 // The following variables override default ActiveMaterial values
-$theme-primary: #00689f;
-$theme-accent: #7dd2f7;
-$theme-accent-fallback: #ff7547;
+$am-theme-primary: #00689f;
+$am-theme-accent: #7dd2f7;
+$am-theme-accent-fallback: #ff7547;
 
 @import "active_material";
 ```
