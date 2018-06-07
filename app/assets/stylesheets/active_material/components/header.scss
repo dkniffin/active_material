@@ -4,7 +4,7 @@
  * the top of the page.
  */
 
-.header {
+#header {
   @include am-toolbar;
   @include am-toolbar-primary;
   padding-right: am-unit(8);
