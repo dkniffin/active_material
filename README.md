@@ -44,8 +44,7 @@ Additionally, ActiveMaterial comes with an optional JavaScript bundle that adds 
 In app/assets/javascripts/active_admin.js, add:
 
 ```
-// active_admin/base
-// active_material
+//= require active_material
 ```
 
 ## Customization
