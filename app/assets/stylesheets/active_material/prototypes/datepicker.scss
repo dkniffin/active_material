@@ -17,6 +17,7 @@ $am-datepicker-cell-size: am-unit(4) !default;
   background: white;
   border-radius: $am-datepicker-border-radius;
   box-shadow: $am-datepicker-shadow;
+  display: none;
   padding: 0 am-unit(1.5) am-unit(1);
   width: $am-datepicker-width;
 }
