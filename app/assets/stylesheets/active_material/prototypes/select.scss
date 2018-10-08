@@ -32,6 +32,10 @@
   border-radius: 0;
 }
 
+@mixin am-select-input-disabled {
+  background-color: #eeeeee;
+}
+
 @mixin am-select-unit {
   border-left: 1px solid am-color(divider);
   text-align: center;
