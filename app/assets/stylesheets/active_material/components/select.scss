@@ -10,6 +10,9 @@
     @include am-select-input;
   }
 
+  select[disabled="disabled"] {
+    @include am-select-input-disabled;
+  }
 }
 
 select[multiple] {

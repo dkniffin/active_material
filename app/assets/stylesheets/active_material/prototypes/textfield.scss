@@ -121,6 +121,10 @@ $am-textfield-date-icon: asset-url("active_material/icons/event.svg") !default;
   margin-left: 4px;
 }
 
+@mixin am-textfield-input-disabled {
+  background-color: #eeeeee;
+}
+
 @mixin am-textfield-inline {
   align-items: center;
   display: flex;
