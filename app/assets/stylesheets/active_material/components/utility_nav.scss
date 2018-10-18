@@ -52,6 +52,7 @@
     text-align: right;
     clip: rect(0, 0, 0, 0);
     opacity: 0;
+    visibility: hidden;
     transition: 0.28s all;
     position: relative;
 
@@ -69,6 +70,7 @@
     > li {
       clip: initial;
       opacity: 1;
+      visibility: visible;
     }
   }
 }
