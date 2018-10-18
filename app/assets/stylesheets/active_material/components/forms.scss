@@ -27,29 +27,48 @@ fieldset.inputs {
   &.stringish input,
   &.numeric input {
     @include am-textfield-input;
+
+    &[disabled="disabled"] {
+      @include am-textfield-input-disabled;
+    }
   }
 
   &.email input {
     @include am-textfield-input-email;
+
+    &[disabled="disabled"] {
+      @include am-textfield-input-disabled;
+    }
   }
 
   &.password input {
     @include am-textfield-input-password;
+
+    &[disabled="disabled"] {
+      @include am-textfield-input-disabled;
+    }
   }
 
   &.datepicker input {
     @include am-textfield-input-date;
+
+    &[disabled="disabled"] {
+      @include am-textfield-input-disabled;
+    }
   }
 
   &.text textarea {
     @include am-textfield-input;
     @include am-textfield-textarea;
+
+    &[disabled="disabled"] {
+      @include am-textfield-input-disabled;
+    }
   }
 
   select + input {
     margin-top: am-unit(2);
   }
-
 }
 
 .field_with_errors input {
