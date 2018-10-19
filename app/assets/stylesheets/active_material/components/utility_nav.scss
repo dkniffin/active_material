@@ -17,6 +17,7 @@
   // Increase the hit region
   &:before {
     content: "";
+    cursor: pointer;
     position: absolute;
     width: 90px;
     height: 50px;
@@ -74,4 +75,3 @@
     }
   }
 }
-
