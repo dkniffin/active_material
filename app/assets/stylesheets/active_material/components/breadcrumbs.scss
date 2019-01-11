@@ -18,10 +18,6 @@
   top: 0;
   width: 100%;
 
-  @media screen and (min-width: $am-breakpoint-medium) {
-    padding-left: am-unit(3);
-  }
-
   a {
     @include am-link(white, accent);
   }

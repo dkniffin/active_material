@@ -40,7 +40,7 @@ body.am-drawer-open {
     display: none;
   }
 
-  &.am-nav-open ul { 
+  &.am-nav-open ul {
     display: block;
   }
 
@@ -73,7 +73,7 @@ body.am-drawer-open {
       transform: rotateZ(135deg);
     }
   }
-  
+
   &.am-nav-open .am-nav-toggle:before {
     border-width: 0 0 2px 2px;
     margin-top: -1px;
@@ -126,7 +126,6 @@ body.am-drawer-open {
 #site_title {
   @include am-drawer-title;
   flex-shrink: 0;
-  height: am-unit(18);
   order: 0;
 }
 

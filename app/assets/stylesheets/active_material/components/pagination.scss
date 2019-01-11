@@ -3,7 +3,16 @@
  * Typically appears on index pages, below tables
  */
 
+#collection_selection {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+}
+
 .paginated_collection {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
 
   .pagination_information,
   .download_links {
@@ -20,14 +29,13 @@
 
   .download_links {
     @include am-min-breakpoint($am-breakpoint-large) {
-      float: right; 
+      float: right;
     }
   }
 }
 
 .paginated_collection_contents {
-  //  overflow: visible;
-  //  overflow-x: scroll;
+  flex: 1 1;
   max-width: 100%;
 }
 
@@ -51,4 +59,5 @@
 #index_footer {
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid am-color(divider);
 }

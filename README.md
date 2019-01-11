@@ -60,7 +60,11 @@ Refer to the [Customization Guide](./docs/customization.md).
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
 
-***
+## Credits
+
+Site title background courtesy of [Steve Huntington via Unsplash](https://unsplash.com/photos/0Kyp7uO-3RQ)
+
+---
 
 <a href="http://code.viget.com">
   <img src="http://code.viget.com/github-banner.png" alt="Code At Viget">

@@ -29,7 +29,7 @@ $(function() {
   $backdrop.on('click', close)
 
   // In order to toggle that navigation drawer, we append a button
-  var $toggle = $("<span class='action_item am-sidebar-toggle-wrapper'><button class='am-sidebar-toggle'>Toggle Sidebar</button></span>")
+  var $toggle = $("<span class='action_item am-sidebar-toggle-wrapper'><button class='am-sidebar-toggle'>Filters</button></span>")
   $toggle.appendTo("#titlebar_right .action_items")
 
   // Whenever the toggle is pressed, toggle an active class on the body
