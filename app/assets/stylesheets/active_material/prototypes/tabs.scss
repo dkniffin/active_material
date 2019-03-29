@@ -8,6 +8,9 @@ $am-tabs-background: am-color(primary) !default;
 $am-tabs-border-width: 3px !default;
 $am-tabs-color: rgba(#fff, 0.6) !default;
 $am-tabs-color-focus: #fff !default;
+$am-tabs-btn-background: inherit !default;
+$am-tabs-btn-background-focus: inherit !default;
+$am-tabs-btn-border-color: inherit !default;
 $am-tabs-font: $am-font-weight-regular 14px/16px $am-font-sans !default;
 
 @keyframes am-tabs-error-throb {
@@ -37,10 +40,12 @@ $am-tabs-font: $am-font-weight-regular 14px/16px $am-font-sans !default;
 
 @mixin am-tabs-list-item {
   display: inline-block;
+  border-color: $am-tabs-btn-border-color;
 }
 
 @mixin am-tabs-btn {
-  color: inherit;
+  background: $am-tabs-btn-background;
+  color: $am-tabs-color;
   cursor: pointer;
   display: block;
   font: $am-tabs-font;
@@ -83,6 +88,7 @@ $am-tabs-font: $am-font-weight-regular 14px/16px $am-font-sans !default;
 }
 
 @mixin am-tabs-btn-active {
+  background: $am-tabs-btn-background-focus;
   color: $am-tabs-color-focus;
 
   &:after {

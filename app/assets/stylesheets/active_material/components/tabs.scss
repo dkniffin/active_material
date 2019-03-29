@@ -7,11 +7,11 @@
   @include am-tabs;
   @include am-tabs-list;
 
-  > li {
+  > li.ui-tabs-tab {
     @include am-tabs-list-item;
   }
 
-  > li > a {
+  > li.ui-tabs-tab > a {
     @include am-tabs-btn;
   }
 
