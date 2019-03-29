@@ -72,7 +72,7 @@ $am-tabs-font: $am-font-weight-regular 14px/16px $am-font-sans !default;
 
   &:focus,
   &:hover {
-    background: transparent;
+    background: $am-tabs-btn-background-focus;
     outline: none;
     text-decoration: none;
 
@@ -95,6 +95,11 @@ $am-tabs-font: $am-font-weight-regular 14px/16px $am-font-sans !default;
     @include am-fill(accent);
     box-shadow: 0 -1px 1px rgba(#000, 0.1), inset 0 1px 1px rgba(#fff, 0.50);
     transform: none;
+  }
+
+  &:focus,
+  &:hover {
+    background: $am-tabs-btn-background-focus;
   }
 }
 
