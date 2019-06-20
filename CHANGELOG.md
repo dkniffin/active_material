@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.4.2
+
+- Added columns and column support:
+  Now each column component inside columns is shown correctly. Previously it was put at the bottom
+  thus breaking the layout.
+
 ## 1.4.1
 
 - Add `!default` flag to `$am-theme-error-400` color
