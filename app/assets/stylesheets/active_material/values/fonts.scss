@@ -2,8 +2,14 @@
 /// @group fonts
 ////
 
+@font-face {
+  font-family: 'Roboto';
+  font-weight: normal;
+  src: url(asset-path('Roboto-Regular.ttf')) format('truetype');
+}
+
 /// The default sans-serif font
-$am-font-sans: 'RobotoDraft', sans-serif !default;
+$am-font-sans: 'Roboto', sans-serif !default;
 
 /// The weight of bold type
 $am-font-weight-bold: 700;
