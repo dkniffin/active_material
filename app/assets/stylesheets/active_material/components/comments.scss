@@ -1,0 +1,28 @@
+/**
+ * Comments
+ * Active Admin comments
+ */
+
+div.active_admin_comment {
+  margin: 0 16px;
+
+  & + & {
+    border-top: 1px solid am-color(divider);
+    padding-top: am-unit(2);
+  }
+}
+
+.active_admin_comment_meta {
+  @include am-color(secondary-text);
+  @include am-type-caption;
+}
+
+.comments {
+  .pagination_information {
+    margin: 16px;
+  }
+
+  .empty {
+    margin: 16px;
+  }
+}
