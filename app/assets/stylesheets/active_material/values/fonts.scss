@@ -3,13 +3,13 @@
 ////
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'RobotoDraft';
   font-weight: normal;
-  src: url(asset-path('Roboto-Regular.ttf')) format('truetype');
+  src: url(asset-path('RobotoDraft-Regular.woff')) format('woff2');
 }
 
 /// The default sans-serif font
-$am-font-sans: 'Roboto', sans-serif !default;
+$am-font-sans: 'RobotoDraft', sans-serif !default;
 
 /// The weight of bold type
 $am-font-weight-bold: 700;
