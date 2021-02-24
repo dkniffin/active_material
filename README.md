@@ -59,10 +59,6 @@ Refer to the [Customization Guide](./docs/customization.md).
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
 
-***
+### Issue and PR reviews
 
-<a href="http://code.viget.com">
-  <img src="http://code.viget.com/github-banner.png" alt="Code At Viget">
-</a>
-
-Visit [code.viget.com](http://code.viget.com) to see more projects from [Viget.](https://viget.com)
+Another way you can help is by reviewing issues, trying to reproduce bugs, and providing feedback on PRs.
