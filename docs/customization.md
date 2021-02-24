@@ -7,7 +7,7 @@
 ## Customizing the Color Theme
 
 Definitions of all colors exist in
-[a single colors.scss file](`https://github.com/vigetlabs/active_material/blob/master/app/assets/stylesheets/active_material/values/colors.scss`). These
+[a single colors.scss file](/app/assets/stylesheets/active_material/values/colors.scss). These
 color variables are assigned using the `!default` Sass flag, so they
 can be easily overridden.
 
