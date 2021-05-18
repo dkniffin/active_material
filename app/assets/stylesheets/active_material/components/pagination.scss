@@ -8,19 +8,37 @@
   clear: both;
 
   .pagination_information,
-  .download_links {
+  .download_links,
+  .pagination_per_page {
     @include am-type-caption;
     padding: am-unit(2);
   }
 
-  .pagination_information {
+  .pagination_information,
+  .pagination_per_page {
     float: left;
+  }
+
+  .pagination_information {
+    clear: left;
   }
 
   .download_links {
     line-height: am-unit(3);
     float: right;
     text-align: right;
+  }
+
+  .pagination_per_page {
+    border-bottom: 1px solid #efefef;
+    padding: am-unit(1) am-unit(2);
+
+    select {
+      @include am-select-input;
+
+      height: 34px;
+      line-height: 30px;
+    }
   }
 }
 
