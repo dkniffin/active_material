@@ -4,8 +4,50 @@
 
 @font-face {
   font-family: 'RobotoDraft';
+  src: url(asset-path('RobotoDraft-Regular.woff2')) format('woff2');
   font-weight: normal;
-  src: url(asset-path('RobotoDraft-Regular.woff')) format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoDraft';
+  src: url(asset-path('RobotoDraft-Regular.woff2')) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoDraft';
+  src: url(asset-path('RobotoDraft-Medium.woff2')) format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoDraft';
+  src: url(asset-path('RobotoDraft-Bold.woff2')) format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoDraft';
+  src: url(asset-path('RobotoDraft-Bold.woff2')) format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoDraft';
+  src: url(asset-path('RobotoDraft-Italic.woff2')) format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'RobotoDraft';
+  src: url(asset-path('RobotoDraft-Italic.woff2')) format('woff2');
+  font-weight: normal;
+  font-style: italic;
 }
 
 /// The default sans-serif font
@@ -15,7 +57,7 @@ $am-font-sans: 'RobotoDraft', sans-serif !default;
 $am-font-weight-bold: 700;
 
 /// The weight of semi-bold type
-$am-font-weight-semi-bold: 600;
+$am-font-weight-semi-bold: 500;
 
 /// The weight of medium type
 $am-font-weight-medium: 500;
