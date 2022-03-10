@@ -1,6 +1,6 @@
 {
   "name": "active_material",
-  "version": "1.5.2",
+  "version": "2.0.0",
   "description": "ActiveAdmin skin based on Google's Material Design.",
   "main": "src/javascripts/active_material.js",
   "directories": {
