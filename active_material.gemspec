@@ -6,11 +6,11 @@ require 'active_material/version'
 Gem::Specification.new do |spec|
   spec.name          = "active_material"
   spec.version       = ActiveMaterial::VERSION
-  spec.authors       = ["Nate Hunzaker", "David Eisinger"]
-  spec.email         = ["nate.hunzaker@viget.com", "david.eisinger@viget.com"]
+  spec.authors       = ["Derek Kniffin", "Nate Hunzaker", "David Eisinger"]
+  spec.email         = ["derek.kniffin@gmail.com"]
   spec.summary       = %q{ActiveAdmin skin based on Google's Material Design.}
   spec.description   = %q{ActiveAdmin skin based on Google's Material Design.}
-  spec.homepage      = ""
+  spec.homepage      = "http://www.github.com/dkniffin/active_material"
   spec.license       = "MIT"
 
   spec.files         = Dir["{lib,app}/**/*"] + ["LICENSE.txt", "README.md"]

@@ -45,7 +45,7 @@ eliminate the possibility of rule collisions outside of ActiveMaterial
 and paves the way for future enhancements to the project.
 
 Release:
-https://github.com/vigetlabs/active_material/releases/tag/v1.0.0
+https://github.com/dkniffin/active_material/releases/tag/v1.0.0
 
 ### Breaking Changes
 

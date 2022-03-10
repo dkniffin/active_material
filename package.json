@@ -4,9 +4,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vigetlabs/active_material.git"
+    "url": "git+https://github.com/dkniffin/active_material.git"
   },
-  "author": "Viget Labs",
+  "author": "Derek Kniffin",
   "license": "MIT",
   "devDependencies": {
     "sassdoc": "2.1.19"

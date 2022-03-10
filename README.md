@@ -14,7 +14,7 @@ An ActiveAdmin skin based on Google's Material Design.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "active_material", github: "vigetlabs/active_material"
+gem "active_material"
 ```
 
 And then execute:
@@ -62,3 +62,22 @@ Refer to the [Customization Guide](./docs/customization.md).
 ### Issue and PR reviews
 
 Another way you can help is by reviewing issues, trying to reproduce bugs, and providing feedback on PRs.
+
+## Pushing a new version
+
+First, you must be authorized on both rubygems.org and npmjs.com. Then:
+
+Update the ruby gem:
+- Update the version in `lib/activeadmin_reorderable/version.rb`
+- `gem build activeadmin_reorderable.gemspec`
+- `gem push activeadmin_reorderable-X.Y.Z.gem`
+
+Update the npm package:
+- Update the version in `package.json`
+- `npm publish`
+
+Tag the version in git:
+- `git tag X.Y.Z`
+- `git push origin X.Y.Z`
+
+Update the changelog
