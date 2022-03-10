@@ -19,11 +19,12 @@ $am-textfield-color: rgba(#000, 0.70) !default;
 /// Textfield highlight color.
 $am-textfield-primary: am-color(primary) !default;
 /// Icon for email fields.
-$am-textfield-email-icon: asset-url("active_material/icons/email.svg") !default;
+$am-textfield-email-icon: url("../../../images/active_material/icons/email.svg") !default;
 /// Icon for password fields.
-$am-textfield-password-icon: asset-url("active_material/icons/secret.svg") !default;
+$am-textfield-password-icon: url("../../../images/active_material/icons/secret.svg") !default;
 /// Icon for date fields.
-$am-textfield-date-icon: asset-url("active_material/icons/event.svg") !default;
+$am-textfield-date-icon: url("../../../images/active_material/icons/event.svg") !default;
+
 
 @mixin am-textfield {
   color: $am-textfield-color;
