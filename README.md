@@ -11,41 +11,17 @@ An ActiveAdmin skin based on Google's Material Design.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+### Sprockets
 
-```ruby
-gem "active_material"
-```
+- Add `gem 'active_material'` to `Gemfile` and run `bundle install`
+- In `app/assets/stylesheets/active_admin.scss`, replace `@import "active_admin/base";` with `@import "active_material";`
+- In app/assets/javascripts/active_admin.js, add `//= require active_material`
 
-And then execute:
+### Webpacker / npm
 
-```shell
-$ bundle
-```
-
-Or install it yourself as:
-
-```shell
-$ gem install active_material
-```
-
-## Usage
-
-In `app/assets/stylesheets/active_admin.css.scss`, replace:
-
-`@import "active_admin/base";`
-
-with
-
-`@import "active_material";`
-
-Additionally, ActiveMaterial comes with an optional JavaScript bundle that adds a few additional features. It should be included right after the active_admin base script.
-
-In app/assets/javascripts/active_admin.js, add:
-
-```
-//= require active_material
-```
+- `npm install --save activeadmin_reorderable` or `yarn add activeadmin_reorderable`
+- Add `@import "active_material/app/assets/styleseets/active_material.scss";` to your CSS style file
+- Add `import "active_material"` to your JS pack file
 
 ## Customization
 

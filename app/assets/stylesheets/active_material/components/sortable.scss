@@ -6,8 +6,7 @@
 ////
 
 /// The icon displayed within a sortable element's drag handle
-$am-sortable-icon: asset-url("active_material/icons/reorder.svg") !default;
-// The size of the draggable handle
+$am-sortable-icon: url("../../../images/active_material/icons/reorder.svg") !default; // The size of the draggable handle
 $am-sortable-handle-size: am-unit(7);
 
 .ui-sortable {
