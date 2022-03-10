@@ -1,4 +1,12 @@
 {
+  "name": "active_material",
+  "version": "1.5.2",
+  "description": "ActiveAdmin skin based on Google's Material Design.",
+  "main": "app/assets/javascripts/active_material.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
   "scripts": {
     "doc": "sassdoc --dest docs/api app/assets/stylesheets/active_material/**/*.scss"
   },
@@ -8,6 +16,10 @@
   },
   "author": "Derek Kniffin",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dkniffin/active_material/issues"
+  },
+  "homepage": "https://github.com/dkniffin/active_material#readme",
   "devDependencies": {
     "sassdoc": "2.1.19"
   }
