@@ -12,7 +12,7 @@ An ActiveAdmin skin based on Google's Material Design.
 
 ## Upgrading from v1 to v2
 
-This activeadmin theme is entirely JS and CSS, and there is no custom ruby code. Therefore, since v2, active_material has been converted from a ruby gem to an npm package. As part of this process, sprockets is also no longer supported.
+This activeadmin theme is entirely JS and CSS, and there is no custom ruby code. Therefore, since v2, active_material has been converted from a ruby gem to an npm/JS package. As part of this process, sprockets is also no longer supported.
 
 To upgrade from v1 to v2, follow these steps:
 1. Follow the instructions above for "installation" to add the npm version

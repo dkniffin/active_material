@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 2.0.0
+
+This activeadmin theme is entirely JS and CSS, and there is no custom ruby code. Therefore, since v2, active_material has been converted from a ruby gem to an npm/JS package. As part of this process, sprockets is also no longer supported.
+
+### Breaking changes
+- Sprockets is no longer supported
+- The library is converted from ruby gem to npm/JS package
+
+### Upgrading
+
+To upgrade from v1 to v2, follow these steps:
+1. Follow the instructions in the readme for "installation" to add the npm/JS version
+2. Remove references to active_material in `app/assets/stylesheets/active_admin.scss`. Any customizations should be moved over to wherever the new scss import is.
+3. Remove references to active_material in `app/assets/javascripts/active_admin.js`.
+4. Remove the `gem 'active_material'` from your Gemfile (and run `bundle install` to update Gemfile.lock)
+
 ## 1.4.1
 
 - Add `!default` flag to `$am-theme-error-400` color
