@@ -45,7 +45,7 @@ $am-dialog-title-padding: am-unit(4) am-unit(3) am-unit(1) !default;
 
 @mixin am-dialog-close {
   @include am-btn-icon;
-  background: url("../../../images/active_material/icons/clear.svg") 50% 50% no-repeat;
+  background: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"> <path opacity="0.54" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12 L19,6.41z"/> </svg>') 50% 50% no-repeat;
   margin: 0;
   padding: 0;
   position: absolute;
