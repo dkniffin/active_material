@@ -13,3 +13,5 @@
 *.a
 mkmf.log
 *.gem
+node_modules
+yarn.lock

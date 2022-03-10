@@ -22,5 +22,8 @@
   "homepage": "https://github.com/dkniffin/active_material#readme",
   "devDependencies": {
     "sassdoc": "2.1.19"
+  },
+  "dependencies": {
+    "@fontsource/roboto": "^4.5.3"
   }
 }
