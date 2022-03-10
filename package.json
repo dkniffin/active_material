@@ -2,13 +2,11 @@
   "name": "active_material",
   "version": "1.5.2",
   "description": "ActiveAdmin skin based on Google's Material Design.",
-  "main": "app/assets/javascripts/active_material.js",
+  "main": "src/javascripts/active_material.js",
   "directories": {
-    "doc": "docs",
     "lib": "lib"
   },
   "scripts": {
-    "doc": "sassdoc --dest docs/api app/assets/stylesheets/active_material/**/*.scss"
   },
   "repository": {
     "type": "git",
@@ -20,10 +18,8 @@
     "url": "https://github.com/dkniffin/active_material/issues"
   },
   "homepage": "https://github.com/dkniffin/active_material#readme",
-  "devDependencies": {
-    "sassdoc": "2.1.19"
-  },
   "dependencies": {
     "@fontsource/roboto": "^4.5.3"
-  }
+  },
+  "devDependencies": {}
 }
