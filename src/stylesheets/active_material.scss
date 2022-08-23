@@ -12,25 +12,77 @@
 @import "active_material/values/fonts";
 @import "active_material/values/breakpoints";
 @import "active_material/values/elevation";
-@import "active_material/values/*";
 
 /// Generators describe functions, mixins, and classes
 /// intended for extension. More or less, they are "style builders"
 /// instead of "style descriptors"
 @import "active_material/generators/functions";
 @import "active_material/generators/mixins";
-@import "active_material/generators/*";
 
 /// Atoms are individual styles to enhance reusability
-@import "active_material/atoms/*";
+@import "active_material/atoms/clearfix";
+@import "active_material/atoms/color";
+@import "active_material/atoms/family";
+@import "active_material/atoms/fill";
+@import "active_material/atoms/hidden";
+@import "active_material/atoms/links";
+@import "active_material/atoms/lists";
+@import "active_material/atoms/paper";
+@import "active_material/atoms/type";
 
 /// Foundational rules that setup the page
 @import "active_material/global/foundation";
-@import "active_material/global/*";
 
 /// Prototypes are collections of mixins that allow for css design
 /// without the constraints of limiting ActiveAdmin selectors
-@import "active_material/prototypes/*";
+@import "active_material/prototypes/actions-footer";
+@import "active_material/prototypes/avatar";
+@import "active_material/prototypes/btn-icon";
+@import "active_material/prototypes/button";
+@import "active_material/prototypes/datepicker";
+@import "active_material/prototypes/dialog";
+@import "active_material/prototypes/menu";
+@import "active_material/prototypes/multiselect";
+@import "active_material/prototypes/select";
+@import "active_material/prototypes/snackbar";
+@import "active_material/prototypes/subheader";
+@import "active_material/prototypes/table";
+@import "active_material/prototypes/tabs";
+@import "active_material/prototypes/tag";
+@import "active_material/prototypes/textfield";
+@import "active_material/prototypes/toolbar";
+@import "active_material/prototypes/underlay";
 
 /// Components describe actual implementation within Active Admin
-@import "active_material/components/*";
+@import "active_material/components/avatar";
+@import "active_material/components/blank_slate";
+@import "active_material/components/breadcrumbs";
+@import "active_material/components/buttons";
+@import "active_material/components/checkbox";
+@import "active_material/components/clearfix";
+@import "active_material/components/comments";
+@import "active_material/components/date-select";
+@import "active_material/components/datepicker";
+@import "active_material/components/dialog";
+@import "active_material/components/dropdown";
+@import "active_material/components/featured-blocks";
+@import "active_material/components/filter";
+@import "active_material/components/flash";
+@import "active_material/components/footer";
+@import "active_material/components/forms";
+@import "active_material/components/header";
+@import "active_material/components/hidden";
+@import "active_material/components/login";
+@import "active_material/components/overlay";
+@import "active_material/components/pagination";
+@import "active_material/components/panels";
+@import "active_material/components/photo_select";
+@import "active_material/components/scopes";
+@import "active_material/components/select";
+@import "active_material/components/sortable";
+@import "active_material/components/structure";
+@import "active_material/components/tables";
+@import "active_material/components/tabs";
+@import "active_material/components/tag";
+@import "active_material/components/title_bar";
+@import "active_material/components/utility_nav";
