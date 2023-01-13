@@ -2,8 +2,9 @@
 
 1. First, you must be authorized on npmjs.com
 2. Update the version in `package.json`
-3. `npm publish`
-4. Update the changelog
-5. Commit
-6. `git tag X.Y.Z`
-7. `git push origin X.Y.Z`
+3. Update the changelog
+4. Commit
+5. `git push`
+6. `npm publish`
+7. `git tag X.Y.Z`
+8. `git push origin X.Y.Z`

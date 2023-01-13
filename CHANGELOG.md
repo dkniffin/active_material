@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.0.1
+
+- Removes dependency on globbing extension (#85)
+
 ## 2.0.0
 
 This activeadmin theme is entirely JS and CSS, and there is no custom ruby code. Therefore, since v2, active_material has been converted from a ruby gem to an npm/JS package. As part of this process, sprockets is also no longer supported.
