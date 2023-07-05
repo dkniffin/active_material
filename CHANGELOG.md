@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.0.2
+
+- Fix broken account menu icon
+
 ## 2.0.1
 
 - Removes dependency on globbing extension (#85)
