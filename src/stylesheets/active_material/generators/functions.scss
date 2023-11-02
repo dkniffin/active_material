@@ -6,7 +6,7 @@
 /// @param {number} $amount - An integer value, such as 100
 /// @return {number} The amount of letter-spacing in ems.
 @function am-tracking($amount) {
-  @return ($amount / 1000) + 0em;
+  @return calc($amount / 1000) + 0em;
 }
 
 
@@ -15,7 +15,7 @@
 /// @param {number} $number - The numeric value to strip units from.
 /// @return {number} A unitless number value.
 @function am-strip-units($number) {
-  @return $number / ($number * 0 + 1);
+  @return calc($number / ($number * 0 + 1));
 }
 
 
@@ -31,7 +31,7 @@
 /// @param {number} $baseline [16] - The assumed base font size.
 /// @return {number} Scalable pixel value in rems.
 @function am-sp($value, $baseline:16) {
-  @return (am-strip-units($value) / $baseline) + rem;
+  @return calc(am-strip-units($value) / $baseline) + rem;
 }
 
 
