@@ -39,7 +39,7 @@ $am-menu-carat-size: 5px !default;
   border-color: am-color(primary) transparent transparent;
   content: "";
   height: 0;
-  margin-top: $am-menu-carat-size / -2;
+  margin-top: calc($am-menu-carat-size / -2);
   position: absolute;
   right: -15px;
   top: 50%;
