@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.0.3
+
+- #90: Wrap divisions in calc() - This fixes a deprecation in Dart Sass: https://sass-lang.com/documentation/breaking-changes/slash-div/
+
 ## 2.0.2
 
 - Fix broken account menu icon
