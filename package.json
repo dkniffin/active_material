@@ -1,6 +1,6 @@
 {
   "name": "active_material",
-  "version": "2.0.3",
+  "version": "3.0.0.beta1",
   "description": "ActiveAdmin skin based on Google's Material Design.",
   "main": "src/javascripts/active_material.js",
   "directories": {
@@ -18,8 +18,6 @@
     "url": "https://github.com/dkniffin/active_material/issues"
   },
   "homepage": "https://github.com/dkniffin/active_material#readme",
-  "dependencies": {
-    "@fontsource/roboto": "^4.5.3"
-  },
+  "dependencies": {},
   "devDependencies": {}
 }
