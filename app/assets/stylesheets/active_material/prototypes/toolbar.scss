@@ -3,8 +3,8 @@
  * A basic navigation element, primary used for top level navigation
  */
 
-$am-toolbar-base-font-size  : am-sp(14) !default;
-$am-toolbar-title-font-size : am-sp(20) !default;
+$am-toolbar-base-font-size  : am-sp(14px) !default;
+$am-toolbar-title-font-size : am-sp(20px) !default;
 $am-toolbar-keyline-small   : am-unit(7) !default;
 $am-toolbar-keyline-medium  : $am-toolbar-keyline-small + 8px !default;
 

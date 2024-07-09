@@ -11,7 +11,7 @@
 }
 
 @mixin am-select-input {
-  @include am-font-size(14);
+  @include am-font-size(14px);
   background: #fafafa url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve"> <path opacity="0.4" d="M5,8l4,4l4-4H5z"/> </svg>') no-repeat calc(100% - 4px) 50%;
   border: 1px solid #d3d3d3;
   border-radius: 3px;
