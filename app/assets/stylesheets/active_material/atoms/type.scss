@@ -7,43 +7,43 @@
 
 /// Applies rules for subheader text.
 @mixin am-type-subheader {
-  @include am-font-size(16);
+  @include am-font-size(16px);
   font-weight: $am-font-weight-regular;
-  line-height: am-sp(24);
+  line-height: am-sp(24px);
   letter-spacing: am-tracking(10);
 }
 
 /// Applies rules for heavier, more emphasized, body text.
 @mixin am-type-body-2 {
-  @include am-font-size(14);
+  @include am-font-size(14px);
   font-weight: $am-font-weight-semi-bold;
-  line-height: am-sp(24);
+  line-height: am-sp(24px);
   letter-spacing: am-tracking(10);
 }
 
 /// Applies rules for standard body text.
 @mixin am-type-body-1 {
-  @include am-font-size(14);
+  @include am-font-size(14px);
   font-weight: $am-font-weight-regular;
-  line-height: am-sp(20);
+  line-height: am-sp(20px);
   letter-spacing: am-tracking(10);
 }
 
 /// Applies rules for caption text.
 @mixin am-type-caption {
-  @include am-font-size(12);
+  @include am-font-size(12px);
   font-style: normal;
   font-weight: $am-font-weight-medium;
   letter-spacing: am-tracking(20);
-  line-height: am-sp(12);
+  line-height: am-sp(12px);
 }
 
 /// Applies rules for button text.
 @mixin am-type-btn {
-  @include am-font-size(14);
+  @include am-font-size(14px);
   font-weight: $am-font-weight-medium;
   letter-spacing: am-tracking(10);
-  line-height: am-sp(12);
+  line-height: am-sp(12px);
   text-transform: uppercase;
 }
 

@@ -9,6 +9,6 @@
 /// in older browsers.
 /// @param {number} $size - Font size in pixels
 @mixin am-font-size($size) {
-  font-size: am-strip-units($size) + 0px;
+  font-size: $size;
   font-size: am-sp($size);
 }

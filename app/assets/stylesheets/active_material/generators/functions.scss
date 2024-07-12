@@ -10,15 +10,6 @@
 }
 
 
-/// Removes units (px, em, etc...) from a given number.
-///
-/// @param {number} $number - The numeric value to strip units from.
-/// @return {number} A unitless number value.
-@function am-strip-units($number) {
-  @return calc($number / ($number * 0 + 1));
-}
-
-
 /// Calculates "scalable pixel" values. This is implemented using rems.
 /// Within material design, scalable pixel values are those that respect
 /// the user's font settings.
@@ -31,7 +22,7 @@
 /// @param {number} $baseline [16] - The assumed base font size.
 /// @return {number} Scalable pixel value in rems.
 @function am-sp($value, $baseline:16) {
-  @return calc(am-strip-units($value) / $baseline) + rem;
+  @return calc($value / $baseline) + rem;
 }
 
 

@@ -31,7 +31,7 @@ $am-snackbar-duration: 9s !default;
   color: $am-snackbar-color;
   font-weight: 300;
   font-size: 14px;
-  line-height: am-sp(20);
+  line-height: am-sp(20px);
   margin: am-unit(2);
   min-width: $am-snackbar-min-width;
   max-width: $am-snackbar-max-width;
