@@ -1,36 +1,38 @@
-$(function() {
-  var actions = $("tbody .col-actions");
+document.addEventListener("DOMContentLoaded", () => {
+  const actions = document.querySelectorAll("tbody .col-actions")
 
   function waitForOutsideClick (el) {
-
-    $("body").on('click.toggle', function(e) {
+    const body = document.querySelector("body")
+    body.addEventListener("click", (e) => {
       if (el.contains(e.currentTarget) === false) {
-        actions.removeClass('active');
-        $("body").off("click.toggle");
+        el.classList.remove('active')
       }
-    });
+    })
   }
 
-  // Make actions focusable
-  actions.attr('tabindex', 0).attr('role', 'button');
+  actions.forEach((action) => {
+    // Make actions focusable
+    action.setAttribute('tabindex', 0)
+    action.setAttribute('role', 'button')
 
-  actions.on('click', function() {
-    $(this).addClass('active');
-    waitForOutsideClick(this);
-  });
+    action.addEventListener('click', () => {
+      action.classList.add('active');
+      waitForOutsideClick(action);
+    })
 
-  actions.on('keydown', function(e) {
-    var space = 32;
-    var enter = 13;
-    var escape = 27;
+    action.addEventListener('keydown', (e) => {
+      const space = 32;
+      const enter = 13;
+      const escape = 27;
 
-    if (e.keyCode == space || e.keyCode == enter) {
-      e.preventDefault();
-      $(this).addClass('active');
-      waitForOutsideClick(this);
-    } else if (e.keyCode == escape) {
-      e.preventDefault();
-      $(this).removeClass('active');
-    }
-  });
-});
+      if (e.keyCode == space || e.keyCode == enter) {
+        e.preventDefault()
+        action.classList.add('active')
+        waitForOutsideClick(action)
+      } else if (e.keyCode == escape) {
+        e.preventDefault()
+        action.classList.remove('active')
+      }
+    })
+  })
+})
