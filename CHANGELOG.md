@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.1.1
+
+- Update included files in gemspec
+
 ## 2.1.0
 
 - Convert JS from jquery to vanilla JS
