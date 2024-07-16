@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.1.0
+
+- Convert JS from jquery to vanilla JS
+- Add support for importmap
+- Update SCSS to support dartsass-rails
+
 ## 2.0.3
 
 - #90: Wrap divisions in calc() - This fixes a deprecation in Dart Sass: https://sass-lang.com/documentation/breaking-changes/slash-div/
