@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.1.2
+
+- #100 - Avoid using ruby 3.1 methods to keep gem compatible with older ruby versions (thanks @alexeyschepin)
+
 ## 2.1.1
 
 - Update included files in gemspec
