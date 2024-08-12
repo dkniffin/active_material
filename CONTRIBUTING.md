@@ -45,3 +45,5 @@ First, you must be authorized on both rubygems.org and npmjs.com. Then:
   - `git tag -a X.Y.Z`
   - Add the same text as the changelog to the tag description
   - `git push origin X.Y.Z`
+
+6. Create a new release in Github: https://github.com/dkniffin/active_material/releases
