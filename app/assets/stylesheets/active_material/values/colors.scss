@@ -1,3 +1,5 @@
+@use "sass:color";
+
 ////
 /// @group colors
 ////
@@ -83,8 +85,8 @@ $theme-error: $am-theme-error !default;
 
 $am-colors: (
   accent               : $am-theme-accent,
-  accent-active        : lighten($am-theme-accent, 2%),
-  accent-hover         : lighten($am-theme-accent, 5%),
+  accent-active        : color.adjust($am-theme-accent, $lightness: 2%, $space: hsl),
+  accent-hover         : color.adjust($am-theme-accent, $lightness: 5%, $space: hsl),
   backdrop             : $am-theme-backdrop,
   black                : black,
   divider              : $am-theme-divider,

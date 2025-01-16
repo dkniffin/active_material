@@ -11,9 +11,10 @@
 }
 
 .site_title {
-  @include am-toolbar-title;
-  @include am-color(text-light);
   text-shadow: 0 1px 2px rgba(#000, 0.15);
+
+  @include am-color(text-light);
+  @include am-toolbar-title;
 }
 
 #tabs {

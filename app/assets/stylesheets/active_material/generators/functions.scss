@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "sass:map";
+
 /// Emulates letter tracking in Adobe Photoshop, which is used for
 /// adjusting the space between letters in text.
 ///
@@ -51,8 +54,8 @@
 /// @param {any} $key - The desired key in $am-colors.
 /// @return {color} A color value from $am-colors.
 @function am-color ($key) {
-  @if map-has-key($am-colors, $key) {
-    @return map-get($am-colors, $key);
+  @if map.has-key($am-colors, $key) {
+    @return map.get($am-colors, $key);
   }
 
   @error "Unknown color value '#{$key}'";
@@ -66,7 +69,7 @@
 /// @param {number} $amount - The degree of lightness.
 /// @return {color} A lightened color value from $am-colors.
 @function am-lighten ($color, $amount) {
-  @return lighten(am-color($color), $amount);
+  @return color.adjust(am-color($color), $lightness: $amount, $space: hsl);
 }
 
 
@@ -76,7 +79,7 @@
 /// @param {number} $amount - The degree of darkness.
 /// @return {color} A darkened color value from $am-colors.
 @function am-darken ($color, $amount) {
-  @return darken(am-color($color), $amount);
+  @return color.adjust(am-color($color), $lightness: -$amount, $space: hsl);
 }
 
 /// Extracts a font family out of the $am-fonts map. Throws an error if that key is not defined.
@@ -84,8 +87,8 @@
 /// @param {any} $key - The desired key in $am-colors.
 /// @return {font} A font family from $am-colors.
 @function am-font-family ($key) {
-  @if map-has-key($am-fonts, $key) {
-    @return map-get($am-fonts, $key);
+  @if map.has-key($am-fonts, $key) {
+    @return map.get($am-fonts, $key);
   }
 
   @error "Unknown font value '#{$key}'";
