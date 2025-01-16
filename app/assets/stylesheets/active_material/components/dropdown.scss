@@ -27,7 +27,7 @@
   }
 
   li a {
-    @include am-menu-link;
     @include am-menu-item-open;
+    @include am-menu-link;
   }
 }
