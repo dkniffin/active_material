@@ -6,7 +6,7 @@
 
 ## 2.1.3
 
-- 102 - Resolve Darsass deprecation warnings
+- #102 - Resolve Darsass deprecation warnings
 
 ## 2.1.2
 
