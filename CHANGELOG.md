@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.1.4
+
+- #103 - Fix dropdown menu
+
 ## 2.1.3
 
 - 102 - Resolve Darsass deprecation warnings
