@@ -8,19 +8,16 @@
 
 Definitions of all colors exist in
 [a single colors.scss file](/app/assets/stylesheets/active_material/values/colors.scss). These
-color variables are assigned using the `!default` Sass flag, so they
-can be easily overridden.
+color variables are assigned using the `!default` Sass flag, so they can be easily overridden.
 
-**Variables need to be overriden before importing active_material.** For example, to customize the primary
-color:
+For example, to customize the primary color:
 
 ```scss
 // The following variables override default ActiveMaterial values
-$am-theme-primary: #00689f;
-$am-theme-accent: #7dd2f7;
-$am-theme-accent-fallback: #ff7547;
-
-@import "active_material";
+@use "active_material" with (
+  $am-theme-primary: #00689f;
+  $am-theme-accent: #7dd2f7;
+);
 ```
 
 ## Color variables
