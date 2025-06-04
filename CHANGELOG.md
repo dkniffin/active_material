@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2.1.5
+
+- Add package.json entry-point, so non-importmap JS usage can just be `import "active_material";`
+- Update and improve docs
+
 ## 2.1.4
 
 - #103 - Fix dropdown menu
