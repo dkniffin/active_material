@@ -57,6 +57,13 @@ For example, to customize the primary color:
 
 **$am-font-sans:** The font family used by active_material
 
+By default, this gem will load the Roboto font from google APIs and use it in the SCSS. If you would like to change that behavior, you have a few options:
+
+1. If you want to change to another font:
+    - In your application config, set `config.active_material.font_url` to your font url
+    - Set `$am-font-sans: 'Roboto';`, replacing `Roboto` with your font name.
+2. If you want to disable font loading altogether, you can use `config.active_material.load_font = true`
+
 **$am-font-weight-bold:** The weight of bold type
 
 **$am-font-weight-semi-bold:** The weight of semi-bold type
